@@ -12,7 +12,7 @@
     ./kitty
     ./micro
     ./mpv
-    ./nixvim
+    # ./nixvim
     ./starship
     ./yt-dlp
     ./zoxide
