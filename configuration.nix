@@ -71,15 +71,15 @@
     isNormalUser = true;
     description = "xd";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
+    #  packages = with pkgs; [
     #  kate
     #  thunderbird
-    vscode-fhs
-    ];
+    #  vscode-fhs
+    #  ];
   };
 
-  programs.gnupg.agent.enable = true;
-  programs.firefox.enable = true;
+  # programs.gnupg.agent.enable = true;
+  # programs.firefox.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

@@ -14,10 +14,13 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.xd = ./home.nix;
+          home-manager.users.xd = (import ./home inputs);
           nix.settings = {
             experimental-features = [ "nix-command" "flakes" ];
           };
+          programs.gnupg.agent.enable = true;
+          programs.firefox.enable = true;
+          environment.systemPackages = (import ./nixos/packages inputs);
         }
       ];
     };
