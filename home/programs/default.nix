@@ -4,6 +4,7 @@
     ./aria2
     ./bat
     ./bottom
+    ./direnv
     ./eza
     ./fish
     ./fzf
