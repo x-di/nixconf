@@ -20,7 +20,6 @@
           };
           programs.gnupg.agent.enable = true;
           programs.firefox.enable = true;
-          environment.systemPackages = (import ./nixos/packages inputs);
         }
       ];
     };
