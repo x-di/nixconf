@@ -9,7 +9,8 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./configuration.nix
+        ./hardware-configuration.nix
+        ./nixos
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
@@ -18,8 +19,6 @@
           nix.settings = {
             experimental-features = [ "nix-command" "flakes" ];
           };
-          programs.gnupg.agent.enable = true;
-          programs.firefox.enable = true;
         }
       ];
     };
