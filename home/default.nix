@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 let
   name = "xd";
   homeDirectory = "/home/xd";
