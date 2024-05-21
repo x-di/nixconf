@@ -24,4 +24,7 @@ in
       key = "${signingkey}";
     };
   };
+  imports = [
+    (import ./packages)
+  ];
 }
