@@ -10,6 +10,6 @@
     ./postgresql
     ./printing
     ./thermald
-    ./xserver
+    # ./xserver
   ];
 }
