@@ -16,8 +16,9 @@
       haruna
       kdePackages.kdeplasma-addons
       libdbusmenu
+      libreoffice-qt6-fresh
       libva-utils
-      onlyoffice-bin_latest
+      # onlyoffice-bin_latest
       p7zip
       postman
       sqlite
