@@ -14,6 +14,7 @@
     ./micro
     ./mpv
     # ./nixvim
+    ./obs-studio
     ./starship
     ./yt-dlp
     ./zoxide
