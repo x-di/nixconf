@@ -16,7 +16,6 @@
       kdePackages.kdeplasma-addons
       libdbusmenu
       libva-utils
-      obs-studio
       onlyoffice-bin_latest
       p7zip
       postman
