@@ -2,7 +2,7 @@
 let
   name = "xd";
   homeDirectory = "/home/xd";
-  stateVersion = "24.05";
+  stateVersion = "24.11";
 in
 {
   home = {
