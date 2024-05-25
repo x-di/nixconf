@@ -3,6 +3,7 @@
   home = {
     packages = with pkgs; [
       clinfo
+      dbeaver-bin
       drawio
       fastfetch
       ffmpeg_7-full
