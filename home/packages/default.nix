@@ -21,7 +21,7 @@
       libva-utils
       # onlyoffice-bin_latest
       p7zip
-      podman-desktop
+      # podman-desktop
       postman
       sqlite
       tela-icon-theme
