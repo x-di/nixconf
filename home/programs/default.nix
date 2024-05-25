@@ -13,7 +13,7 @@
     ./kitty
     ./micro
     ./mpv
-    # ./nixvim
+    ./nixvim
     ./obs-studio
     ./starship
     ./yt-dlp
