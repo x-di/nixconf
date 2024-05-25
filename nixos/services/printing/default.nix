@@ -2,7 +2,7 @@
 {
   services = {
     printing = {
-      enable = true;
+      enable = false;
     };
   };
 }
