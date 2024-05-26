@@ -18,8 +18,8 @@
       # ".." = "cd ..";
 
       #nix
-      nrs = "sudo nixos-rebuild switch";
-      nrb = "sudo nixos-rebuild boot";
+      nrs = "sudo nixos-rebuild switch --flake .";
+      nrb = "sudo nixos-rebuild boot --flake .";
       #nix-shell
       ns = "nix-shell --command fish -p";
 
