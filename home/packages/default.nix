@@ -19,9 +19,7 @@
       libdbusmenu
       libreoffice-qt6-fresh
       libva-utils
-      # onlyoffice-bin_latest
       p7zip
-      # podman-desktop
       postman
       sqlite
       tela-icon-theme
