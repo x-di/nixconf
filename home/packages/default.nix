@@ -2,6 +2,7 @@
 {
   home = {
     packages = with pkgs; [
+      chromium
       clinfo
       dbeaver-bin
       drawio
