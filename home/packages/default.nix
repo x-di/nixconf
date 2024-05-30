@@ -7,7 +7,7 @@
       dbeaver-bin
       drawio
       fastfetch
-      ffmpeg_7-full
+      ffmpeg
       glxinfo
       gnome.gnome-keyring
       gst_all_1.gstreamer
