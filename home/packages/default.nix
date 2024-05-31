@@ -19,6 +19,7 @@
       kdePackages.kdeplasma-addons
       libdbusmenu
       libreoffice-qt6-fresh
+      librewolf
       libva-utils
       p7zip
       postman
