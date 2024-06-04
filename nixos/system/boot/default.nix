@@ -10,8 +10,10 @@
       };
     };
     # kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_xanmod;
     # kernelPackages = pkgs.linuxPackages_xanmod_latest;
-    kernelPackages = pkgs.linuxPackages_zen;
+    # kernelPackages = pkgs.linuxPackages_zen;
+    # kernelPackages = pkgs.linuxPackages_lqx;
     # kernel = {
       # sysctl = {
         # "vm.swappiness" = 180;
