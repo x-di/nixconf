@@ -22,5 +22,6 @@
     plasma-browser-integration
     konsole
     oxygen
+    elisa
   ];
 }
