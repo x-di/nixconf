@@ -5,6 +5,7 @@
       clinfo
       dbeaver-bin
       drawio
+      easyeffects
       fastfetch
       ffmpeg
       glxinfo
