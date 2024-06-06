@@ -16,6 +16,7 @@
       gst_all_1.gst-plugins-ugly
       gst_all_1.gst-vaapi
       haruna
+      kdePackages.juk
       kdePackages.kdenlive
       kdePackages.kdeplasma-addons
       libdbusmenu
