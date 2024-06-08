@@ -14,6 +14,7 @@
     ./micro
     ./mpv
     ./nixvim
+    ./nu
     ./obs-studio
     ./starship
     ./yt-dlp
