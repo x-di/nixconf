@@ -9,7 +9,7 @@
       size = 14;
     };
     extraConfig = ''
-      			shell fish
+      			shell nu
       			tab_bar_edge top
       			tab_bar_style slant
       			cursor_shape beam
