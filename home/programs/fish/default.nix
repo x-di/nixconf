@@ -12,6 +12,7 @@
     ];
     interactiveShellInit = ''
       			set fish_greeting # Disable greeting
+      			fish_vi_key_bindings
       			set -gx PATH $PATH $HOME/.config/composer/vendor/bin
           	'';
     shellAbbrs = {
