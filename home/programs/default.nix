@@ -14,7 +14,7 @@
     ./kitty
     ./micro
     ./mpv
-    # ./nixvim
+    ./nixvim
     ./nu
     ./obs-studio
     ./starship
