@@ -24,12 +24,14 @@
       libva-utils
       p7zip
       postman
+      ripgrep
       sqlite
       tela-icon-theme
       telegram-desktop
       thunderbird
       vscode-fhs
       vulkan-tools
+      wl-clipboard
     ];
   };
 }
