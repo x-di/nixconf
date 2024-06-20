@@ -19,6 +19,7 @@
       			tab_title_template "{index}: {title[title.rfind('/')+1:]}"
       			window_padding_width 5 10
       			enable_audio_bell no
+      			scrollback_lines 5000
       		'';
     keybindings = {
       "ctrl+page_up" = "scroll_page_up";
