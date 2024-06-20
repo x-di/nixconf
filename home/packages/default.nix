@@ -23,6 +23,7 @@
       libreoffice-qt6-fresh
       libva-utils
       p7zip
+      papirus-icon-theme
       postman
       ripgrep
       sqlite
