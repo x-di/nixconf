@@ -6,7 +6,6 @@
       dbeaver-bin
       drawio
       easyeffects
-      fastfetch
       ffmpeg
       glxinfo
       gnome.gnome-keyring
