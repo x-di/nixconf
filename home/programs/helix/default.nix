@@ -11,7 +11,7 @@
           cursorline = true;
           cursorcolumn = true;
           line-number = "relative";
-          rulers = [ 80 ];
+          # rulers = [ 80 ];
           true-color = true;
           indent-guides = {
             render = true;
@@ -51,6 +51,10 @@
           };
         };
       };
+      ignores = [
+        "node_modules"
+        "vendor"
+      ];
       languages = {
         language = [
           # {
@@ -65,7 +69,7 @@
           #   debugger = {
           #     name = "lldb-dap";
           #     transport = "stdio";
-          #     command = "${lldb}/bin/lldb-vscode";
+          #     command = "${pkgs.lldb}/bin/lldb-vscode";
           #     templates = [
           #       {
           #         name = "binary";
@@ -147,7 +151,7 @@
           #   debugger = {
           #     name = "lldb-dap";
           #     transport = "stdio";
-          #     command = "${lldb}/bin/lldb-vscode";
+          #     command = "${pkgs.lldb}/bin/lldb-vscode";
           #     templates = [
           #       {
           #         name = "binary";
@@ -335,7 +339,7 @@
             comment-token = "#";
             indent = { tab-width = 4; unit = "    "; };
             auto-format = true;
-            formatter = { command = "${fish}/bin/fish_indent"; };
+            formatter = { command = "${pkgs.fish}/bin/fish_indent"; };
           }
           # {
           #   name = "gdscript";
@@ -346,7 +350,7 @@
           #   roots = [ "project.godot" ];
           #   auto-format = true;
           #   formatter = {
-          #     command = "${gdtoolkit}/bin/gdformat";
+          #     command = "${pkgs.gdtoolkit}/bin/gdformat";
           #     args = [ "-" ];
           #   };
           #   comment-token = "#";
@@ -377,7 +381,7 @@
             debugger = {
               name = "go";
               transport = "tcp";
-              command = "${delve}/bin/dlv";
+              command = "${pkgs.delve}/bin/dlv";
               args = [ "dap" ];
               port-arg = "-l 127.0.0.1:{}";
               templates = [
@@ -541,7 +545,7 @@
           #   indent = { tab-width = 4; unit = "\t"; };
           #   auto-format = true;
           #   formatter = {
-          #     command = "${bibtex-tidy}/bin/bibtex-tidy";
+          #     command = "${pkgs.bibtex-tidy}/bin/bibtex-tidy";
           #     args = [
           #       "-"
           #       "--curly"
@@ -725,7 +729,7 @@
             debugger = {
               name = "lldb-dap";
               transport = "stdio";
-              command = "${lldb}/bin/lldb-vscode";
+              command = "${pkgs.lldb}/bin/lldb-vscode";
               templates = [
                 {
                   name = "binary";
@@ -813,13 +817,13 @@
           #   language-servers = [ "zls" ];
           #   indent = { tab-width = 4; unit = "    "; };
           #   formatter = {
-          #     command = "${zig}/bin/zig";
+          #     command = "${pkgs.zig}/bin/zig";
           #     args = [ "fmt" "--stdin" ];
           #   };
           #   debugger = {
           #     name = "lldb-dap";
           #     transport = "stdio";
-          #     command = "${lldb}/bin/lldb-vscode";
+          #     command = "${pkgs.lldb}/bin/lldb-vscode";
           #     templates = [
           #       {
           #         name = "binary";
@@ -877,41 +881,41 @@
         ];
         language-server = {
           # ansible-language-server = {
-          #   command = "${ansible-language-server}/bin/ansible-language-server";
+          #   command = "${pkgs.ansible-language-server}/bin/ansible-language-server";
           #   args = [ "--stdio" ];
           # };
           bash-language-server = with pkgs.nodePackages; {
-            command = "${bash-language-server}/bin/bash-language-server";
+            command = "${pkgs.bash-language-server}/bin/bash-language-server";
             args = [ "start" ];
           };
           # clangd = {
-          #   command = "${clang-tools}/bin/clangd";
+          #   command = "${pkgs.clang-tools}/bin/clangd";
           # };
           # clojure-lsp = {
-          #   command = "${clojure-lsp}/bin/clojure-lsp";
+          #   command = "${pkgs.clojure-lsp}/bin/clojure-lsp";
           # };
           # cmake-language-server = {
-          #   command = "${cmake-language-server}/bin/cmake-language-server";
+          #   command = "${pkgs.cmake-language-server}/bin/cmake-language-server";
           # };
           docker-langserver = {
-            command = "${dockerfile-language-server-nodejs}/bin/docker-langserver";
+            command = "${pkgs.dockerfile-language-server-nodejs}/bin/docker-langserver";
             args = [ "--stdio" ];
           };
           docker-compose-langserver = {
-            command = "${docker-compose-language-service}/bin/docker-compose-langserver";
+            command = "${pkgs.docker-compose-language-service}/bin/docker-compose-langserver";
             args = [ "--stdio" ];
           };
           # elixir-ls = {
-          #   command = "${elixir-ls}/bin/elixir-ls";
+          #   command = "${pkgs.elixir-ls}/bin/elixir-ls";
           #   config = {
           #     elixirLS.dialyzerEnabled = false;
           #   };
           # };
           # elm-language-server = with elmPackages; {
-          #   command = "${elm-language-server}/bin/elm-language-server";
+          #   command = "${pkgs.elm-language-server}/bin/elm-language-server";
           # };
           gopls = {
-            command = "${gopls}/bin/gopls";
+            command = "${pkgs.gopls}/bin/gopls";
             config.hints = {
               assignVariableTypes = true;
               compositeLiteralFields = true;
@@ -922,10 +926,10 @@
             };
           };
           golangci-lint-lsp = {
-            command = "${golangci-lint-langserver}/bin/golangci-lint-langserver";
+            command = "${pkgs.golangci-lint-langserver}/bin/golangci-lint-langserver";
             config = {
               command = [
-                "${golangci-lint}/bin/golangci-lint"
+                "${pkgs.golangci-lint}/bin/golangci-lint"
                 "run"
                 "--out-format"
                 "json"
@@ -934,10 +938,10 @@
             };
           };
           # jdtls = {
-          #   command = "${jdt-language-server}/bin/jdtls";
+          #   command = "${pkgs.jdt-language-server}/bin/jdtls";
           # };
           # julia = {
-          #   command = "${julia}/bin/julia";
+          #   command = "${pkgs.julia}/bin/julia";
           #   timeout = 60;
           #   args = [
           #     "--startup-file=no"
@@ -948,11 +952,11 @@
           #   ];
           # };
           # lean = {
-          #   command = "${lean}/bin/lean";
+          #   command = "${pkgs.lean}/bin/lean";
           #   args = [ "--server" ];
           # };
           lua-language-server = {
-            command = "${lua-language-server}/bin/lua-language-server";
+            command = "${pkgs.lua-language-server}/bin/lua-language-server";
             config = {
               Lua = {
                 hint = {
@@ -967,14 +971,14 @@
             };
           };
           markdown-oxide = {
-            command = "${markdown-oxide}/bin/markdown-oxide";
+            command = "${pkgs.markdown-oxide}/bin/markdown-oxide";
           };
           marksman = {
-            command = "${marksman}/bin/marksman";
+            command = "${pkgs.marksman}/bin/marksman";
             args = [ "server" ];
           };
           # metals = {
-          #   command = "${metals}/bin/metals";
+          #   command = "${pkgs.metals}/bin/metals";
           #   config = {
           #     "isHttpEnabled" = true;
           #     metals = {
@@ -990,23 +994,23 @@
           #   };
           # };
           # mint = {
-          #   command = "${mint}/bin/mint";
+          #   command = "${pkgs.mint}/bin/mint";
           #   args = [ "ls" ];
           # };
           nil = {
-            command = "${nil}/bin/nil";
+            command = "${pkgs.nil}/bin/nil";
           };
           # nimlangserver = {
-          #   command = "${nimlangserver}/bin/nimlangserver";
+          #   command = "${pkgs.nimlangserver}/bin/nimlangserver";
           # };
-          pylsp = with python3Packages; {
+          pylsp = with pkgs.python3Packages; {
             command = "${python-lsp-server}/bin/pylsp";
           };
           # ocamllsp = with ocamlPackages; {
-          #   command = "${ocaml-lsp}/bin/ocamllsp";
+          #   command = "${pkgs.ocaml-lsp}/bin/ocamllsp";
           # };
           pyright = {
-            command = "${pyright}/bin/pyright-langserver";
+            command = "${pkgs.pyright}/bin/pyright-langserver";
             args = [ "--stdio" ];
             config = {
               python = {
@@ -1017,15 +1021,15 @@
             };
           };
           pylyzer = {
-            command = "${pylyzer}/bin/pylyzer";
+            command = "${pkgs.pylyzer}/bin/pylyzer";
             args = [ "--server" ];
           };
           # r = {
-          #   command = "${R}/bin/R";
+          #   command = "${pkgs.R}/bin/R";
           #   args = [ "--no-echo" "-e" "languageserver::run()" ];
           # };
           ruff = {
-            command = "${ruff-lsp}/bin/ruff-lsp";
+            command = "${pkgs.ruff-lsp}/bin/ruff-lsp";
             config = {
               settings = {
                 args = [ "--ignore" "E501" ];
@@ -1033,7 +1037,7 @@
             };
           };
           rust-analyzer = {
-            command = "${rust-analyzer}/bin/rust-analyzer";
+            command = "${pkgs.rust-analyzer}/bin/rust-analyzer";
             config = {
               inlayHints = {
                 bindingModeHints.enable = false;
@@ -1046,17 +1050,17 @@
             };
           };
           taplo = {
-            command = "${taplo}/bin/taplo";
+            command = "${pkgs.taplo}/bin/taplo";
             args = [ "lsp" "stdio" ];
           };
           # terraform-ls = {
-          #   command = "${terraform-ls}/bin/terraform-ls";
+          #   command = "${pkgs.terraform-ls}/bin/terraform-ls";
           #   args = [ "serve" ];
           # };
           # texlab = {
-          #   command = "${texlab}/bin/texlab";
+          #   command = "${pkgs.texlab}/bin/texlab";
           # };
-          typescript-language-server = with nodePackages; {
+          typescript-language-server = with pkgs.nodePackages; {
             command = "${typescript-language-server}/bin/typescript-language-server";
             args = [ "--stdio" ];
             config = {
@@ -1113,11 +1117,11 @@
             };
           };
           yaml-language-server = {
-            command = "${yaml-language-server}/bin/yaml-language-server";
+            command = "${pkgs.yaml-language-server}/bin/yaml-language-server";
             args = [ "--stdio" ];
           };
           # zls = {
-          #   command = "${zls}/bin/zls";
+          #   command = "${pkgs.zls}/bin/zls";
           # };
         };
       };
