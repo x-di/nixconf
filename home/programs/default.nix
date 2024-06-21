@@ -7,10 +7,13 @@
     ./carapace
     ./direnv
     ./eza
+    ./fastfetch
     ./fish
     ./fzf
     ./gh
     ./git
+    ./helix
+    ./jq
     ./kitty
     ./micro
     ./mpv
