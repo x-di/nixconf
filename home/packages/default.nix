@@ -26,7 +26,7 @@
       postman
       ripgrep
       sqlite
-      tela-icon-theme
+      # tela-icon-theme
       telegram-desktop
       thunderbird
       vscode-fhs
