@@ -29,6 +29,7 @@
       # tela-icon-theme
       telegram-desktop
       thunderbird
+      ungoogled-chromium
       vscode-fhs
       vulkan-tools
       wl-clipboard
