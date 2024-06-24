@@ -1,9 +1,9 @@
 { ... }:
 {
   programs.micro = {
-    enable = true;
-    settings = {
-      colorscheme = "gruvbox-tc";
-    };
+    enable = false;
+    # settings = {
+    #   colorscheme = "gruvbox-tc";
+    # };
   };
 }

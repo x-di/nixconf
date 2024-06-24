@@ -3,7 +3,7 @@
   programs.kitty = {
     enable = true;
     shellIntegration.enableFishIntegration = true;
-    theme = "Catppuccin-Mocha";
+    # theme = "Catppuccin-Mocha";
     font = {
       name = "Liga SFMono Nerd Font";
       size = 14;

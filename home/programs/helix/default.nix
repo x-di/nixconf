@@ -5,7 +5,7 @@
       enable = true;
       defaultEditor = true;
       settings = {
-        theme = "base16_transparent";
+        # theme = "base16_transparent";
         editor = {
           bufferline = "always";
           cursorline = true;

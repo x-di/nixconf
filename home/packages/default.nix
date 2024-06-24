@@ -2,12 +2,13 @@
 {
   home = {
     packages = with pkgs; [
-      catppuccin-kde
+      # catppuccin-kde
       clinfo
       dbeaver-bin
       drawio
       easyeffects
       ffmpeg
+      gcc
       glxinfo
       gnome.gnome-keyring
       gst_all_1.gstreamer
@@ -31,8 +32,10 @@
       telegram-desktop
       thunderbird
       ungoogled-chromium
+      unzip
       vscode-fhs
       vulkan-tools
+      wget
       wl-clipboard
     ];
   };

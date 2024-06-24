@@ -2,10 +2,15 @@
 {
   programs.nixvim = {
     enable = true;
-    extraPlugins = with pkgs.vimPlugins; [
-      gruvbox
-    ];
-    colorscheme = "gruvbox";
+    # extraPlugins = with pkgs.vimPlugins; [
+    #   gruvbox
+    #   catppuccin-nvim
+    # ];
+    # colorscheme = "catppuccin-mocha";
+    colorschemes.catppuccin = {
+      enable = true;
+      settings.flavour = "mocha";
+    };
     opts = {
       number = true; # Show line numbers
       relativenumber = true; # Show relative line numbers
