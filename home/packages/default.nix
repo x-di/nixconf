@@ -2,6 +2,7 @@
 {
   home = {
     packages = with pkgs; [
+      catppuccin-kde
       clinfo
       dbeaver-bin
       drawio
