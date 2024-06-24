@@ -3,13 +3,13 @@
   programs.kitty = {
     enable = true;
     shellIntegration.enableFishIntegration = true;
-    theme = "Gruvbox Dark";
+    theme = "Catppuccin-Mocha";
     font = {
       name = "Liga SFMono Nerd Font";
       size = 14;
     };
     extraConfig = ''
-      			shell nu
+      			shell fish
       			tab_bar_edge top
       			tab_bar_style slant
       			cursor_shape beam
