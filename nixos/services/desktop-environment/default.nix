@@ -8,7 +8,6 @@
           enable = true;
           compositor = "kwin";
         };
-        # package = pkgs.kdePackages.sddm;
       };
     };
     desktopManager = {
