@@ -1,7 +1,7 @@
 { ... }:
 {
   programs.nushell = {
-    enable = true;
+    enable = false;
     extraConfig = ''
       $env.config = {
         show_banner: false,

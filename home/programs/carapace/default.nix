@@ -1,7 +1,7 @@
 { ... }:
 {
   programs.carapace = {
-    enable = true;
+    enable = false;
     enableNushellIntegration = true;
   };
 }
