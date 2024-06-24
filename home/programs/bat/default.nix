@@ -3,7 +3,7 @@
   programs.bat = {
     enable = true;
     config = {
-      theme = "gruvbox-dark";
+      # theme = "Catppuccin Mocha";
       italic-text = "always";
       paging = "always";
       tabs = "2";
