@@ -15,7 +15,6 @@
       			cursor_shape beam
       			cursor_beam_thickness 2
       			sync_to_monitor yes
-      			wayland_titlebar_color #1c2836
       			tab_title_template "{index}: {title[title.rfind('/')+1:]}"
       			window_padding_width 5 10
       			enable_audio_bell no
