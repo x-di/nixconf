@@ -42,6 +42,9 @@
 
       #cat = "bat";
 
+      priv = "cryfs-unmount '/mnt/data/Vaults/mount'";
+      unpriv = "cryfs /mnt/data/Vaults/.priv /mnt/data/Vaults/mount";
+
       nd = "mkdir -p";
       nf = "touch";
 
