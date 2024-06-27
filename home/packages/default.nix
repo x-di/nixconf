@@ -4,6 +4,7 @@
     packages = with pkgs; [
       # catppuccin-kde
       clinfo
+      cryfs
       dbeaver-bin
       drawio
       easyeffects
