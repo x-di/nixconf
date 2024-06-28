@@ -88,6 +88,7 @@
       gmlm = "git merge gl/main";
       gmt = "git mergetool --no-prompt";
 
+      gps = "git push origin main";
       gpsm = "git push -u sh main";
       gpgm = "git push -u gh main";
       gplm = "git push -u gl main";
