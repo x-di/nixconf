@@ -12,6 +12,7 @@
       gcc
       glxinfo
       gnome.gnome-keyring
+      ghostscript
       gst_all_1.gstreamer
       gst_all_1.gst-plugins-bad
       gst_all_1.gst-plugins-good
