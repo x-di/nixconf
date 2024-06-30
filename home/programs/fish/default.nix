@@ -48,6 +48,8 @@
       nd = "mkdir -p";
       nf = "touch";
 
+      n = "nvim";
+      h = "hx";
       #git ##gh = github, sh = sr.ht, gl = gitlab
       gad = "git add";
       gal = "git add --all";
