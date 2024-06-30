@@ -2,6 +2,7 @@
 {
   imports = [
     ./desktop-environment
+    ./dnscrypt
     ./earlyoom
     ./httpd
     ./mariadb
