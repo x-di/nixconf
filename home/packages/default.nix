@@ -6,12 +6,12 @@
       clinfo
       cryfs
       dbeaver-bin
-      drawio
+      # drawio
       easyeffects
       ffmpeg
       gcc
       glxinfo
-      gnome.gnome-keyring
+      # gnome.gnome-keyring
       ghostscript
       gst_all_1.gstreamer
       gst_all_1.gst-plugins-bad

@@ -1,8 +1,8 @@
 { pkgs, ... }:
 let
-  user = "xd";
+  user = "dim";
   group = "users";
-  documentRoot = "/home/xd/web";
+  documentRoot = "/home/dim/web";
 in
 {
   services = {

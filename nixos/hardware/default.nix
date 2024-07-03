@@ -1,8 +1,8 @@
 { ... }:
 {
   imports = [
-    ./cpu
-    ./filesystem
+    # ./cpu
+    # ./filesystem
     ./gpu
   ];
 }

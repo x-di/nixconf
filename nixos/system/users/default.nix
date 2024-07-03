@@ -1,7 +1,7 @@
 { ... }:
 let
-  name = "xd";
-  fullname = "XD";
+  name = "dim";
+  fullname = "Dimas";
 in
 {
   users = {

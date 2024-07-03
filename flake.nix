@@ -31,7 +31,7 @@
             nixvim.homeManagerModules.nixvim
             catppuccin.homeManagerModules.catppuccin
           ];
-          home-manager.users.xd = (import ./home inputs);
+          home-manager.users.dim = (import ./home inputs);
           nix.settings = {
             experimental-features = [ "nix-command" "flakes" ];
           };

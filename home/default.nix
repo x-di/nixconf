@@ -1,7 +1,7 @@
 { ... }:
 let
-  name = "xd";
-  homeDirectory = "/home/xd";
+  name = "dim";
+  homeDirectory = "/home/dim";
   stateVersion = "24.11";
 in
 {
