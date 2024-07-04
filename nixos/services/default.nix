@@ -4,6 +4,7 @@
     ./desktop-environment
     ./dnscrypt
     ./earlyoom
+    ./fstrim
     ./httpd
     ./mariadb
     ./mongodb
