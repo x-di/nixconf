@@ -25,6 +25,7 @@
       libdbusmenu
       libreoffice-qt6-fresh
       libva-utils
+      megasync
       p7zip
       papirus-icon-theme
       postman

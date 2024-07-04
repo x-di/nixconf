@@ -44,6 +44,8 @@
 
       priv = "cryfs-unmount '/mnt/data/Vaults/mount'";
       unpriv = "cryfs /mnt/data/Vaults/.priv /mnt/data/Vaults/mount";
+      megaLock = "cryfs-unmount '/mnt/data/MEGAsync'";
+      megaUnlock = "cryfs /mnt/data/.Mega /mnt/data/MEGAsync";
 
       nd = "mkdir -p";
       nf = "touch";
