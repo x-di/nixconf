@@ -1089,7 +1089,7 @@
             };
           };
           vscode-css-language-server = with pkgs.nodePackages; {
-            command = "${vscode-css-languageserver-bin}/bin/css-languageserver";
+            command = "${vscode-langservers-extracted}/bin/css-languageserver";
             args = [ "--stdio" ];
             config = {
               provideFormatter = true;
@@ -1101,7 +1101,7 @@
             };
           };
           vscode-html-language-server = with pkgs.nodePackages; {
-            command = "${vscode-html-languageserver-bin}/bin/html-language-server";
+            command = "${vscode-langservers-extracted}/bin/html-language-server";
             args = [ "--stdio" ];
             config = {
               provideFormatter = true;
