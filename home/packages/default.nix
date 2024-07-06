@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   home = {
-    packages = with pkgs; [
+    packages = (with pkgs; [
       # catppuccin-kde
       clinfo
       cryfs
@@ -13,15 +13,7 @@
       glxinfo
       # gnome.gnome-keyring
       ghostscript
-      gst_all_1.gstreamer
-      gst_all_1.gst-plugins-bad
-      gst_all_1.gst-plugins-good
-      gst_all_1.gst-plugins-ugly
-      gst_all_1.gst-vaapi
       haruna
-      kdePackages.juk
-      kdePackages.kdenlive
-      kdePackages.kdeplasma-addons
       libdbusmenu
       libreoffice-qt6-fresh
       libva-utils
@@ -40,6 +32,16 @@
       vulkan-tools
       wget
       wl-clipboard
-    ];
+    ]) ++ (with pkgs.gst_all_1; [
+      gstreamer
+      gst-plugins-bad
+      gst-plugins-good
+      gst-plugins-ugly
+      gst-vaapi
+    ]) ++ (with pkgs.kdePackages; [
+      juk
+      kdenlive
+      kdeplasma-addons
+    ]);
   };
 }
