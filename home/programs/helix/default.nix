@@ -38,8 +38,8 @@
               W = ":toggle-option soft-wrap.enable";
               F = ":pipe fmt -w 79";
               A-s = ":w";
-              A-q = ":q";
-              A-Q = ":wq";
+              Q = ":q";
+              q = ":wq";
             };
           };
           insert = {
