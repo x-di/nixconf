@@ -32,6 +32,7 @@
       vulkan-tools
       wget
       wl-clipboard
+      # zed-editor
     ]) ++ (with pkgs.gst_all_1; [
       gstreamer
       gst-plugins-bad
