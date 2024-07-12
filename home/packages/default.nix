@@ -4,6 +4,7 @@
     packages = (with pkgs; [
       # catppuccin-kde
       clinfo
+      crow-translate
       cryfs
       dbeaver-bin
       # drawio
