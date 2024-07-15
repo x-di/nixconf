@@ -14,7 +14,7 @@ in
     ./network
     ./nix
     ./security
-    ./sound
+    # ./sound
     ./systemd
     ./timezone
     ./users
