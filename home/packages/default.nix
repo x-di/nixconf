@@ -19,6 +19,7 @@
       libreoffice-qt6-fresh
       libva-utils
       megasync
+      onlyoffice-bin_latest
       p7zip
       papirus-icon-theme
       postman
