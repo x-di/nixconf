@@ -12,12 +12,12 @@
     ./fzf
     ./gh
     ./git
-    ./helix
+    # ./helix
     ./jq
     ./kitty
     ./micro
     ./mpv
-    ./nixvim
+    # ./nixvim
     ./nu
     ./obs-studio
     ./starship
