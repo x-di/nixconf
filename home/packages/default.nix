@@ -2,11 +2,14 @@
 {
   home = {
     packages = (with pkgs; [
+      anytype
+      bruno
       # catppuccin-kde
       clinfo
       crow-translate
       cryfs
-      dbeaver-bin
+      # dbeaver-bin
+      dbgate
       # drawio
       easyeffects
       ffmpeg
@@ -16,13 +19,14 @@
       ghostscript
       haruna
       libdbusmenu
-      libreoffice-qt6-fresh
+      # libreoffice-qt6-fresh
       libva-utils
       megasync
+      neovim
       onlyoffice-bin_latest
       p7zip
       papirus-icon-theme
-      postman
+      # postman
       ripgrep
       sqlite
       # tela-icon-theme
@@ -45,6 +49,16 @@
       juk
       kdenlive
       kdeplasma-addons
+      # akonadi
+      # akonadi-calendar-tools
+      # akonadi-import-wizard
+      # akonadiconsole
+      # kdepim-addons
+      # kdepim-runtime
+      # libkdepim
+      # kmail
+      # kmailtransport
+      # kmail-account-wizard
     ]);
   };
 }
