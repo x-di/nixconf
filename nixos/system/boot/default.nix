@@ -9,9 +9,9 @@
         canTouchEfiVariables = true;
       };
     };
-    # kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_latest;
     # kernelPackages = pkgs.linuxPackages_xanmod;
-    kernelPackages = pkgs.linuxPackages_xanmod_latest;
+    # kernelPackages = pkgs.linuxPackages_xanmod_latest;
     # kernelPackages = pkgs.linuxPackages_zen;
     # kernelPackages = pkgs.linuxPackages_lqx;
     kernel = {
@@ -22,10 +22,6 @@
         "vm.page-cluster" = 0;
       };
     };
-    # kernelParams = [
-    #   "i915.enable_fbc=1"
-    #   "i915.enable_psr=2"
-    # ];
     plymouth = {
       enable = true;
       # theme = "rings";
@@ -48,6 +44,8 @@
       "rd.systemd.show_status=false"
       "rd.udev.log_level=3"
       "udev.log_priority=3"
+      "i915.enable_fbc=1"
+      "i915.enable_psr=2"
     ];
     # Hide the OS choice for bootloaders.
     # It's still possible to open the bootloader list by pressing any key

@@ -1,27 +1,63 @@
-{ pkgs, ... }:
 {
-  nixpkgs.config.packageOverrides = pkgs: {
-    intel-vaapi-driver = pkgs.intel-vaapi-driver.override { enableHybridCodec = true; };
-  };
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true; # driSupport32Bit = true;
-    # package = pkgs.mesa.drivers;
-    # package32 = pkgs.pkgsi686Linux.mesa.drivers;
-    extraPackages = with pkgs; [
-      intel-media-driver # LIBVA_DRIVER_NAME=iHD
-      # intel-vaapi-driver # LIBVA_DRIVER_NAME=i965 (older but works better for Firefox/Chromium)
-      libvdpau-va-gl
-      mesa.drivers
-      mesa.opencl
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
+  # imports = [ ../24.05-compat.nix ];
+  options.hardware.intelgpu.driver = lib.mkOption {
+    description = "Intel GPU driver to use";
+    type = lib.types.enum [
+      "i915"
+      "xe"
     ];
-    extraPackages32 = with pkgs.pkgsi686Linux; [
-      intel-media-driver # LIBVA_DRIVER_NAME=iHD
-      # intel-vaapi-driver # LIBVA_DRIVER_NAME=i965 (older but works better for Firefox/Chromium)
-      libvdpau-va-gl
-      mesa.drivers
-      # mesa.opencl
+    default = "i915";
+  };
+
+  options.hardware.intelgpu.loadInInitrd =
+    lib.mkEnableOption (
+      lib.mdDoc "Load the Intel GPU kernel module at stage 1 boot. (Added to `boot.initrd.kernelModules`)"
+    )
+    // {
+      default = true;
+    };
+
+  config = {
+    boot.initrd.kernelModules = [ config.hardware.intelgpu.driver ];
+
+    environment.variables = {
+      VDPAU_DRIVER = lib.mkIf config.hardware.graphics.enable (lib.mkDefault "va_gl");
+    };
+
+    hardware.graphics.extraPackages = with pkgs; [
+      (
+        if (lib.versionOlder (lib.versions.majorMinor lib.version) "23.11") then
+          vaapiIntel
+        else
+          intel-vaapi-driver
+      )
+      intel-media-driver
+    ];
+
+    hardware.graphics.extraPackages32 = with pkgs.driversi686Linux; [
+      (
+        if (lib.versionOlder (lib.versions.majorMinor lib.version) "23.11") then
+          vaapiIntel
+        else
+          intel-vaapi-driver
+      )
+      intel-media-driver
+    ];
+
+    assertions = [
+      {
+        assertion = (
+          config.hardware.intelgpu.driver != "xe"
+          || lib.versionAtLeast config.boot.kernelPackages.kernel.version "6.8"
+        );
+        message = "Intel Xe GPU driver is not supported on kernels earlier than 6.8. Update or use the i915 driver.";
+      }
     ];
   };
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; }; # Force intel-media-driver
 }

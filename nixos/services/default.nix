@@ -5,6 +5,7 @@
     ./dnscrypt
     ./earlyoom
     ./fstrim
+    ./fwupd
     ./httpd
     ./mariadb
     ./mongodb
@@ -12,6 +13,7 @@
     ./postgresql
     ./printing
     ./thermald
+    # ./throttled
     ./xserver
   ];
 }
