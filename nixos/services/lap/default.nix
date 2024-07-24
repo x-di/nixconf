@@ -15,11 +15,7 @@ in
       phpPackage = pkgs.php;
       virtualHosts.localhost = {
         documentRoot = "${documentRoot}";
-        extraConfig = ''
-          					<Directory "/">
-          						DirectoryIndex index.html index.php
-          					</Directory>
-          				'';
+        locations."/".index = "index.php index.html";
       };
     };
   };

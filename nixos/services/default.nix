@@ -6,7 +6,7 @@
     ./earlyoom
     ./fstrim
     ./fwupd
-    ./httpd
+    ./lap #Linux Apache PHP
     ./mariadb
     ./mongodb
     ./pipewire
