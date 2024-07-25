@@ -59,6 +59,7 @@
       # kmail
       # kmailtransport
       # kmail-account-wizard
+      qtwebengine
     ]);
   };
 }
