@@ -4,7 +4,7 @@ let
 in
 {
   services.postgresql = {
-    enable = false;
+    enable = true;
     package = pkgs.postgresql_16;
     dataDir = "${dataDir}";
   };
