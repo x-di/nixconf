@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./espanso
     ./kdeconnect
   ];
 }
