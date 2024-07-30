@@ -11,7 +11,7 @@
       # dbeaver-bin
       dbgate
       # drawio
-      easyeffects
+      # easyeffects
       ffmpeg
       gcc
       glxinfo
