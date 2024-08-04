@@ -17,6 +17,7 @@
       glxinfo
       # gnome.gnome-keyring
       ghostscript
+      google-chrome
       haruna
       libdbusmenu
       # libreoffice-qt6-fresh
@@ -32,7 +33,7 @@
       # tela-icon-theme
       telegram-desktop
       thunderbird
-      ungoogled-chromium
+      # ungoogled-chromium
       unzip
       vscode-fhs
       vulkan-tools
@@ -47,6 +48,7 @@
       gst-vaapi
     ]) ++ (with pkgs.kdePackages; [
       juk
+      kclock
       kdenlive
       kdeplasma-addons
       # akonadi
