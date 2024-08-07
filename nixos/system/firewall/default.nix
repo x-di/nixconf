@@ -3,12 +3,30 @@
   networking = {
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 80 443 ];
+      allowPing = false;
+      allowedTCPPorts = [
+        # 20 # ftp
+        # 21 # ftp
+        # 22 # ssh
+        80 # http
+        443 # https
+        # 3000 # adguard
+        # 8384 # syncthing
+        # 22000 # syncthing
+      ];
       allowedTCPPortRanges = [
-        { from = 1714; to = 1764; }
+        {
+          # kde connect
+          from = 1714;
+          to = 1764;
+        }
       ];
       allowedUDPPortRanges = [
-        { from = 1714; to = 1764; }
+        {
+          # kde connect
+          from = 1714;
+          to = 1764;
+        }
       ];
     };
   };
