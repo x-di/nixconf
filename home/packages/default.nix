@@ -10,6 +10,7 @@
       cryfs
       # dbeaver-bin
       dbgate
+      devenv
       # drawio
       # easyeffects
       ffmpeg
@@ -24,6 +25,7 @@
       libva-utils
       megasync
       neovim
+      nodejs_latest
       onlyoffice-bin_latest
       p7zip
       papirus-icon-theme
