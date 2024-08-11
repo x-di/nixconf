@@ -13,7 +13,8 @@
       devenv
       # drawio
       # easyeffects
-      ffmpeg
+      # ffmpeg
+      ffmpeg_7-full
       gcc
       glxinfo
       # gnome.gnome-keyring
