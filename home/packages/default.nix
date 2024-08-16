@@ -22,7 +22,7 @@
       google-chrome
       haruna
       libdbusmenu
-      # libreoffice-qt6-fresh
+      libreoffice-qt6-fresh
       libva-utils
       megasync
       neovim
