@@ -28,9 +28,10 @@
             {
               server_name = "*";
               via = [
-                "anon-tiarap"
-                "anon-cs-singapore"
-                "anon-cs-tokyo"
+                "*"
+                # "anon-tiarap"
+                # "anon-cs-singapore"
+                # "anon-cs-tokyo"
                 # "dnscry.pt-anon-singapore02-ipv4"
                 # "dnscry.pt-anon-singapore02-ipv6"
               ];
