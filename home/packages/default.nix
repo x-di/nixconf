@@ -35,6 +35,7 @@
       sqlite
       # tela-icon-theme
       telegram-desktop
+      tlrc
       thunderbird
       # ungoogled-chromium
       unzip
