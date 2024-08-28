@@ -21,6 +21,7 @@
       ghostscript
       google-chrome
       haruna
+      jre
       libdbusmenu
       libreoffice-qt6-fresh
       libva-utils
