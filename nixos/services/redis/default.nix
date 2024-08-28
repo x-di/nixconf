@@ -7,7 +7,7 @@ in
     redis = {
       servers = {
         "${name}" = {
-          enable = true;
+          enable = false;
           port = 6379;
         };
       };
