@@ -2,7 +2,7 @@
 {
   home = {
     packages = (with pkgs; [
-      anytype
+      # anytype
       bruno
       # catppuccin-kde
       clinfo
@@ -25,7 +25,7 @@
       libdbusmenu
       libreoffice-qt6-fresh
       libva-utils
-      megasync
+      # megasync
       neovim
       nodejs_latest
       onlyoffice-bin_latest
