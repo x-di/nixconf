@@ -3,7 +3,7 @@
     dnscrypt-proxy2 = {
       enable = true;
       settings = {
-        ipv6_servers = true;
+        ipv6_servers = false;
         require_dnssec = true;
         doh_servers = false;
         sources.public-resolvers = {
