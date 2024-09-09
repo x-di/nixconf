@@ -23,18 +23,33 @@
           minisign_key = "RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3";
           refresh_delay = 72;
         };
+
+        server_names = [ "dnscry.pt-jakarta-ipv4" "dnscry.pt-singapore-ipv4" "dnscry.pt-singapore02-ipv4" ];
+
         anonymized_dns = {
           routes = [
+            # {
+            #   server_name = "*";
+            #   via = [
+            #     # "*"
+            #     "anon-tiarap"
+            #     "anon-cs-singapore"
+            #     "anon-cs-tokyo"
+            #     "dnscry.pt-anon-singapore02-ipv4"
+            #     # "dnscry.pt-anon-singapore02-ipv6"
+            #   ];
+            # }
             {
-              server_name = "*";
-              via = [
-                "*"
-                # "anon-tiarap"
-                # "anon-cs-singapore"
-                # "anon-cs-tokyo"
-                # "dnscry.pt-anon-singapore02-ipv4"
-                # "dnscry.pt-anon-singapore02-ipv6"
-              ];
+              server_name = "dnscry.pt-jakarta-ipv4";
+              via = [ "anon-tiarap" "anon-cs-singapore" ];
+            }
+            {
+              server_name = "dnscry.pt-singapore-ipv4";
+              via = [ "anon-tiarap" "anon-cs-singapore" ];
+            }
+            {
+              server_name = "dnscry.pt-singapore02-ipv4";
+              via = [ "anon-tiarap" "anon-cs-singapore" ];
             }
           ];
           skip_incompatible = true;
