@@ -19,7 +19,7 @@
       glxinfo
       # gnome.gnome-keyring
       ghostscript
-      google-chrome
+      # google-chrome
       haruna
       jre
       libdbusmenu
