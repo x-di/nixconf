@@ -18,6 +18,7 @@ in
     ./systemd
     ./timezone
     ./users
+    ./xdg
     ./zram
   ];
   system = {

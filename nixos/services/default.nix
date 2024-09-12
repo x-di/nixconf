@@ -4,6 +4,7 @@
     ./desktop-environment
     ./dnscrypt
     ./earlyoom
+    ./flatpak
     ./fstrim
     ./fwupd
     ./lap #Linux Apache PHP
