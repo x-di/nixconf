@@ -6,6 +6,7 @@
       bruno
       # catppuccin-kde
       clinfo
+      colloid-icon-theme
       crow-translate
       cryfs
       # dbeaver-bin
@@ -34,7 +35,7 @@
       # postman
       ripgrep
       sqlite
-      # tela-icon-theme
+      tela-icon-theme
       telegram-desktop
       tlrc
       thunderbird
