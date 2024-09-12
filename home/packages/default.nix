@@ -6,6 +6,7 @@
       bruno
       # catppuccin-kde
       clinfo
+      code-cursor
       colloid-icon-theme
       crow-translate
       cryfs
