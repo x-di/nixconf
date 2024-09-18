@@ -37,12 +37,16 @@
           y = 10;
         };
         decorations = "Full";
-        blur = true;
-        opacity = 0.85;
+        blur = false;
+        opacity = 1.0;
         startup_mode = "Maximized";
       };
       cursor = {
         style = {
+          shape = "Beam";
+          blinking = "Always";
+        };
+        vi_mode_style = {
           shape = "Beam";
           blinking = "Always";
         };
