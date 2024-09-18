@@ -1,8 +1,8 @@
 { ... }:
 {
   programs.kitty = {
-    enable = true;
-    shellIntegration.enableFishIntegration = true;
+    enable = false;
+    shellIntegration.enableFishIntegration = false;
     # theme = "Catppuccin-Mocha";
     font = {
       name = "GeistMono Nerd Font";
