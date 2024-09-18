@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./alacritty
     ./aria2
     ./bat
     ./bottom
