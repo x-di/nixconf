@@ -14,6 +14,7 @@
     ./gh
     ./git
     # ./helix
+    ./htop
     ./jq
     ./kitty
     ./micro
