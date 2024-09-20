@@ -34,7 +34,6 @@
       p7zip
       papirus-icon-theme
       # postman
-      ripgrep
       sqlite
       tela-icon-theme
       telegram-desktop
