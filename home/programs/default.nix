@@ -13,7 +13,7 @@
     ./fzf
     ./gh
     ./git
-    # ./helix
+    ./helix
     ./htop
     ./jq
     ./kitty
@@ -22,8 +22,11 @@
     # ./nixvim
     ./nu
     ./obs-studio
+    ./ripgrep
     ./starship
+    ./yazi
     ./yt-dlp
+    ./zellij
     ./zoxide
   ];
 }
