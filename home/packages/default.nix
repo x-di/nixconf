@@ -58,6 +58,8 @@
       kclock
       kdenlive
       kdeplasma-addons
+      kget
+      ktorrent
       # akonadi
       # akonadi-calendar-tools
       # akonadi-import-wizard
