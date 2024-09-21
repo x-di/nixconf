@@ -2,7 +2,7 @@
 {
   programs = {
     zellij = {
-      enable = true;
+      enable = false;
       enableFishIntegration = true;
       settings = {
         copy_command = "wl-copy";
