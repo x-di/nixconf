@@ -13,7 +13,7 @@
     ./fzf
     ./gh
     ./git
-    ./helix
+    # ./helix
     ./htop
     ./jq
     ./kitty
