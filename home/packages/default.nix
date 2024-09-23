@@ -2,7 +2,7 @@
 {
   home = {
     packages = (with pkgs; [
-      # anytype
+      anytype
       bruno
       # catppuccin-kde
       clinfo
@@ -29,6 +29,8 @@
       libva-utils
       # megasync
       neovim
+      nil
+      nixpkgs-fmt
       nodejs_latest
       onlyoffice-bin_latest
       p7zip
@@ -57,8 +59,8 @@
       kclock
       kdenlive
       kdeplasma-addons
-      kget
-      ktorrent
+      # kget
+      # ktorrent
       # akonadi
       # akonadi-calendar-tools
       # akonadi-import-wizard
