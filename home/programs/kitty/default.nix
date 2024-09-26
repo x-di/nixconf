@@ -5,7 +5,7 @@
     shellIntegration.enableFishIntegration = false;
     # theme = "Catppuccin-Mocha";
     font = {
-      name = "GeistMono Nerd Font";
+      name = "GeistMono NF";
       size = 14;
     };
     extraConfig = ''

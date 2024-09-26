@@ -6,19 +6,19 @@
       shell = "fish";
       font = {
         normal = {
-          family = "GeistMono Nerd Font";
+          family = "GeistMono NF";
           style = "Regular";
         };
         bold = {
-          family = "GeistMono Nerd Font";
+          family = "GeistMono NF";
           style = "Bold";
         };
         italic = {
-          family = "GeistMono Nerd Font";
+          family = "GeistMono NF";
           style = "Italic";
         };
         bold_italic = {
-          family = "GeistMono Nerd Font";
+          family = "GeistMono NF";
           style = "Bold Italic";
         };
         size = 14;
