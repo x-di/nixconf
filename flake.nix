@@ -25,7 +25,7 @@
             accent = "mauve"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
             flavor = "mocha"; # Type: one of “latte”, “frappe”, “macchiato”, “mocha”
           };
-          home-manager.backupFileExtension = ".bak";
+          home-manager.backupFileExtension = ".back";
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.sharedModules = [
