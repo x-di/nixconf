@@ -3,7 +3,7 @@
   programs.kitty = {
     enable = false;
     shellIntegration.enableFishIntegration = false;
-    # theme = "Catppuccin-Mocha";
+    themeFile = "GruvboxMaterialDarkHard";
     font = {
       name = "GeistMono NF";
       size = 14;
