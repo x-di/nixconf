@@ -6,7 +6,7 @@ let
 in
 {
   catppuccin = {
-    enable = true;
+    enable = false;
     accent = "mauve"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
     flavor = "mocha"; # Type: one of “latte”, “frappe”, “macchiato”, “mocha”
   };
