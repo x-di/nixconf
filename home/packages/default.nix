@@ -4,6 +4,7 @@
     packages = (with pkgs; [
       anytype
       bruno
+      capitaine-cursors-themed
       # catppuccin-kde
       clinfo
       code-cursor
@@ -22,11 +23,13 @@
       # gnome.gnome-keyring
       ghostscript
       # google-chrome
+      gruvbox-plus-icons
       haruna
       jre
       libdbusmenu
       libreoffice-qt6-fresh
       libva-utils
+      kde-gruvbox
       # megasync
       neovim
       nil
