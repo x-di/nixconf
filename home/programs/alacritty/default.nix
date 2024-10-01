@@ -56,7 +56,7 @@
           # hard contrast background = = '#1d2021'
           # default background = = '#282828'
           # soft contrast background = = '#32302f'
-          background = "#1d2021";
+          background = "#282828";
           foreground = "#ebdbb2";
         };
         normal = {
