@@ -4,11 +4,11 @@
     packages = (with pkgs; [
       anytype
       bruno
-      capitaine-cursors-themed
+      # capitaine-cursors-themed
       # catppuccin-kde
       clinfo
       code-cursor
-      colloid-icon-theme
+      # colloid-icon-theme
       crow-translate
       cryfs
       # dbeaver-bin
@@ -29,7 +29,7 @@
       libdbusmenu
       libreoffice-qt6-fresh
       libva-utils
-      kde-gruvbox
+      # kde-gruvbox
       # megasync
       neovim
       nil
@@ -40,7 +40,7 @@
       papirus-icon-theme
       # postman
       sqlite
-      tela-icon-theme
+      # tela-icon-theme
       telegram-desktop
       tlrc
       thunderbird
