@@ -33,6 +33,8 @@
       # megasync
       neovim
       nil
+      nixd
+      nixfmt-rfc-style
       nixpkgs-fmt
       nodejs_latest
       onlyoffice-bin_latest
@@ -50,7 +52,7 @@
       vulkan-tools
       wget
       wl-clipboard
-      # zed-editor
+      zed-editor.fhs
     ]) ++ (with pkgs.gst_all_1; [
       gstreamer
       gst-plugins-bad
