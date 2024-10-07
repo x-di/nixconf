@@ -1,63 +1,15 @@
+{ pkgs, ... }:
 {
-  config,
-  lib,
-  pkgs,
-  ...
-}:
-{
-  # imports = [ ../24.05-compat.nix ];
-  options.hardware.intelgpu.driver = lib.mkOption {
-    description = "Intel GPU driver to use";
-    type = lib.types.enum [
-      "i915"
-      "xe"
-    ];
-    default = "i915";
-  };
-
-  options.hardware.intelgpu.loadInInitrd =
-    lib.mkEnableOption (
-      lib.mdDoc "Load the Intel GPU kernel module at stage 1 boot. (Added to `boot.initrd.kernelModules`)"
-    )
-    // {
-      default = true;
-    };
-
-  config = {
-    boot.initrd.kernelModules = [ config.hardware.intelgpu.driver ];
-
-    environment.variables = {
-      VDPAU_DRIVER = lib.mkIf config.hardware.graphics.enable (lib.mkDefault "va_gl");
-    };
-
-    hardware.graphics.extraPackages = with pkgs; [
-      (
-        if (lib.versionOlder (lib.versions.majorMinor lib.version) "23.11") then
-          vaapiIntel
-        else
-          intel-vaapi-driver
-      )
-      intel-media-driver
-    ];
-
-    hardware.graphics.extraPackages32 = with pkgs.driversi686Linux; [
-      (
-        if (lib.versionOlder (lib.versions.majorMinor lib.version) "23.11") then
-          vaapiIntel
-        else
-          intel-vaapi-driver
-      )
-      intel-media-driver
-    ];
-
-    assertions = [
-      {
-        assertion = (
-          config.hardware.intelgpu.driver != "xe"
-          || lib.versionAtLeast config.boot.kernelPackages.kernel.version "6.8"
-        );
-        message = "Intel Xe GPU driver is not supported on kernels earlier than 6.8. Update or use the i915 driver.";
-      }
+  hardware.graphics = {
+    # hardware.opengl in 24.05 and older
+    enable = true;
+    extraPackages = with pkgs; [
+      intel-media-driver # For Broadwell (2014) or newer processors. LIBVA_DRIVER_NAME=iHD
+      vpl-gpu-rt
+      # intel-vaapi-driver # For older processors. LIBVA_DRIVER_NAME=i965
     ];
   };
+  environment.sessionVariables = {
+    LIBVA_DRIVER_NAME = "iHD";
+  }; # Optionally, set the environment variable
 }
