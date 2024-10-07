@@ -11,56 +11,68 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = inputs@{ self, nixpkgs, home-manager, nixvim, catppuccin, ... }: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [
-        ./hardware-configuration.nix
-        ./nixos
-        catppuccin.nixosModules.catppuccin
-        home-manager.nixosModules.home-manager
-        {
-          catppuccin = {
-            enable = false;
-            accent = "mauve"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
-            flavor = "mocha"; # Type: one of “latte”, “frappe”, “macchiato”, “mocha”
-          };
-          home-manager.backupFileExtension = ".ba";
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.sharedModules = [
-            nixvim.homeManagerModules.nixvim
-            catppuccin.homeManagerModules.catppuccin
-          ];
-          home-manager.users.dim = (import ./home inputs);
-          nix = {
-            settings = {
-              trusted-users = [
-                "root"
-                "dim"
-              ];
-              keep-outputs = true;
-              keep-derivations = true;
-              experimental-features = [ "nix-command" "flakes" ];
-              substituters = [
-                "https://cache.nixos.org/"
-                # "https://cache.komunix.org/"
-                "https://nix-community.cachix.org"
-              ];
-              extra-substituters = [
-                "https://devenv.cachix.org"
-              ];
-              trusted-public-keys = [
-                "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-              ];
-              extra-trusted-public-keys = [
-                "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw="
-              ];
-              fallback = true;
+  outputs =
+    inputs@{
+      self,
+      nixpkgs,
+      home-manager,
+      nixvim,
+      catppuccin,
+      ...
+    }:
+    {
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./hardware-configuration.nix
+          ./nixos
+          catppuccin.nixosModules.catppuccin
+          home-manager.nixosModules.home-manager
+          {
+            catppuccin = {
+              enable = false;
+              accent = "mauve"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
+              flavor = "mocha"; # Type: one of “latte”, “frappe”, “macchiato”, “mocha”
             };
-          };
-        }
-      ];
+            home-manager.backupFileExtension = ".ba";
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.sharedModules = [
+              nixvim.homeManagerModules.nixvim
+              catppuccin.homeManagerModules.catppuccin
+            ];
+            home-manager.users.dim = (import ./home inputs);
+            nix = {
+              settings = {
+                trusted-users = [
+                  "root"
+                  "dim"
+                ];
+                keep-outputs = true;
+                keep-derivations = true;
+                experimental-features = [
+                  "nix-command"
+                  "flakes"
+                ];
+                substituters = [
+                  "https://cache.nixos.org/"
+                  # "https://cache.komunix.org/"
+                  "https://nix-community.cachix.org"
+                ];
+                extra-substituters = [
+                  "https://devenv.cachix.org"
+                ];
+                trusted-public-keys = [
+                  "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+                ];
+                extra-trusted-public-keys = [
+                  "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw="
+                ];
+                fallback = true;
+              };
+            };
+          }
+        ];
+      };
     };
-  };
 }
