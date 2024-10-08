@@ -8,7 +8,7 @@
         # capitaine-cursors-themed
         # catppuccin-kde
         clinfo
-        code-cursor
+        # code-cursor
         # colloid-icon-theme
         crow-translate
         cryfs
