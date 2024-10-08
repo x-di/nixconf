@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs;
+  home.packages =
+    with pkgs;
     # with pkgs.elmPackages;
     with pkgs.nodePackages;
     # with pkgs.ocamlPackages;

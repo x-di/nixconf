@@ -58,17 +58,44 @@
           gc = "Comments";
         };
         registrations = {
-          "<c-h>" = [ "<c-w>h" "Move top" ];
-          "<c-j>" = [ "<c-w>j" "Move down" ];
-          "<c-k>" = [ "<c-w>k" "Move left" ];
-          "<c-l>" = [ "<c-w>l" "Move right" ];
+          "<c-h>" = [
+            "<c-w>h"
+            "Move top"
+          ];
+          "<c-j>" = [
+            "<c-w>j"
+            "Move down"
+          ];
+          "<c-k>" = [
+            "<c-w>k"
+            "Move left"
+          ];
+          "<c-l>" = [
+            "<c-w>l"
+            "Move right"
+          ];
 
-          "<up>" = [ "<cmd>resize +1<CR>" "resize window up" ];
-          "<down>" = [ "<cmd>resize -1<CR>" "resize window down" ];
-          "<left>" = [ "<cmd>vertical resize +1<CR>" "resize window left" ];
-          "<right>" = [ "<cmd>vertical resize -1<CR>" "resize window right" ];
+          "<up>" = [
+            "<cmd>resize +1<CR>"
+            "resize window up"
+          ];
+          "<down>" = [
+            "<cmd>resize -1<CR>"
+            "resize window down"
+          ];
+          "<left>" = [
+            "<cmd>vertical resize +1<CR>"
+            "resize window left"
+          ];
+          "<right>" = [
+            "<cmd>vertical resize -1<CR>"
+            "resize window right"
+          ];
 
-          "<c-n>" = [ "<cmd>NvimTreeToggle<CR>" "Open Tree in left side" ];
+          "<c-n>" = [
+            "<cmd>NvimTreeToggle<CR>"
+            "Open Tree in left side"
+          ];
         };
       };
     };

@@ -8,7 +8,11 @@
           enabled = false;
         };
         manager = {
-          ratio = [ 1 5 2 ];
+          ratio = [
+            1
+            5
+            2
+          ];
           show_hidden = false;
           sort_by = "alphabetical";
           linemode = "size";

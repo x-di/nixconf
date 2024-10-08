@@ -3,12 +3,30 @@
   programs.fish = {
     enable = true;
     plugins = with pkgs.fishPlugins; [
-      { name = "forgit"; src = forgit; }
-      { name = "git"; src = plugin-git; }
-      { name = "hydro"; src = hydro; }
-      { name = "pisces"; src = pisces; }
-      { name = "pure"; src = pure; }
-      { name = "sponge"; src = sponge; }
+      {
+        name = "forgit";
+        src = forgit;
+      }
+      {
+        name = "git";
+        src = plugin-git;
+      }
+      {
+        name = "hydro";
+        src = hydro;
+      }
+      {
+        name = "pisces";
+        src = pisces;
+      }
+      {
+        name = "pure";
+        src = pure;
+      }
+      {
+        name = "sponge";
+        src = sponge;
+      }
     ];
     interactiveShellInit = ''
       			set fish_greeting # Disable greeting
@@ -116,7 +134,6 @@
       gusm = "git pull sh main";
       gugm = "git pull gh main";
       gulm = "git pull gl main";
-
 
       #yt-dlp
       yt = "yt-dlp";

@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
   services = {
     dnscrypt-proxy2 = {
       enable = true;
@@ -24,7 +25,11 @@
           refresh_delay = 72;
         };
 
-        server_names = [ "dnscry.pt-jakarta-ipv4" "dnscry.pt-singapore-ipv4" "dnscry.pt-singapore02-ipv4" ];
+        server_names = [
+          "dnscry.pt-jakarta-ipv4"
+          "dnscry.pt-singapore-ipv4"
+          "dnscry.pt-singapore02-ipv4"
+        ];
 
         anonymized_dns = {
           routes = [
@@ -41,15 +46,24 @@
             # }
             {
               server_name = "dnscry.pt-jakarta-ipv4";
-              via = [ "anon-tiarap" "anon-cs-singapore" ];
+              via = [
+                "anon-tiarap"
+                "anon-cs-singapore"
+              ];
             }
             {
               server_name = "dnscry.pt-singapore-ipv4";
-              via = [ "anon-tiarap" "anon-cs-singapore" ];
+              via = [
+                "anon-tiarap"
+                "anon-cs-singapore"
+              ];
             }
             {
               server_name = "dnscry.pt-singapore02-ipv4";
-              via = [ "anon-tiarap" "anon-cs-singapore" ];
+              via = [
+                "anon-tiarap"
+                "anon-cs-singapore"
+              ];
             }
           ];
           skip_incompatible = true;

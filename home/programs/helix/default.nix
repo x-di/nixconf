@@ -1,4 +1,5 @@
-{ pkgs, ... }: with pkgs;
+{ pkgs, ... }:
+with pkgs;
 {
   programs = {
     helix = {
@@ -339,7 +340,10 @@
             name = "css";
             scope = "source.css";
             injection-regex = "css";
-            file-types = [ "css" "scss" ];
+            file-types = [
+              "css"
+              "scss"
+            ];
             block-comment-tokens = {
               start = "/*";
               end = "*/";
@@ -350,7 +354,7 @@
               tab-width = 2;
               unit = "  ";
             };
-           }
+          }
 
           # cue
           # {
@@ -398,7 +402,10 @@
             name = "dockerfile";
             scope = "source.dockerfile";
             injection-regex = "docker|dockerfile";
-            roots = [ "Dockerfile" "Containerfile" ];
+            roots = [
+              "Dockerfile"
+              "Containerfile"
+            ];
             file-types = [
               "Dockerfile"
               { glob = "Dockerfile"; }
@@ -616,14 +623,20 @@
             scope = "source.go";
             injection-regex = "go";
             file-types = [ "go" ];
-            roots = [ "go.work" "go.mod" ];
+            roots = [
+              "go.work"
+              "go.mod"
+            ];
             auto-format = true;
             comment-token = "//";
             block-comment-tokens = {
               start = "/*";
               end = "*/";
             };
-            language-servers = [ "gopls" "golangci-lint-lsp" ];
+            language-servers = [
+              "gopls"
+              "golangci-lint-lsp"
+            ];
             indent = {
               tab-width = 4;
               unit = "\t";
@@ -884,7 +897,9 @@
             debugger = {
               name = "node-debug2";
               transport = "stdio";
-              quirks = { absolute-paths = true; };
+              quirks = {
+                absolute-paths = true;
+              };
               templates = [
                 {
                   name = "source";
@@ -896,7 +911,9 @@
                       default = "index.js";
                     }
                   ];
-                  args = { program = "{0}"; };
+                  args = {
+                    program = "{0}";
+                  };
                 }
               ];
             };
@@ -1037,7 +1054,10 @@
               { glob = "PULLREQ_EDITMSG"; }
             ];
             roots = [ ".marksman.toml" ];
-            language-servers = [ "marksman" "markdown-oxide" ];
+            language-servers = [
+              "marksman"
+              "markdown-oxide"
+            ];
             indent = {
               tab-width = 2;
               unit = "  ";
@@ -1320,21 +1340,43 @@
             scope = "source.rust";
             injection-regex = "rs|rust";
             file-types = [ "rs" ];
-            roots = [ "Cargo.toml" "Cargo.lock" ];
-            shebangs = [ "rust-script" "cargo" ];
+            roots = [
+              "Cargo.toml"
+              "Cargo.lock"
+            ];
+            shebangs = [
+              "rust-script"
+              "cargo"
+            ];
             auto-format = true;
-            comment-tokens = [ "//" "///" "//!" ];
+            comment-tokens = [
+              "//"
+              "///"
+              "//!"
+            ];
             block-comment-tokens = [
-              { start = "/*"; end = "*/"; }
-              { start = "/**"; end = "*/"; }
-              { start = "/*!"; end = "*/"; }
+              {
+                start = "/*";
+                end = "*/";
+              }
+              {
+                start = "/**";
+                end = "*/";
+              }
+              {
+                start = "/*!";
+                end = "*/";
+              }
             ];
             language-servers = [ "rust-analyzer" ];
             indent = {
               tab-width = 4;
               unit = "    ";
             };
-            persistent-diagnostic-sources = [ "rustc" "clippy" ];
+            persistent-diagnostic-sources = [
+              "rustc"
+              "clippy"
+            ];
             debugger = {
               name = "lldb-dap";
               transport = "stdio";
@@ -1371,7 +1413,9 @@
                   name = "attach";
                   request = "attach";
                   completion = [ "pid" ];
-                  args = { pid = "{0}"; };
+                  args = {
+                    pid = "{0}";
+                  };
                 }
                 {
                   name = "gdbserver attach";
@@ -1465,7 +1509,10 @@
           {
             name = "sql";
             scope = "source.sql";
-            file-types = [ "sql" "dsql" ];
+            file-types = [
+              "sql"
+              "dsql"
+            ];
             comment-token = "--";
             block-comment-tokens = {
               start = "/*";
@@ -1483,7 +1530,10 @@
           {
             name = "yaml";
             scope = "source.yaml";
-            file-types = [ "yml" "yaml" ];
+            file-types = [
+              "yml"
+              "yaml"
+            ];
             comment-token = "#";
             indent = {
               tab-width = 2;
