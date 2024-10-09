@@ -1,7 +1,7 @@
 { ... }:
 {
   programs.appimage = {
-    enable = true;
-    binfmt = true;
+    enable = false;
+    binfmt = false;
   };
 }
