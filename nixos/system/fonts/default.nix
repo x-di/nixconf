@@ -4,8 +4,8 @@
     packages = with pkgs; [
       carlito
       geist-font
+      joypixels
       liberation_ttf
-      openmoji-color
       (nerdfonts.override {
         fonts = [
           "FiraCode"
@@ -16,8 +16,9 @@
     ];
     fontconfig = {
       defaultFonts = {
-        emoji = [ "OpenMoji Color" ];
+        emoji = [ "JoyPixels" ];
       };
     };
   };
+  nixpkgs.config.joypixels.acceptLicense = true;
 }
