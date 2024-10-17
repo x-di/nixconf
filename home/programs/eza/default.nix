@@ -7,6 +7,5 @@
       "--header"
     ];
     git = true;
-    icons = false;
   };
 }
