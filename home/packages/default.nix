@@ -16,15 +16,14 @@
         dbgate
         devenv
         # drawio
-        # easyeffects
-        # ffmpeg
-        ffmpeg_7-full
+        easyeffects
+        ffmpeg
         gcc
         glxinfo
         # gnome.gnome-keyring
         ghostscript
         # google-chrome
-        gruvbox-plus-icons
+        # gruvbox-plus-icons
         haruna
         jre
         libdbusmenu
