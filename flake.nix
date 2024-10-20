@@ -30,7 +30,7 @@
           home-manager.nixosModules.home-manager
           {
             catppuccin = {
-              enable = true;
+              enable = false;
               accent = "green"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
               flavor = "mocha"; # Type: one of “latte”, “frappe”, “macchiato”, “mocha”
             };

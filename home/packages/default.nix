@@ -3,15 +3,17 @@
   home = {
     packages =
       (with pkgs; [
+        adwaita-icon-theme
         anytype
         bruno
         # capitaine-cursors-themed
         # catppuccin-kde
+        celluloid
         clinfo
         # code-cursor
         # colloid-icon-theme
-        crow-translate
-        cryfs
+        # crow-translate
+        # cryfs
         # dbeaver-bin
         dbgate
         devenv
@@ -21,13 +23,15 @@
         gcc
         glxinfo
         # gnome.gnome-keyring
+        gnome-tweaks
         ghostscript
         # google-chrome
         # gruvbox-plus-icons
-        haruna
+        # haruna
         jre
         libdbusmenu
-        libreoffice-qt6-fresh
+        libreoffice-fresh
+        # libreoffice-qt6-fresh
         libva-utils
         # kde-gruvbox
         # megasync
@@ -39,7 +43,7 @@
         nodejs_latest
         onlyoffice-bin_latest
         p7zip
-        papirus-icon-theme
+        # papirus-icon-theme
         # postman
         sqlite
         # tela-icon-theme
@@ -62,10 +66,10 @@
         gst-vaapi
       ])
       ++ (with pkgs.kdePackages; [
-        juk
-        kclock
-        kdenlive
-        kdeplasma-addons
+        # juk
+        # kclock
+        # kdenlive
+        # kdeplasma-addons
         # kget
         # ktorrent
         # akonadi
@@ -78,7 +82,15 @@
         # kmail
         # kmailtransport
         # kmail-account-wizard
-        qtwebengine
+        # qtwebengine
+      ])
+      ++ (with pkgs.gnomeExtensions; [
+        appindicator
+        blur-my-shell
+        clipboard-indicator
+        easyeffects-preset-selector
+        # pop-shell
+        # ...
       ]);
   };
 }

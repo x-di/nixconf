@@ -1,7 +1,7 @@
 { ... }:
 {
   programs.bottom = {
-    enable = true;
+    enable = false;
     settings = {
       flags = {
         avg_cpu = true;

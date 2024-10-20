@@ -6,6 +6,7 @@
     ./bat
     ./bottom
     ./carapace
+    ./dconf
     ./direnv
     ./eza
     ./fastfetch

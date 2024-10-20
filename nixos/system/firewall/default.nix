@@ -7,7 +7,7 @@
       allowedTCPPorts = [
         # 20 # ftp
         # 21 # ftp
-        22 # ssh
+        # 22 # ssh
         80 # http
         443 # https
         # 3000 # adguard
