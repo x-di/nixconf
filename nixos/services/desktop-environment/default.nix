@@ -45,7 +45,7 @@
     # evince # document viewer
   ];
   qt = {
-    enable = true;
+    enable = false;
     platformTheme = "gnome";
     style = "adwaita-dark";
   };
