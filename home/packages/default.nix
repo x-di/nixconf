@@ -19,6 +19,7 @@
         devenv
         # drawio
         easyeffects
+        endeavour
         ffmpeg
         gcc
         glxinfo
@@ -45,6 +46,7 @@
         p7zip
         # papirus-icon-theme
         # postman
+        smile
         sqlite
         # tela-icon-theme
         telegram-desktop
