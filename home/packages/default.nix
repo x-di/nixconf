@@ -18,10 +18,11 @@
         dbgate
         devenv
         # drawio
-        easyeffects
+        # easyeffects
         endeavour
         ffmpeg
         gcc
+        gimp
         glxinfo
         # gnome.gnome-keyring
         gnome-tweaks
@@ -29,6 +30,7 @@
         # google-chrome
         # gruvbox-plus-icons
         # haruna
+        inkscape
         jre
         libdbusmenu
         libreoffice-fresh
@@ -90,7 +92,7 @@
         appindicator
         blur-my-shell
         clipboard-indicator
-        easyeffects-preset-selector
+        # easyeffects-preset-selector
         # pop-shell
         # ...
       ]);
