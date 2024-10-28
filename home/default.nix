@@ -17,6 +17,7 @@ in
   };
   nixpkgs.config.allowUnfree = true;
   imports = [
+    (import ./dev)
     # (import ./langserver)
     (import ./packages)
     (import ./programs)

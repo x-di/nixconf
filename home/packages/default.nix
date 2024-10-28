@@ -22,7 +22,7 @@
         # easyeffects
         endeavour
         ffmpeg
-        gcc
+        # gcc
         gimp
         glxinfo
         # gnome.gnome-keyring
@@ -32,7 +32,7 @@
         # gruvbox-plus-icons
         # haruna
         inkscape
-        jre
+        # jre
         libdbusmenu
         libreoffice-fresh
         # libreoffice-qt6-fresh
@@ -40,11 +40,11 @@
         # kde-gruvbox
         # megasync
         neovim
-        nil
-        nixd
-        nixfmt-rfc-style
-        nixpkgs-fmt
-        nodejs_latest
+        # nil
+        # nixd
+        # nixfmt-rfc-style
+        # nixpkgs-fmt
+        # nodejs_latest
         onlyoffice-bin_latest
         p7zip
         # papirus-icon-theme
