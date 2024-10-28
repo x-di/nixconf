@@ -93,6 +93,7 @@
         appindicator
         blur-my-shell
         clipboard-indicator
+        notification-counter
         # easyeffects-preset-selector
         # pop-shell
         # ...
