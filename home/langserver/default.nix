@@ -30,24 +30,27 @@
       # julia # julia
       # lean # lean
       # lsp # ocaml
-      lua-language-server # lua
-      marksman # markdodwn
+      # lua-language-server # lua
+      marksman # markdown
       # metals # scala
       # mint # mint
-      nil # nix
+      nil
+      nixd
+      nixfmt-rfc-style
+      nixpkgs-fmt
       # nimlsp # nim
-      nixpkgs-fmt # nixpkgs formatter
       # nls # nickel
       # ols # odin
       # openscad-lsp # openscad
       # perlnavigator # perl
+      phpactor # php
       # protobuf # protobuf
       # purescript-language-server # purescript
-      pyright # python
+      # pyright # python
       # racket # racket
       # regols # rego
-      ruff-lsp # python
-      rust-analyzer # rust
+      # ruff-lsp # python
+      # rust-analyzer # rust
       # slint-lsp # slint
       # solargraph # ruby
       # solc # solidity
@@ -59,12 +62,12 @@
       typescript-language-server # typescript
       # vala-language-server # vala
       # vhdl-ls # vhdl
-      vls # vue
+      # vls
       yaml-language-server # yaml
       # zls # zig
 
       # sourcekit-lsp # swift & objective-c # too much storage
       # haskell-language-server # haskell # too much storage
-      intelephense # php # unfree package
+      # intelephense # php # unfree package
     ];
 }
