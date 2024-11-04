@@ -5,14 +5,15 @@
       (with pkgs; [
         adw-gtk3
         adwaita-icon-theme
-        anytype
+        # anytype
+        bibata-cursors
         bruno
         # capitaine-cursors-themed
         # catppuccin-kde
         celluloid
         clinfo
         # code-cursor
-        # colloid-icon-theme
+        colloid-icon-theme
         # crow-translate
         # cryfs
         # dbeaver-bin
@@ -33,6 +34,7 @@
         # haruna
         inkscape
         # jre
+        keypunch
         libdbusmenu
         libreoffice-fresh
         # libreoffice-qt6-fresh
@@ -92,8 +94,10 @@
       ++ (with pkgs.gnomeExtensions; [
         appindicator
         blur-my-shell
+        caffeine
         clipboard-indicator
         notification-counter
+        just-perfection
         # easyeffects-preset-selector
         # pop-shell
         # ...
