@@ -68,8 +68,9 @@
       nd = "mkdir -p";
       nf = "touch";
 
-      n = "nvim";
-      h = "hx";
+      n = "nvim .";
+      h = "hx .";
+      e = "zeditor .";
       #git ##gh = github, sh = sr.ht, gl = gitlab
       gad = "git add";
       gal = "git add --all";
