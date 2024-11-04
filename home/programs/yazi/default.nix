@@ -2,7 +2,7 @@
 {
   programs = {
     yazi = {
-      enable = true;
+      enable = false;
       settings = {
         log = {
           enabled = false;
