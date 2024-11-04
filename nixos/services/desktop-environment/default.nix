@@ -38,9 +38,9 @@
     gnome-text-editor
     gnome-tour
     gnome-connections
-    gnome-music
+    # gnome-music
     epiphany # web browser
-    totem
+    # totem
     # geary # email reader. Up to 24.05. Starting from 24.11 the package name is just geary.
     # evince # document viewer
   ];
