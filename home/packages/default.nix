@@ -98,6 +98,7 @@
         clipboard-indicator
         notification-counter
         just-perfection
+        smile-complementary-extension
         # easyeffects-preset-selector
         # pop-shell
         # ...
