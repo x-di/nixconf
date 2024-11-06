@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./easyeffects
     ./espanso
     ./kdeconnect
   ];
