@@ -43,7 +43,7 @@
       # ols # odin
       # openscad-lsp # openscad
       # perlnavigator # perl
-      # phpactor # php
+      phpactor # php
       # protobuf # protobuf
       # purescript-language-server # purescript
       # pyright # python
