@@ -3,7 +3,7 @@
   imports = [
     ./desktop-environment
     ./dnscrypt
-    ./earlyoom
+    # ./earlyoom
     ./flatpak
     ./fstrim
     ./fwupd
@@ -15,8 +15,8 @@
     ./postgresql
     ./printing
     ./redis
-    ./thermald
-    # ./throttled
+    # ./thermald
+    ./throttled
     ./udev
     ./xserver
   ];

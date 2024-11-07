@@ -14,14 +14,14 @@
     # kernelPackages = pkgs.linuxPackages_xanmod_latest;
     # kernelPackages = pkgs.linuxPackages_zen;
     kernelPackages = pkgs.linuxPackages_lqx;
-    kernel = {
-      sysctl = {
-        "vm.swappiness" = 180;
-        "vm.watermark_boost_factor" = 0;
-        "vm.watermark_scale_factor" = 125;
-        "vm.page-cluster" = 0;
-      };
-    };
+    # kernel = {
+    #   sysctl = {
+    #     "vm.swappiness" = 180;
+    #     "vm.watermark_boost_factor" = 0;
+    #     "vm.watermark_scale_factor" = 125;
+    #     "vm.page-cluster" = 0;
+    #   };
+    # };
     plymouth = {
       enable = true;
       # theme = "rings";
@@ -44,6 +44,7 @@
       "rd.systemd.show_status=false"
       "rd.udev.log_level=3"
       "udev.log_priority=3"
+      "i915.enable_guc=2"
       "i915.enable_fbc=1"
       "i915.enable_psr=2"
     ];
