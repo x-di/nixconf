@@ -1,8 +1,8 @@
 {
   description = "NixOS configuration";
   inputs = {
-    # nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -14,12 +14,13 @@
     };
   };
   outputs =
-    inputs@{ self
-    , nixpkgs
-    , home-manager
-    , nixvim
-    , catppuccin
-    , ...
+    inputs@{
+      self,
+      nixpkgs,
+      home-manager,
+      nixvim,
+      catppuccin,
+      ...
     }:
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
