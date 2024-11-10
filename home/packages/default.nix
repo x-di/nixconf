@@ -12,6 +12,7 @@
         # catppuccin-kde
         celluloid
         clinfo
+        cpu-x
         # code-cursor
         colloid-icon-theme
         # crow-translate
