@@ -15,8 +15,8 @@
     ./postgresql
     ./printing
     ./redis
-    # ./thermald
-    ./throttled
+    ./thermald
+    # ./throttled
     ./udev
     ./xserver
   ];
