@@ -7,6 +7,7 @@
         adwaita-icon-theme
         # anytype
         bibata-cursors
+        brave
         bruno
         # capitaine-cursors-themed
         # catppuccin-kde
@@ -100,6 +101,7 @@
         notification-counter
         just-perfection
         smile-complementary-extension
+        top-panel-notification-icons-revived
         # easyeffects-preset-selector
         # pop-shell
         # ...
