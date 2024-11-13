@@ -15,6 +15,7 @@
     ./postgresql
     ./printing
     ./redis
+    ./switcherooControl
     ./thermald
     # ./throttled
     ./udev
