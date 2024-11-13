@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   programs.obs-studio = {
-    enable = false;
+    enable = true;
     # package = (pkgs.obs-studio.override { ffmpeg = pkgs.ffmpeg_7-full; });
     plugins = with pkgs.obs-studio-plugins; [
       # obs-multi-rtmp
@@ -16,7 +16,7 @@
       obs-text-pthread
       obs-source-switcher
       input-overlay
-      wlrobs
+      # wlrobs
     ];
   };
 }
