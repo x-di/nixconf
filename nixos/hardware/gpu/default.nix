@@ -80,6 +80,14 @@
 
       hardware.intelgpu.vaapiDriver = "intel-media-driver";
 
+      hardware.graphics = {
+        enable = lib.mkDefault true;
+        # enable32Bit = lib.mkDefault true;
+      };
+
+      hardware.amdgpu.initrd.enable = lib.mkDefault true;
+      hardware.amdgpu.amdvlk.enable = lib.mkDefault true;
+
       assertions = [
         {
           assertion = (
