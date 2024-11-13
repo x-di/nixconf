@@ -18,6 +18,7 @@
         colloid-icon-theme
         # crow-translate
         # cryfs
+        dav1d
         # dbeaver-bin
         dbgate
         devenv
@@ -38,6 +39,7 @@
         # jre
         keypunch
         libdbusmenu
+        libde265
         libreoffice-fresh
         # libreoffice-qt6-fresh
         libva-utils
@@ -50,11 +52,13 @@
         # nixpkgs-fmt
         # nodejs_latest
         onlyoffice-bin_latest
+        openssl
         p7zip
         # papirus-icon-theme
         # postman
         smile
         sqlite
+        svt-av1
         # tela-icon-theme
         telegram-desktop
         tlrc
@@ -65,11 +69,14 @@
         vulkan-tools
         wget
         wl-clipboard
+        x265
         zed-editor.fhs
       ])
       ++ (with pkgs.gst_all_1; [
         gstreamer
+        gst-libav
         gst-plugins-bad
+        gst-plugins-base
         gst-plugins-good
         gst-plugins-ugly
         gst-vaapi
