@@ -7,6 +7,7 @@
       #   layout = "us";
       #   variant = "";
       # };
+      videoDrivers = [ "modesetting" ];
       excludePackages = [
         pkgs.xterm
       ];
