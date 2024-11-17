@@ -7,7 +7,7 @@
         adwaita-icon-theme
         # anytype
         bibata-cursors
-        brave
+        # brave
         bruno
         # capitaine-cursors-themed
         # catppuccin-kde
@@ -56,13 +56,13 @@
         p7zip
         # papirus-icon-theme
         # postman
-        smile
+        # smile
         sqlite
         svt-av1
         # tela-icon-theme
         telegram-desktop
         tlrc
-        thunderbird
+        # thunderbird
         # ungoogled-chromium
         unzip
         vscode-fhs
@@ -107,8 +107,11 @@
         clipboard-indicator
         notification-counter
         just-perfection
-        smile-complementary-extension
+        # smile-complementary-extension
         top-panel-notification-icons-revived
+        emoji-copy
+        alphabetical-app-grid
+        vitals
         # easyeffects-preset-selector
         # pop-shell
         # ...
