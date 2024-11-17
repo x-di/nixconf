@@ -2,7 +2,7 @@
 let
   name = "dim";
   homeDirectory = "/home/dim";
-  stateVersion = "24.11";
+  stateVersion = "25.05";
 in
 {
   catppuccin = {
