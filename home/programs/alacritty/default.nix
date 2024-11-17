@@ -24,7 +24,7 @@
         size = 14;
       };
       scrolling = {
-        history = 10000;
+        history = 20000;
         multiplier = 3;
       };
       window = {
