@@ -16,6 +16,7 @@
     ./printing
     ./redis
     ./switcherooControl
+    ./system76
     ./thermald
     # ./throttled
     ./udev
