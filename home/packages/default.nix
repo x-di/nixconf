@@ -40,7 +40,7 @@
         keypunch
         libdbusmenu
         libde265
-        libreoffice-fresh
+        # libreoffice-fresh
         # libreoffice-qt6-fresh
         libva-utils
         # kde-gruvbox
