@@ -14,5 +14,13 @@ in
       signByDefault = true;
       key = "${signingkey}";
     };
+    delta = {
+      enable = true;
+    };
+    extraConfig = {
+      delta ={
+        side-by-side = true;
+      };
+    };
   };
 }
