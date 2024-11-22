@@ -86,7 +86,7 @@
       };
 
       hardware.amdgpu.initrd.enable = lib.mkDefault true;
-      hardware.amdgpu.amdvlk.enable = lib.mkDefault true;
+      # hardware.amdgpu.amdvlk.enable = lib.mkDefault true;
 
       assertions = [
         {
