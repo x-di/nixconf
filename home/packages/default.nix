@@ -112,6 +112,7 @@
         emoji-copy
         alphabetical-app-grid
         vitals
+        app-menu-is-back
         # easyeffects-preset-selector
         # pop-shell
         # ...
