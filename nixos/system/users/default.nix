@@ -13,6 +13,7 @@ in
           "dnscrypt-proxy2"
           "networkmanager"
           "wheel"
+          "i2c"
         ];
       };
     };

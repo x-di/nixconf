@@ -21,6 +21,7 @@
         dav1d
         # dbeaver-bin
         dbgate
+        ddcutil
         devenv
         # drawio
         # easyeffects
@@ -113,6 +114,7 @@
         alphabetical-app-grid
         vitals
         app-menu-is-back
+        brightness-control-using-ddcutil
         # easyeffects-preset-selector
         # pop-shell
         # ...
