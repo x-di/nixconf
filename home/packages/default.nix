@@ -62,7 +62,7 @@
         svt-av1
         # tela-icon-theme
         telegram-desktop
-        tlrc
+        # tlrc
         # thunderbird
         # ungoogled-chromium
         unzip

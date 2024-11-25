@@ -25,6 +25,7 @@
     ./obs-studio
     ./ripgrep
     ./starship
+    ./tealdeer
     ./yazi
     ./yt-dlp
     ./zellij
