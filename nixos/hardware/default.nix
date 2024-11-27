@@ -4,6 +4,6 @@
     # ./cpu
     # ./filesystem
     ./gpu
-    ./i2c
+    # ./i2c
   ];
 }

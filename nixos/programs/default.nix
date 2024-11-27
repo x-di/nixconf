@@ -5,5 +5,6 @@
     ./dconf
     ./firefox
     ./gnupg
+    ./kde-pim
   ];
 }

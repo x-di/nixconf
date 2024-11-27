@@ -20,7 +20,7 @@
     # ./system76
     ./thermald
     # ./throttled
-    ./udev
+    # ./udev
     ./xserver
   ];
 }

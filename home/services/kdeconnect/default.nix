@@ -3,6 +3,6 @@
   services.kdeconnect = {
     enable = true;
     indicator = true;
-    package = pkgs.gnomeExtensions.gsconnect;
+    package = pkgs.kdePackages.kdeconnect-kde;
   };
 }

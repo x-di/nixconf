@@ -3,46 +3,46 @@
   home = {
     packages =
       (with pkgs; [
-        adw-gtk3
-        adwaita-icon-theme
+        # adw-gtk3
+        # adwaita-icon-theme
         # anytype
-        bibata-cursors
+        # bibata-cursors
         # brave
         bruno
         # capitaine-cursors-themed
         # catppuccin-kde
-        celluloid
+        # celluloid
         clinfo
         cpu-x
         # code-cursor
         colloid-icon-theme
-        # crow-translate
+        crow-translate
         # cryfs
         dav1d
         # dbeaver-bin
         dbgate
-        ddcutil
+        # ddcutil
         devenv
         # drawio
         # easyeffects
-        endeavour
-        ffmpeg
+        # endeavour
+        ffmpeg-full
         # gcc
-        gimp
+        # gimp
         glxinfo
         # gnome.gnome-keyring
-        gnome-tweaks
+        # gnome-tweaks
         ghostscript
         # google-chrome
         # gruvbox-plus-icons
-        # haruna
-        inkscape
+        haruna
+        # inkscape
         # jre
-        keypunch
+        # keypunch
         libdbusmenu
         libde265
         # libreoffice-fresh
-        # libreoffice-qt6-fresh
+        libreoffice-qt6-fresh
         libva-utils
         # kde-gruvbox
         # megasync
@@ -55,7 +55,7 @@
         onlyoffice-bin_latest
         openssl
         p7zip
-        # papirus-icon-theme
+        papirus-icon-theme
         # postman
         # smile
         sqlite
@@ -83,10 +83,10 @@
         gst-vaapi
       ])
       ++ (with pkgs.kdePackages; [
-        # juk
-        # kclock
-        # kdenlive
-        # kdeplasma-addons
+        juk
+        kclock
+        kdenlive
+        kdeplasma-addons
         # kget
         # ktorrent
         # akonadi
@@ -99,25 +99,26 @@
         # kmail
         # kmailtransport
         # kmail-account-wizard
-        # qtwebengine
+        qtwebengine
+        qtmultimedia
       ])
       ++ (with pkgs.gnomeExtensions; [
-        appindicator
-        blur-my-shell
-        caffeine
-        clipboard-indicator
-        notification-counter
-        just-perfection
-        # smile-complementary-extension
-        top-panel-notification-icons-revived
-        emoji-copy
-        alphabetical-app-grid
-        vitals
-        app-menu-is-back
-        brightness-control-using-ddcutil
-        # easyeffects-preset-selector
-        # pop-shell
-        # ...
+        # appindicator
+        # blur-my-shell
+        # caffeine
+        # clipboard-indicator
+        # notification-counter
+        # just-perfection
+        # # smile-complementary-extension
+        # top-panel-notification-icons-revived
+        # emoji-copy
+        # alphabetical-app-grid
+        # vitals
+        # app-menu-is-back
+        # brightness-control-using-ddcutil
+        # # easyeffects-preset-selector
+        # # pop-shell
+        # # ...
       ]);
   };
 }
