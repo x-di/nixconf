@@ -15,8 +15,9 @@
     ./postgresql
     ./printing
     ./redis
+    ./scx
     ./switcherooControl
-    ./system76
+    # ./system76
     ./thermald
     # ./throttled
     ./udev
