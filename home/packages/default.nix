@@ -24,7 +24,7 @@
         # ddcutil
         devenv
         # drawio
-        # easyeffects
+        easyeffects
         # endeavour
         ffmpeg-full
         # gcc
@@ -101,6 +101,7 @@
         # kmail-account-wizard
         qtwebengine
         qtmultimedia
+        falkon
       ])
       ++ (with pkgs.gnomeExtensions; [
         # appindicator
