@@ -60,7 +60,7 @@
         # smile
         sqlite
         svt-av1
-        # tela-icon-theme
+        tela-icon-theme
         telegram-desktop
         # tlrc
         # thunderbird
@@ -89,19 +89,13 @@
         kdeplasma-addons
         # kget
         # ktorrent
-        # akonadi
-        # akonadi-calendar-tools
-        # akonadi-import-wizard
-        # akonadiconsole
-        # kdepim-addons
-        # kdepim-runtime
-        # libkdepim
-        # kmail
-        # kmailtransport
-        # kmail-account-wizard
         qtwebengine
         qtmultimedia
         falkon
+        kaccounts-providers
+        kaccounts-integration
+        kio-extras
+        kio-gdrive
       ])
       ++ (with pkgs.gnomeExtensions; [
         # appindicator
