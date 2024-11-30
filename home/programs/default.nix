@@ -6,7 +6,8 @@
     ./bat
     ./bottom
     ./carapace
-    ./dconf
+    ./chromium
+    # ./dconf
     ./direnv
     ./eza
     ./fastfetch
