@@ -96,6 +96,8 @@
         kaccounts-integration
         kio-extras
         kio-gdrive
+        kdepim-addons
+        signond
       ])
       ++ (with pkgs.gnomeExtensions; [
         # appindicator
