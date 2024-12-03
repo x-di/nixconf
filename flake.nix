@@ -1,8 +1,8 @@
 {
   description = "NixOS configuration";
   inputs = {
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -32,8 +32,8 @@
           home-manager.nixosModules.home-manager
           {
             catppuccin = {
-              enable = false;
-              accent = "green"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
+              enable = true;
+              accent = "flamingo"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
               flavor = "mocha"; # Type: one of “latte”, “frappe”, “macchiato”, “mocha”
             };
             home-manager.backupFileExtension = ".backup"; # remove duplicates from ~/.config/fontconfig/conf.d/
