@@ -91,7 +91,7 @@
         # ktorrent
         qtwebengine
         qtmultimedia
-        falkon
+        # falkon
         kaccounts-providers
         kaccounts-integration
         kio-extras
