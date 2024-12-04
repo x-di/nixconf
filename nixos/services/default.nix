@@ -3,7 +3,7 @@
   imports = [
     ./desktop-environment
     ./dnscrypt
-    # ./earlyoom
+    ./earlyoom
     ./flatpak
     ./fstrim
     ./fwupd
