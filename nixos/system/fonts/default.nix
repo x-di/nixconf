@@ -19,10 +19,24 @@
       zed-mono
     ]);
     fontconfig = {
+      enable = true;
       defaultFonts = {
-        # emoji = [ "OpenMoji Color" ];
+        emoji = [ "Noto Color Emoji" ];
+        monospace = [ "GeistMono Nerd Font" ];
+        sansSerif = [ "Geist" ];
+        serif = [ "Geist" ];
+      };
+      hinting = {
+        enable = true;
+        autohint = true;
+        style = "medium";
+      };
+      subpixel = {
+        rgba = "rgb";
       };
     };
+    enableGhostscriptFonts = true;
+    enableDefaultPackages = true;
   };
   # nixpkgs.config.joypixels.acceptLicense = true;
 }
