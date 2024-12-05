@@ -22,14 +22,14 @@
       enable = true;
       defaultFonts = {
         emoji = [ "Noto Color Emoji" ];
-        monospace = [ "GeistMono Nerd Font" ];
-        sansSerif = [ "Geist" ];
-        serif = [ "Geist" ];
+        monospace = [ "GeistMono Nerd Font" "JetBrainsMono Nerd Font" "FiraCode Nerd Font" ];
+        sansSerif = [ "Geist" "Noto Sans" ];
+        serif = [ "Geist" "Noto Serif" ];
       };
       hinting = {
         enable = true;
         autohint = true;
-        style = "medium";
+        style = "none";
       };
       subpixel = {
         rgba = "rgb";
