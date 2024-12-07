@@ -25,8 +25,14 @@
   boot.kernelModules = [
     "kvm-intel"
     # "i2c-dev"
+    "v4l2loopback"
   ];
-  boot.extraModulePackages = [ ];
+  boot.extraModulePackages = with config.boot.kernelPackages; [
+    v4l2loopback
+  ];
+  boot.extraModprobeConfig = ''
+    options v4l2loopback devices=1 video_nr=1 card_label="OBS Cam" exclusive_caps=1
+  '';
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/b33cefe0-6e9d-4281-aecc-23b6ff10cd27";
