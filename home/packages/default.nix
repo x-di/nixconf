@@ -15,7 +15,7 @@
         clinfo
         cpu-x
         # code-cursor
-        colloid-icon-theme
+        # colloid-icon-theme
         crow-translate
         # cryfs
         dav1d
@@ -55,12 +55,12 @@
         onlyoffice-bin_latest
         openssl
         p7zip
-        papirus-icon-theme
+        # papirus-icon-theme
         # postman
         # smile
         sqlite
         svt-av1
-        tela-icon-theme
+        # tela-icon-theme
         telegram-desktop
         # tlrc
         # thunderbird
