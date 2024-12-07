@@ -4,7 +4,7 @@
     packages = (with pkgs; [
       carlito
       geist-font
-      # joypixels
+      joypixels
       liberation_ttf
       noto-fonts
       noto-fonts-cjk-sans
@@ -21,7 +21,7 @@
     fontconfig = {
       enable = true;
       defaultFonts = {
-        emoji = [ "Noto Color Emoji" ];
+        emoji = [ "JoyPixels" "Noto Color Emoji" ];
         monospace = [ "GeistMono Nerd Font" "JetBrainsMono Nerd Font" "FiraCode Nerd Font" ];
         sansSerif = [ "Geist" "Noto Sans" ];
         serif = [ "Geist" "Noto Serif" ];
@@ -38,5 +38,5 @@
     enableGhostscriptFonts = true;
     enableDefaultPackages = true;
   };
-  # nixpkgs.config.joypixels.acceptLicense = true;
+  nixpkgs.config.joypixels.acceptLicense = true;
 }
