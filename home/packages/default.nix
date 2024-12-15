@@ -42,7 +42,7 @@
         libdbusmenu
         libde265
         # libreoffice-fresh
-        libreoffice-qt6-fresh
+        # libreoffice-qt6-fresh
         libva-utils
         # kde-gruvbox
         # megasync
