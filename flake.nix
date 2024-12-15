@@ -14,12 +14,11 @@
     };
   };
   outputs =
-    inputs@{
-      self,
-      nixpkgs,
-      home-manager,
-      nixvim,
-      # catppuccin,
+    inputs@{ self
+    , nixpkgs
+    , home-manager
+    , nixvim
+    , # catppuccin,
       ...
     }:
     {
