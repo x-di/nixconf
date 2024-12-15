@@ -14,6 +14,7 @@ in
           "networkmanager"
           "wheel"
           "i2c"
+          "podman"
         ];
       };
     };
