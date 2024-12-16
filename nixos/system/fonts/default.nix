@@ -34,9 +34,11 @@
       subpixel = {
         rgba = "rgb";
       };
+      useEmbeddedBitmaps = true;
     };
     enableGhostscriptFonts = true;
     enableDefaultPackages = true;
+    fontDir.decompressFonts = true;
   };
   nixpkgs.config.joypixels.acceptLicense = true;
 }
