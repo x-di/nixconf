@@ -66,7 +66,7 @@
         # thunderbird
         # ungoogled-chromium
         unzip
-        vscode-fhs
+        vscode.fhs
         vulkan-tools
         wget
         wl-clipboard
