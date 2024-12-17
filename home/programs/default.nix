@@ -27,6 +27,7 @@
     ./ripgrep
     ./starship
     ./tealdeer
+    ./xdg
     ./yazi
     ./yt-dlp
     ./zellij

@@ -8,6 +8,11 @@
         kdePackages.xdg-desktop-portal-kde
         xdg-desktop-portal-gtk
       ];
+      config = {
+        common = {
+          default = "*";
+        };
+      };
     };
   };
 }
