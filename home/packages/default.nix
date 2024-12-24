@@ -8,7 +8,7 @@
         # anytype
         # bibata-cursors
         # brave
-        bruno
+        # bruno
         # capitaine-cursors-themed
         # catppuccin-kde
         # celluloid
