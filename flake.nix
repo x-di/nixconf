@@ -7,19 +7,19 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     # catppuccin.url = "github:catppuccin/nix";
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nixvim = {
+    #   url = "github:nix-community/nixvim";
+    #   # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
   outputs =
     inputs@{ self
     , nixpkgs
     , home-manager
-    , nixvim
-    , # catppuccin,
-      ...
+      # nixvim
+      # catppuccin
+    , ...
     }:
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
@@ -39,7 +39,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.sharedModules = [
-              nixvim.homeManagerModules.nixvim
+              # nixvim.homeManagerModules.nixvim
               # catppuccin.homeManagerModules.catppuccin
             ];
             home-manager.users.dim = (import ./home inputs);
