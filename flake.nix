@@ -14,12 +14,13 @@
     # };
   };
   outputs =
-    inputs@{ self
-    , nixpkgs
-    , home-manager
+    inputs@{
+      self,
+      nixpkgs,
+      home-manager,
       # nixvim
       # catppuccin
-    , ...
+      ...
     }:
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {

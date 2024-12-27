@@ -18,7 +18,7 @@ in
       enable = true;
     };
     extraConfig = {
-      delta ={
+      delta = {
         side-by-side = true;
       };
     };
