@@ -28,6 +28,7 @@
         # endeavour
         ffmpeg-full
         # gcc
+        ghostty
         # gimp
         glxinfo
         # gnome.gnome-keyring
