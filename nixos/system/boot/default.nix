@@ -24,8 +24,16 @@
         "vm.dirty_ratio" = 6;
         "vm.dirty_background_ratio" = 3;
         "vm.vfs_cache_pressure" = 50;
+        "kernel.sysrq" = 1;
       };
     };
+
+    tmp = {
+      useTmpfs = true;
+      cleanOnBoot = true;
+      tmpfsSize = "75%";
+    };
+
     plymouth = {
       enable = true;
       # theme = "rings";
