@@ -99,6 +99,7 @@
         kio-gdrive
         kdepim-addons
         signond
+        krdc
       ])
       ++ (with pkgs.gnomeExtensions; [
         # appindicator
