@@ -8,7 +8,7 @@
         # anytype
         # bibata-cursors
         # brave
-        # bruno
+        bruno
         # capitaine-cursors-themed
         # catppuccin-kde
         # celluloid
@@ -39,6 +39,7 @@
         haruna
         # inkscape
         # jre
+        kdiskmark
         # keypunch
         libdbusmenu
         libde265
@@ -53,11 +54,13 @@
         # nixfmt-rfc-style
         # nixpkgs-fmt
         # nodejs_latest
+        nvme-cli
         onlyoffice-bin_latest
         openssl
         p7zip
         # papirus-icon-theme
         # postman
+        smartmontools
         # smile
         sqlite
         svt-av1
