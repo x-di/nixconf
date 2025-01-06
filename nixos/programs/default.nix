@@ -5,6 +5,7 @@
     ./dconf
     ./firefox
     ./gnupg
+    ./kde-partition-manager
     ./kde-pim
   ];
 }
