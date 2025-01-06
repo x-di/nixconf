@@ -19,7 +19,7 @@ in
   imports = [
     (import ./dev)
     (import ./langserver)
-    (import ./packages)
+    # (import ./packages)
     (import ./programs)
     (import ./services)
   ];

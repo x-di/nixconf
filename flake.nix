@@ -22,8 +22,20 @@
       # catppuccin
       ...
     }:
-    {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    let
+      system = "x86_64-linux";
+      pkgs = import nixpkgs {
+        inherit system;
+        config = {
+          allowUnfree = true;
+        };
+      };
+
+      lib = nixpkgs.lib;
+    in
+    rec {
+      inputs.pkgs = pkgs;
+      nixosConfigurations.nixos = lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./hardware-configuration.nix
@@ -44,6 +56,7 @@
               # catppuccin.homeManagerModules.catppuccin
             ];
             home-manager.users.dim = (import ./home inputs);
+            environment.systemPackages = (import ./nixos/packages inputs).packages;
             nix = {
               settings = {
                 trusted-users = [
