@@ -7,6 +7,7 @@
       { id = "ddkjiahejlhfcafbddmgiahcphecmpfh"; } # ublock origin lite
       { id = "mnjggcdmjocbbbhaepdhchncahnbgone"; } # sponsor block
       { id = "pkehgijcmpdhfbdbbnkijodmdjhbjlgp"; } # privacy badger
+      { id = "nngceckbapebfimnlniiiahkandclblb"; } # bitwarden
       { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; } # dark reader
       { id = "cimiefiiaegbelhefglklhhakcgmhkai"; } # plasma integration
       { id = "fmkadmapgofadopljbjfkapdkoienihi"; } # react developer tools
