@@ -16,7 +16,7 @@
       # code-cursor
       # colloid-icon-theme
       crow-translate
-      # cryfs
+      cryfs
       dav1d
       # dbeaver-bin
       dbgate
@@ -102,6 +102,7 @@
       kdepim-addons
       signond
       krdc
+      plasma-vault
     ])
     ++ (with pkgs.gnomeExtensions; [
       # appindicator
