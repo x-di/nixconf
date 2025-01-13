@@ -43,7 +43,7 @@
       libdbusmenu
       libde265
       # libreoffice-fresh
-      # libreoffice-qt6-fresh
+      libreoffice-qt6-fresh
       libva-utils
       # kde-gruvbox
       # megasync
@@ -59,6 +59,7 @@
       p7zip
       # papirus-icon-theme
       # postman
+      sirikali
       smartmontools
       # smile
       sqlite
@@ -102,7 +103,8 @@
       kdepim-addons
       signond
       krdc
-      plasma-vault
+      # plasma-vault
+      kleopatra
     ])
     ++ (with pkgs.gnomeExtensions; [
       # appindicator
