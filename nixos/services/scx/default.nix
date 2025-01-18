@@ -3,9 +3,9 @@
   services.scx = {
     enable = true;
     package = pkgs.scx.rustscheds;
-    scheduler = "scx_flash";
+    scheduler = "scx_lavd";
     extraArgs = [
-      # "--slice-us-max 3000"
+      "--autopower"
       # "--verbose"
     ];
   };
