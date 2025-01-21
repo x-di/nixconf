@@ -48,11 +48,15 @@
       subpixel = {
         rgba = "rgb";
       };
+      allowBitmaps = true;
       useEmbeddedBitmaps = true;
     };
     enableGhostscriptFonts = true;
     enableDefaultPackages = true;
-    fontDir.decompressFonts = true;
+    fontDir = {
+      enable = true;
+      decompressFonts = true;
+    };
   };
   nixpkgs.config.joypixels.acceptLicense = true;
 }
