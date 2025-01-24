@@ -24,14 +24,14 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [
     "kvm-intel"
-    "v4l2loopback"
+    # "v4l2loopback"
   ];
-  boot.extraModulePackages = with config.boot.kernelPackages; [
-    v4l2loopback
-  ];
-  boot.extraModprobeConfig = ''
-    options v4l2loopback devices=1 video_nr=1 card_label="OBS Cam" exclusive_caps=1
-  '';
+  # boot.extraModulePackages = with config.boot.kernelPackages; [
+  #   v4l2loopback
+  # ];
+  # boot.extraModprobeConfig = ''
+  #   options v4l2loopback devices=1 video_nr=1 card_label="OBS Cam" exclusive_caps=1
+  # '';
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/1e08c2c5-47fe-4cab-80a3-85a1f6e5d0c8";
