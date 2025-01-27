@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    # ./chaotic
     # ./cpu
     # ./filesystem
     ./gpu

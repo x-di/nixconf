@@ -12,6 +12,7 @@
     #   # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
+    # chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
   };
   outputs =
     inputs@{
@@ -20,6 +21,7 @@
       home-manager,
       # nixvim
       # catppuccin
+      # chaotic,
       ...
     }:
     let
@@ -42,6 +44,7 @@
           ./nixos
           # catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager
+          # chaotic.nixosModules.default # OUR DEFAULT MODULE
           {
             # catppuccin = {
             #   enable = false;
@@ -73,12 +76,14 @@
                   "https://cache.nixos.org/"
                   # "https://cache.komunix.org/"
                   "https://nix-community.cachix.org"
+                  # "https://chaotic-nyx.cachix.org"
                 ];
                 extra-substituters = [
                   "https://devenv.cachix.org"
                 ];
                 trusted-public-keys = [
                   "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+                  # "chaotic-nyx.cachix.org-1:HfnXSw4pj95iI/n17rIDy40agHj12WfF+Gqk6SonIT8="
                 ];
                 extra-trusted-public-keys = [
                   "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw="

@@ -3,6 +3,6 @@
   imports = [
     ./easyeffects
     ./espanso
-    ./kdeconnect
+    # ./kdeconnect
   ];
 }

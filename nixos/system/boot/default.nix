@@ -9,12 +9,14 @@
         canTouchEfiVariables = true;
       };
     };
-    # kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_latest;
     # kernelPackages = pkgs.linuxPackages-rt_latest;
     # kernelPackages = pkgs.linuxPackages_xanmod;
     # kernelPackages = pkgs.linuxPackages_xanmod_latest;
     # kernelPackages = pkgs.linuxPackages_zen;
-    kernelPackages = pkgs.linuxPackages_lqx;
+    # kernelPackages = pkgs.linuxPackages_lqx;
+    # kernelPackages = pkgs.linuxPackages_cachyos;
+    # kernelPackages = pkgs.linuxPackages_cachyos-rc;
     kernel = {
       sysctl = {
         "vm.swappiness" = 180;
@@ -29,9 +31,9 @@
     };
 
     tmp = {
-      useTmpfs = false;
+      useTmpfs = true;
       cleanOnBoot = true;
-      tmpfsSize = "75%";
+      tmpfsSize = "50%";
     };
 
     plymouth = {
