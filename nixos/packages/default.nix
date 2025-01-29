@@ -6,7 +6,7 @@
       # adwaita-icon-theme
       # anytype
       # bibata-cursors
-      # brave
+      brave
       bruno
       # capitaine-cursors-themed
       # catppuccin-kde
@@ -91,8 +91,8 @@
       kclock
       kdenlive
       kdeplasma-addons
-      # kget
-      # ktorrent
+      kget
+      ktorrent
       qtwebengine
       qtmultimedia
       # falkon
