@@ -57,7 +57,7 @@
       onlyoffice-bin_latest
       openssl
       p7zip
-      # papirus-icon-theme
+      papirus-icon-theme
       # postman
       sirikali
       smartmontools
