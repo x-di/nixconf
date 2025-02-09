@@ -8,5 +8,6 @@
     ./kde-partition-manager
     ./kde-pim
     ./kdeconnect
+    ./nix-ld
   ];
 }
