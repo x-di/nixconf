@@ -30,6 +30,7 @@
     ./xdg
     ./yazi
     ./yt-dlp
+    ./zed-editor
     ./zellij
     ./zoxide
   ];
