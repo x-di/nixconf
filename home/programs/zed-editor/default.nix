@@ -2,7 +2,7 @@
 {
   programs.zed-editor = {
     enable = true;
-    # package = pkgs.zed-editor_git;
+    package = pkgs.zed-editor_git;
     # extensions = [
 
     # ];
@@ -147,7 +147,8 @@
         dock = "right";
       };
       features = {
-        inline_completion_provider = "supermaven";
+        "edit_prediction_provider" = "copilot";
+        "copilot" = true;
       };
       indent_guides = {
         enabled = true;
