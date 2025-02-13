@@ -1,10 +1,10 @@
 { ... }:
 {
   imports = [
-    # ./chaotic
+    ./chaotic
     # ./cpu
     # ./filesystem
-    ./gpu
+    # ./gpu
     # ./i2c
   ];
 }
