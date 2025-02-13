@@ -65,7 +65,7 @@
               # catppuccin.homeManagerModules.catppuccin
             ];
             home-manager.users.dim = (import ./home inputs);
-            environment.systemPackages = (import ./nixos/packages inputs).packages;
+            # environment.systemPackages = (import ./nixos/packages inputs).packages;
             nix = {
               settings = {
                 trusted-users = [

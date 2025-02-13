@@ -6,5 +6,6 @@
     ./services
     ./system
     ./virtualisation
+    ./packages
   ];
 }
