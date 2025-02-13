@@ -2,6 +2,7 @@
 {
   programs.zed-editor = {
     enable = true;
+    # package = pkgs.zed-editor_git;
     # extensions = [
 
     # ];
@@ -123,7 +124,7 @@
           provider = "zed.dev";
           model = "claude-3-5-sonnet-latest";
         };
-        version = 2;
+        version = "2";
       };
       telemetry = {
         diagnostics = false;
