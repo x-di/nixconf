@@ -13,6 +13,7 @@ in
     signing = {
       signByDefault = true;
       key = "${signingkey}";
+      format = "openpgp";
     };
     delta = {
       enable = true;
