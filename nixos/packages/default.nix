@@ -59,6 +59,7 @@
       p7zip
       papirus-icon-theme
       # postman
+      sbctl
       sirikali
       smartmontools
       # smile

@@ -1,9 +1,13 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   boot = {
+    lanzaboote = {
+      enable = true;
+      pkiBundle = "/var/lib/sbctl";
+    };
     loader = {
       systemd-boot = {
-        enable = true;
+        enable = lib.mkForce false;
       };
       efi = {
         canTouchEfiVariables = true;
@@ -15,8 +19,9 @@
     # kernelPackages = pkgs.linuxPackages_xanmod_latest;
     # kernelPackages = pkgs.linuxPackages_zen;
     # kernelPackages = pkgs.linuxPackages_lqx;
-    kernelPackages = pkgs.linuxPackages_cachyos;
+    # kernelPackages = pkgs.linuxPackages_cachyos;
     # kernelPackages = pkgs.linuxPackages_cachyos-rc;
+    kernelPackages = pkgs.linuxPackages_cachyos-hardened;
     kernel = {
       sysctl = {
         "vm.swappiness" = 150;
