@@ -2,6 +2,7 @@
 {
   imports = [
     ./appimage
+    ./ccache
     ./dconf
     ./firefox
     ./gnupg
