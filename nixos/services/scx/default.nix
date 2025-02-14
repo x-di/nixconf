@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   services.scx = {
-    enable = true;
+    enable = false;
     package = pkgs.scx.rustscheds;
     scheduler = "scx_rusty";
     extraArgs = [

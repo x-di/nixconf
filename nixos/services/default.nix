@@ -7,6 +7,7 @@
     ./flatpak
     ./fstrim
     ./fwupd
+    ./journald
     ./lap # Linux Apache PHP
     # ./lep #Linux Nginx PHP
     ./mariadb
@@ -20,6 +21,7 @@
     # ./system76
     ./thermald
     # ./throttled
+    ./timesyncd
     ./udev
     ./xserver
   ];

@@ -18,5 +18,10 @@
     oomd = {
       enable = true; # Switch to earlyoom.
     };
+    extraConfig = ''
+      DefaultLimitNOFILE=2048:2097152
+      DefaultTimeoutStartSec=15s
+      DefaultTimeoutStopSec=10s
+    '';
   };
 }
