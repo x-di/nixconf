@@ -57,7 +57,7 @@
     {
       device = "/mnt/data/sys/swapfile";
       size = 12 * 1024;
-      randomEncryption.enable = true;
+      randomEncryption.enable = false;
     }
   ];
 
