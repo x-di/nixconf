@@ -1,6 +1,8 @@
 { ... }:
 {
   imports = [
+    ./ananicy
+    ./cachefilesd
     ./desktop-environment
     ./dnscrypt
     ./earlyoom
