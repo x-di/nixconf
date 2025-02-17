@@ -15,7 +15,7 @@ in
     homeDirectory = "${homeDirectory}";
     stateVersion = "${stateVersion}";
   };
-  nixpkgs.config.allowUnfree = true;
+  # nixpkgs.config.allowUnfree = true;
   imports = [
     (import ./dev)
     (import ./fonts)
