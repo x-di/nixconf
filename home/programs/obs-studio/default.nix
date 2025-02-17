@@ -17,7 +17,7 @@
       obs-source-switcher
       input-overlay
       # wlrobs
-      droidcam-obs
+      # droidcam-obs
     ];
   };
 }
