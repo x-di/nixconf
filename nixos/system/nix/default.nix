@@ -38,5 +38,13 @@
       auto-optimise-store = true;
     };
     # package = pkgs.lix;
+    # nixPath = ''
+    #   nixos-config=/home/dim/.config/nixconf/flake.nix
+    # '';
+    gc = {
+      automatic = true;
+      dates = "Mon,Fri *-*-* 00:00:00";
+      options = "--delete-older-than 3d";
+    };
   };
 }
