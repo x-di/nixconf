@@ -58,6 +58,7 @@
       openssl
       p7zip
       papirus-icon-theme
+      peazip
       # postman
       sbctl
       sirikali
