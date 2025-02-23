@@ -2,6 +2,7 @@
 {
   imports = [
     ./ananicy
+    ./btrfs
     ./cachefilesd
     ./desktop-environment
     ./dnscrypt
