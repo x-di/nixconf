@@ -35,17 +35,99 @@
   '';
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/1e08c2c5-47fe-4cab-80a3-85a1f6e5d0c8";
-    fsType = "xfs";
+    device = "/dev/disk/by-uuid/a9152a2b-054c-498c-a016-27720aae387e";
+    fsType = "btrfs";
+    options = [
+      "subvol=/rootfs"
+      "compress=zstd"
+      "rw"
+      "relatime"
+      "ssd"
+      "discard=async"
+      "space_cache=v2"
+    ];
+  };
+  fileSystems."/home" = {
+    device = "/dev/disk/by-uuid/a9152a2b-054c-498c-a016-27720aae387e";
+    fsType = "btrfs";
+    options = [
+      "subvol=/home"
+      "compress=zstd"
+      "rw"
+      "relatime"
+      "ssd"
+      "discard=async"
+      "space_cache=v2"
+    ];
+  };
+  fileSystems."/nix" = {
+    device = "/dev/disk/by-uuid/a9152a2b-054c-498c-a016-27720aae387e";
+    fsType = "btrfs";
+    options = [
+      "subvol=/nix"
+      "compress=zstd"
+      "noatime"
+      "ssd"
+      "discard=async"
+      "space_cache=v2"
+    ];
   };
 
   fileSystems."/mnt/data" = {
-    device = "/dev/disk/by-uuid/68df6428-8998-42dc-b42b-ca3e65434af3";
-    fsType = "xfs";
+    device = "/dev/disk/by-uuid/84470fd7-7316-441a-b3f3-6ec553f98772";
+    fsType = "btrfs";
+    options = [
+      "subvol=/data"
+      "compress=zstd"
+      "rw"
+      "relatime"
+      "ssd"
+      "discard=async"
+      "space_cache=v2"
+    ];
+  };
+  fileSystems."/mnt/data/personal" = {
+    device = "/dev/disk/by-uuid/84470fd7-7316-441a-b3f3-6ec553f98772";
+    fsType = "btrfs";
+    options = [
+      "subvol=/personal"
+      "compress=zstd"
+      "rw"
+      "relatime"
+      "ssd"
+      "discard=async"
+      "space_cache=v2"
+    ];
+  };
+  fileSystems."/mnt/data/work" = {
+    device = "/dev/disk/by-uuid/84470fd7-7316-441a-b3f3-6ec553f98772";
+    fsType = "btrfs";
+    options = [
+      "subvol=/work"
+      "compress=zstd"
+      "rw"
+      "relatime"
+      "ssd"
+      "discard=async"
+      "space_cache=v2"
+    ];
+  };
+  fileSystems."/mnt/data/misc" = {
+    device = "/dev/disk/by-uuid/84470fd7-7316-441a-b3f3-6ec553f98772";
+    fsType = "btrfs";
+    options = [
+      "subvol=/misc"
+      "compress=zstd"
+      "rw"
+      "relatime"
+      "ssd"
+      "discard=async"
+      "space_cache=v2"
+    ];
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/946A-6C81";
+    device = "/dev/disk/by-uuid/2FC3-4011";
     fsType = "vfat";
     options = [
       "fmask=0022"
@@ -53,13 +135,13 @@
     ];
   };
 
-  swapDevices = [
-    {
-      device = "/mnt/data/sys/swapfile";
-      size = 12 * 1024;
-      randomEncryption.enable = false;
-    }
-  ];
+  # swapDevices = [
+  #   {
+  #     device = "/mnt/data/sys/swapfile";
+  #     size = 12 * 1024;
+  #     randomEncryption.enable = false;
+  #   }
+  # ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
