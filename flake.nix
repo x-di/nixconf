@@ -17,12 +17,12 @@
       url = "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    lanzaboote = {
-      url = "github:nix-community/lanzaboote/v0.4.2";
+    # lanzaboote = {
+    #   url = "github:nix-community/lanzaboote/v0.4.2";
 
-      # Optional but recommended to limit the size of your system closure.
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #   # Optional but recommended to limit the size of your system closure.
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
   outputs =
     inputs@{
@@ -33,7 +33,7 @@
       # catppuccin,
       chaotic,
       lix-module,
-      lanzaboote,
+      # lanzaboote,
       ...
     }:
     let
@@ -58,7 +58,7 @@
           home-manager.nixosModules.home-manager
           chaotic.nixosModules.default # OUR DEFAULT MODULE
           lix-module.nixosModules.default
-          lanzaboote.nixosModules.lanzaboote
+          # lanzaboote.nixosModules.lanzaboote
           {
             # catppuccin = {
             #   enable = false;

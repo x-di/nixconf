@@ -1,13 +1,13 @@
 { pkgs, lib, ... }:
 {
   boot = {
-    lanzaboote = {
-      enable = true;
-      pkiBundle = "/var/lib/sbctl";
-    };
+    # lanzaboote = {
+    #   enable = true;
+    #   pkiBundle = "/var/lib/sbctl";
+    # };
     loader = {
       systemd-boot = {
-        enable = lib.mkForce false;
+        enable = lib.mkForce true;
       };
       efi = {
         canTouchEfiVariables = true;
