@@ -58,7 +58,7 @@
       openssl
       p7zip
       papirus-icon-theme
-      peazip
+      # peazip
       # postman
       sbctl
       sirikali
@@ -72,6 +72,7 @@
       # thunderbird
       # ungoogled-chromium
       unzip
+      unrar
       vscode.fhs
       vulkan-tools
       wget
