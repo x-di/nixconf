@@ -2,6 +2,7 @@
 {
   imports = [
     ./ananicy
+    ./btrbk
     ./btrfs
     ./cachefilesd
     ./desktop-environment
