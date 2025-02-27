@@ -45,6 +45,7 @@
       "ssd"
       "discard=async"
       "space_cache=v2"
+      "commit=120"
     ];
   };
   fileSystems."/home" = {
@@ -58,6 +59,7 @@
       "ssd"
       "discard=async"
       "space_cache=v2"
+      "commit=120"
     ];
   };
   fileSystems."/nix" = {
@@ -70,6 +72,7 @@
       "ssd"
       "discard=async"
       "space_cache=v2"
+      "commit=120"
     ];
   };
 
@@ -84,6 +87,7 @@
       "ssd"
       "discard=async"
       "space_cache=v2"
+      "commit=120"
     ];
   };
   fileSystems."/mnt/data/personal" = {
@@ -97,6 +101,7 @@
       "ssd"
       "discard=async"
       "space_cache=v2"
+      "commit=120"
     ];
   };
   fileSystems."/mnt/data/work" = {
@@ -110,6 +115,7 @@
       "ssd"
       "discard=async"
       "space_cache=v2"
+      "commit=120"
     ];
   };
   fileSystems."/mnt/data/misc" = {
@@ -123,8 +129,23 @@
       "ssd"
       "discard=async"
       "space_cache=v2"
+      "commit=120"
     ];
   };
+  # fileSystems."/mnt/data/snapshots" = {
+  #   device = "/dev/disk/by-uuid/84470fd7-7316-441a-b3f3-6ec553f98772";
+  #   fsType = "btrfs";
+  #   options = [
+  #     "subvol=/snapshots"
+  #     "compress=zstd"
+  #     "rw"
+  #     "relatime"
+  #     "ssd"
+  #     "discard=async"
+  #     "space_cache=v2"
+  #     "commit=120"
+  #   ];
+  # };
 
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/2FC3-4011";
