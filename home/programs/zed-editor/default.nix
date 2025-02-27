@@ -1,4 +1,7 @@
 { pkgs, ... }:
+# let
+#   flake = ''(builtins.getFlake "github:x-di/nixconf")'';
+# in
 {
   programs.zed-editor = {
     enable = true;
@@ -158,6 +161,9 @@
       show_whitespaces = "all";
       inlay_hints = {
         enabled = true;
+        show_type_hints = true;
+        show_parameter_hints = true;
+        show_other_hints = true;
       };
       file_finder = {
         modal_width = "large";
@@ -189,6 +195,10 @@
       };
       languages = {
         Nix = {
+          language_servers = [
+            "nixd"
+            # "!nil"
+          ];
           formatter = {
             external = {
               command = "nixfmt";
@@ -197,6 +207,26 @@
           format_on_save = "on";
         };
       };
+      lsp = {
+        nixd.settings = {
+          nixpkgs.expr = "import <nixpkgs> { }";
+          # formatting.command = [ "${lib.getExe pkgs.nixfmt}" ];
+          diagnostic.suppress = [ "sema-escaping-with" ];
+          options =
+            let
+              flake = ''(builtins.getFlake "/home/dim/.config/nixconf")'';
+            in
+            # flake = ''
+            #   $HOME\.config\nixconf
+            # '';
+            {
+              # nix-darwin.expr = ''${flake}.darwinConfigurations.eR17x.options'';
+              home-manager.expr = ''${flake}.homeConfigurations."dim@nixos".options'';
+              # nixvim.expr = ''${flake}.packages.${system}.nvim.options'';
+            };
+        };
+      };
+      load_direnv = "shell_hook";
     };
   };
 }
