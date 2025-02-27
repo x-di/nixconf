@@ -18,6 +18,9 @@
     oomd = {
       enable = true; # Switch to earlyoom.
     };
+    sleep.extraConfig = ''
+      AllowHibernation=no
+    '';
     extraConfig = ''
       DefaultLimitNOFILE=2048:2097152
       DefaultTimeoutStartSec=15s
