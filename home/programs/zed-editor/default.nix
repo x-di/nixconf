@@ -170,6 +170,11 @@
       };
       vim_mode = false;
       relative_line_numbers = true;
+      diagnostics = {
+        inline = {
+          enabled = true;
+        };
+      };
       file_scan_exclusions = [
         "**/.git"
         "**/.svn"
