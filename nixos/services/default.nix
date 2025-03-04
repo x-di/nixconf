@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./ananicy
+    # ./ananicy
     ./btrbk
     ./btrfs
     ./cachefilesd

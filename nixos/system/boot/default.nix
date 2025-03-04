@@ -13,13 +13,13 @@
         canTouchEfiVariables = true;
       };
     };
-    # kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_latest;
     # kernelPackages = pkgs.linuxPackages-rt_latest;
     # kernelPackages = pkgs.linuxPackages_xanmod;
     # kernelPackages = pkgs.linuxPackages_xanmod_latest;
     # kernelPackages = pkgs.linuxPackages_zen;
     # kernelPackages = pkgs.linuxPackages_lqx;
-    kernelPackages = pkgs.linuxPackages_cachyos;
+    # kernelPackages = pkgs.linuxPackages_cachyos;
     # kernelPackages = pkgs.linuxPackages_cachyos-rc;
     # kernelPackages = pkgs.linuxPackages_cachyos-hardened;
     kernel = {
@@ -40,7 +40,7 @@
         "net.ipv4.tcp_slow_start_after_idle" = 0;
         "net.ipv4.tcp_rfc1337" = 1;
         "fs.file-max" = 2097152;
-        "fs.xfs.xfssyncd_centisecs" = 10000;
+        # "fs.xfs.xfssyncd_centisecs" = 10000;
         "kernel.sysrq" = 1;
       };
     };
