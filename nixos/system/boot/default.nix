@@ -46,7 +46,7 @@
     };
 
     tmp = {
-      useTmpfs = true;
+      useTmpfs = false;
       cleanOnBoot = true;
       tmpfsSize = "50%";
     };
