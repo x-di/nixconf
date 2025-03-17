@@ -13,10 +13,10 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-    lix-module = {
-      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0.tar.gz";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # lix-module = {
+    #   url = "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0.tar.gz";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
     # lanzaboote = {
     #   url = "github:nix-community/lanzaboote/v0.4.2";
 
@@ -32,7 +32,7 @@
       # nixvim,
       # catppuccin,
       chaotic,
-      lix-module,
+      # lix-module,
       # lanzaboote,
       ...
     }:
@@ -57,7 +57,7 @@
           # catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager
           chaotic.nixosModules.default # OUR DEFAULT MODULE
-          lix-module.nixosModules.default
+          # lix-module.nixosModules.default
           # lanzaboote.nixosModules.lanzaboote
           {
             # catppuccin = {
