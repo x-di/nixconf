@@ -1,6 +1,6 @@
 { ... }:
 let
-  hostname = "nixos";
+  hostname = "nixos-81B0";
 in
 {
   networking = {

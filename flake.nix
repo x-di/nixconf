@@ -49,7 +49,7 @@
     in
     rec {
       inputs.pkgs = pkgs;
-      nixosConfigurations.nixos = lib.nixosSystem {
+      nixosConfigurations.nixos-81B0 = lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./hardware-configuration.nix
