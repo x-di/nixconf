@@ -6,7 +6,7 @@
       # adwaita-icon-theme
       # anytype
       # bibata-cursors
-      brave
+      # brave
       bruno
       # capitaine-cursors-themed
       # catppuccin-kde
@@ -26,6 +26,7 @@
       easyeffects
       # endeavour
       ffmpeg-full
+      # floorp
       # gcc
       # ghostty
       # gimp
