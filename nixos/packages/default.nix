@@ -109,6 +109,7 @@
       krdc
       # plasma-vault
       kleopatra
+      plasma-browser-integration
     ])
     ++ (with pkgs.gnomeExtensions; [
       # appindicator
