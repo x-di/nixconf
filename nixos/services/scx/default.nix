@@ -5,7 +5,7 @@
     package = pkgs.scx.rustscheds;
     scheduler = "scx_lavd";
     extraArgs = [
-      # "--autopower" # scx_lavd
+      "--autopower" # scx_lavd
       # "--verbose"
     ];
   };
