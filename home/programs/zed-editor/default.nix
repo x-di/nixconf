@@ -5,7 +5,7 @@
 {
   programs.zed-editor = {
     enable = true;
-    package = pkgs.zed-editor_git;
+    package = pkgs.zed-editor;
     # extensions = [
 
     # ];
