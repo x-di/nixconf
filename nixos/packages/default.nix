@@ -74,12 +74,12 @@
       # ungoogled-chromium
       unzip
       unrar
-      vscode.fhs
+      vscode-fhs
       vulkan-tools
       wget
       wl-clipboard
       x265
-      # zed-editor.fhs
+      zed-editor_git
     ])
     ++ (with pkgs.gst_all_1; [
       gstreamer
