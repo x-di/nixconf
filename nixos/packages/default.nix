@@ -62,7 +62,7 @@
       # peazip
       # postman
       sbctl
-      sirikali
+      # sirikali
       smartmontools
       # smile
       sqlite
