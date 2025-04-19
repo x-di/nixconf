@@ -4,6 +4,10 @@
     config = {
       allowUnfree = true;
     };
+    # hostPlatform = {
+    #   system = "x86_64-linux";
+    #   gcc.arch = "x86-64-v3";
+    # };
   };
   nix = {
     settings = {
@@ -36,6 +40,13 @@
       fallback = true;
       extra-sandbox-paths = lib.optional config.programs.ccache.enable config.programs.ccache.cacheDir;
       auto-optimise-store = true;
+      # system-features = lib.mkForce [
+      #   "gccarch-x86-64-v3"
+      #   "benchmark"
+      #   "big-parallel"
+      #   "kvm"
+      #   "nixos-test"
+      # ];
     };
     # package = pkgs.lix;
     # nixPath = ''
@@ -46,5 +57,20 @@
       dates = "Mon,Fri *-*-* 00:00:00";
       options = "--delete-older-than 3d";
     };
+    # buildMachines = [
+    #   {
+    #     hostName = "nixos-81B0";
+    #     systems = [ "x86_64-linux" ];
+    #     supportedFeatures = [
+    #       "gccarch-x86-64-v3"
+    #       "benchmark"
+    #       "big-parallel"
+    #       "kvm"
+    #       "nixos-test"
+    #     ];
+    #     maxJobs = 8;
+    #   }
+    # ];
+    # distributedBuilds = true;
   };
 }

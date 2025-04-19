@@ -110,6 +110,7 @@
       # plasma-vault
       kleopatra
       plasma-browser-integration
+      filelight
     ])
     ++ (with pkgs.gnomeExtensions; [
       # appindicator

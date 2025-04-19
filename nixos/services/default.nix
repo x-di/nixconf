@@ -27,6 +27,6 @@
     # ./throttled
     ./timesyncd
     ./udev
-    ./xserver
+    # ./xserver
   ];
 }

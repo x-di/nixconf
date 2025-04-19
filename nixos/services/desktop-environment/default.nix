@@ -26,8 +26,8 @@
   ];
 
   # GNOME
-  services.xserver.displayManager.gdm.enable = false;
-  services.xserver.desktopManager.gnome.enable = false;
+  # services.xserver.displayManager.gdm.enable = false;
+  # services.xserver.desktopManager.gnome.enable = false;
   # environment.gnome.excludePackages = with pkgs; [
   #   cheese
   #   gedit
