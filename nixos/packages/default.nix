@@ -5,6 +5,7 @@
       # adw-gtk3
       # adwaita-icon-theme
       # anytype
+      aspell
       # bibata-cursors
       # brave
       bruno
@@ -37,6 +38,7 @@
       # google-chrome
       # gruvbox-plus-icons
       haruna
+      hunspell
       # inkscape
       # jre
       kdiskmark
@@ -111,6 +113,7 @@
       kleopatra
       plasma-browser-integration
       filelight
+      sonnet
     ])
     ++ (with pkgs.gnomeExtensions; [
       # appindicator
@@ -129,5 +132,13 @@
       # # easyeffects-preset-selector
       # # pop-shell
       # # ...
+    ])
+    ++ (with pkgs.hunspellDicts; [
+      en_US-large
+      id_ID
+    ])
+    ++ (with pkgs.aspellDicts; [
+      en
+      id
     ]);
 }
