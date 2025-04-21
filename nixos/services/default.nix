@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./ananicy
+    # ./ananicy
     ./btrbk
     ./btrfs
     ./cachefilesd
@@ -20,7 +20,7 @@
     ./postgresql
     ./printing
     ./redis
-    # ./scx
+    ./scx
     ./switcherooControl
     # ./system76
     ./thermald
