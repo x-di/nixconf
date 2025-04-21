@@ -3,7 +3,7 @@
   services.btrbk = {
     instances = {
       "multi" = {
-        onCalendar = "*:0/10";
+        onCalendar = "*:0/30";
         settings = {
           timestamp_format = "long";
           snapshot_preserve_min = "4h";
