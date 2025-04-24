@@ -17,8 +17,8 @@
         vaapiIntel
       ];
     };
-    hdr = {
-      enable = true;
-    };
+    # hdr = {
+    #   enable = true;
+    # };
   };
 }
