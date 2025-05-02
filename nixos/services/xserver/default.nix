@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 {
   services = {
     xserver = {
-      enable = false;
+      enable = lib.mkForce false;
       # xkb = {
       #   layout = "us";
       #   variant = "";
