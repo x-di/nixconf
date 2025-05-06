@@ -3,7 +3,7 @@
   services.lorri = {
     enable = true;
     enableNotifications = true;
-    nixPackage = pkgs.lix;
+    # nixPackage = pkgs.lix;
     package = pkgs.lorri;
   };
 }

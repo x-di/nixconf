@@ -12,11 +12,11 @@
     #   # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
-    # chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-    # lix-module = {
-    #   url = "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0.tar.gz";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    lix-module = {
+      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0-3.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # lanzaboote = {
     #   url = "github:nix-community/lanzaboote/v0.4.2";
 
@@ -31,8 +31,8 @@
       home-manager,
       # nixvim,
       # catppuccin,
-      # chaotic,
-      # lix-module,
+      chaotic,
+      lix-module,
       # lanzaboote,
       ...
     }:
@@ -56,8 +56,8 @@
           ./nixos
           # catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager
-          # chaotic.nixosModules.default # OUR DEFAULT MODULE
-          # lix-module.nixosModules.default
+          chaotic.nixosModules.default # OUR DEFAULT MODULE
+          lix-module.nixosModules.default
           # lanzaboote.nixosModules.lanzaboote
           {
             # catppuccin = {
