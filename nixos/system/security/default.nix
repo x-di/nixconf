@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   security = {
     rtkit = {
@@ -6,6 +6,13 @@
     };
     polkit = {
       enable = true;
+    };
+    apparmor = {
+      enable = true;
+      enableCache = true;
+      packages = with pkgs; [
+        apparmor-profiles
+      ];
     };
   };
 }
