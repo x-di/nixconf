@@ -5,6 +5,7 @@
     ./btrbk
     ./btrfs
     ./cachefilesd
+    ./dbus
     ./desktop-environment
     ./dnscrypt
     ./earlyoom
