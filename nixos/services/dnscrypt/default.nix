@@ -7,8 +7,6 @@
         ipv6_servers = false;
         require_dnssec = true;
         doh_servers = false;
-        require_nolog = true;
-        require_nofilter = true;
         sources.public-resolvers = {
           urls = [
             "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md"
@@ -28,7 +26,11 @@
           refresh_delay = 24;
         };
 
-        server_names = [ ];
+        server_names = [
+          # "dnscry.pt-singapore02-ipv4"
+          # "dnscry.pt-singapore-ipv4"
+          # "dnscry.pt-jakarta-ipv4"
+        ];
 
         anonymized_dns = {
           routes = [
