@@ -17,6 +17,11 @@
     };
     oomd = {
       enable = true; # Switch to earlyoom.
+      extraConfig = {
+        SwapUsedLimit = "90%";
+        DefaultMemoryPressureLimit = "80%";
+        DefaultMemoryPressureDurationSec = "5s";
+      };
     };
     sleep.extraConfig = ''
       AllowHibernation=no
