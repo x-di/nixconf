@@ -14,5 +14,8 @@
         apparmor-profiles
       ];
     };
+    auditd = {
+      enable = true;
+    };
   };
 }
