@@ -2,7 +2,7 @@
 {
   services.scx = {
     enable = true;
-    package = pkgs.scx.rustscheds;
+    package = pkgs.scx_git.rustscheds;
     scheduler = "scx_rusty";
     extraArgs = [
       # "-f" # scx_bpfland | scx_rusty
