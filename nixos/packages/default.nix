@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 {
   environment.systemPackages =
     (with pkgs; [
@@ -140,5 +140,8 @@
     ++ (with pkgs.aspellDicts; [
       en
       id
-    ]);
+    ])
+    ++ [
+      (lib.hiPrio pkgs.uutils-coreutils-noprefix)
+    ];
 }
