@@ -17,5 +17,11 @@
     auditd = {
       enable = true;
     };
+    sudo-rs = {
+      enable = true;
+    };
+    sudo = {
+      enable = false;
+    };
   };
 }
