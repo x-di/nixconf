@@ -8,9 +8,9 @@
         joypixels
         liberation_ttf
         noto-fonts
-        noto-fonts-cjk-sans
-        noto-fonts-cjk-serif
-        noto-fonts-color-emoji
+        # noto-fonts-cjk-sans
+        # noto-fonts-cjk-serif
+        # noto-fonts-color-emoji
         # openmoji-color
       ])
       ++ (with pkgs.nerd-fonts; [
