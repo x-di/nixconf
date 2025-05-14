@@ -15,5 +15,6 @@
     };
     # etc."chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json".source =
     #   "${pkgs.kdePackages.plasma-browser-integration}/etc/chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json";
+    # memoryAllocator.provider = "scudo";
   };
 }
