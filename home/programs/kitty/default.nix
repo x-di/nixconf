@@ -3,9 +3,9 @@
   programs.kitty = {
     enable = false;
     shellIntegration.enableFishIntegration = false;
-    # themeFile = "gruvbox-dark";
+    themeFile = "gruvbox-dark";
     font = {
-      name = "GeistMono NF";
+      name = "ZedMono Nerd font";
       size = 14;
     };
     extraConfig = ''

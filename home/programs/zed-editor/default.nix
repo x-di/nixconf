@@ -116,9 +116,9 @@
       }
     ];
     userSettings = {
-      icon_theme = "Catppuccin Mocha";
+      icon_theme = "Colored Zed Icons Theme Dark";
       base_keymap = "VSCode";
-      theme = "Catppuccin Mocha";
+      theme = "Gruvbox Dark Hard";
       collaboration_panel = {
         dock = "right";
       };
@@ -135,8 +135,8 @@
       };
       ui_font_size = 18;
       buffer_font_size = 18;
-      ui_font_family = "Geist";
-      buffer_font_family = "GeistMono Nerd Font";
+      ui_font_family = "ZedMono Nerd Font";
+      buffer_font_family = "ZedMono Nerd Font";
       soft_wrap = "editor_width";
       terminal = {
         shell = {
