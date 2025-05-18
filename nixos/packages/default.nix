@@ -11,6 +11,7 @@
       bruno
       # capitaine-cursors-themed
       # catppuccin-kde
+      catppuccin-sddm
       # celluloid
       clinfo
       cpu-x
@@ -60,7 +61,7 @@
       onlyoffice-bin_latest
       openssl
       p7zip
-      papirus-icon-theme
+      # papirus-icon-theme
       # peazip
       # postman
       sbctl
