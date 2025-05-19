@@ -5,7 +5,7 @@
     shellIntegration.enableFishIntegration = false;
     themeFile = "gruvbox-dark";
     font = {
-      name = "ZedMono Nerd font";
+      name = "IBM Plex Mono";
       size = 14;
     };
     extraConfig = ''

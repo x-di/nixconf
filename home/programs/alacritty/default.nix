@@ -6,19 +6,19 @@
       terminal.shell = "fish";
       font = {
         normal = {
-          family = "ZedMono Nerd Font";
+          family = "IBM Plex Mono";
           style = "Regular";
         };
         bold = {
-          family = "ZedMono Nerd Font";
+          family = "IBM Plex Mono";
           style = "Bold";
         };
         italic = {
-          family = "ZedMono Nerd Font";
+          family = "IBM Plex Mono";
           style = "Italic";
         };
         bold_italic = {
-          family = "ZedMono Nerd Font";
+          family = "IBM Plex Mono";
           style = "Bold Italic";
         };
         size = 16;
