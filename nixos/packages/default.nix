@@ -58,6 +58,7 @@
       # nixpkgs-fmt
       # nodejs_latest
       nvme-cli
+      nvtopPackages.intel
       onlyoffice-bin_latest
       openssl
       p7zip
