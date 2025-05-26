@@ -19,12 +19,14 @@
     # kernelPackages = pkgs.linuxPackages_xanmod_latest;
     # kernelPackages = pkgs.linuxPackages_zen;
     # kernelPackages = pkgs.linuxPackages_lqx;
-    kernelPackages = pkgs.linuxPackages_cachyos;
-    # kernelPackages = pkgs.linuxPackages_cachyos-rc;
+    # kernelPackages = pkgs.linuxPackages_cachyos;
+    kernelPackages = pkgs.linuxPackages_cachyos-rc;
     # kernelPackages = pkgs.linuxPackages_cachyos-hardened;
     kernel = {
       sysctl = {
-        "vm.swappiness" = 150;
+        "vm.swappiness" = 180;
+        "vm.watermark_boost_factor" = 0;
+        "vm.watermark_scale_factor" = 125;
         "vm.vfs_cache_pressure" = 50;
         "vm.dirty_bytes" = 268435456;
         "vm.page-cluster" = 0;
