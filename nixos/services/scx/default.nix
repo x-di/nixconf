@@ -3,10 +3,16 @@
   services.scx = {
     enable = true;
     package = pkgs.scx_git.rustscheds;
-    scheduler = "scx_lavd";
+    scheduler = "scx_bpfland";
     extraArgs = [
-      "--autopilot"
-      "--no-freq-scaling"
+      "-s"
+      "5000"
+      "-S"
+      "500"
+      "-l"
+      "5000"
+      "-p"
+      "-k"
     ];
   };
 }
