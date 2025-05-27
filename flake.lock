@@ -1,19 +1,37 @@
 {
   "nodes": {
+    "catppuccin": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1748080874,
+        "narHash": "sha256-sUebEzAkrY8Aq5G0GHFyRddmRNGP/a2iTtV7ISNvi/c=",
+        "owner": "catppuccin",
+        "repo": "nix",
+        "rev": "0ba11b12be81f0849a89ed17ab635164ea8f0112",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "nix",
+        "type": "github"
+      }
+    },
     "chaotic": {
       "inputs": {
         "fenix": "fenix",
         "flake-schemas": "flake-schemas",
         "home-manager": "home-manager",
         "jovian": "jovian",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1748287245,
-        "narHash": "sha256-LnNiRRmWmuRmn8hOgS205Gn39d0ZAoNbtq5TIEW4wAQ=",
+        "lastModified": 1748304776,
+        "narHash": "sha256-Eb+kBcm7ECpJ1HKjMgvZPo9TpGG0CpzfGRUc0FCZKP0=",
         "owner": "chaotic-cx",
         "repo": "nyx",
-        "rev": "21060b27db09e7c72d974a1279219307104f3d81",
+        "rev": "5278f55d2c2c568db38ed03370606b5e009e34df",
         "type": "github"
       },
       "original": {
@@ -215,6 +233,22 @@
     },
     "nixpkgs": {
       "locked": {
+        "lastModified": 1744463964,
+        "narHash": "sha256-LWqduOgLHCFxiTNYi3Uj5Lgz0SR+Xhw3kr/3Xd0GPTM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "2631b0b7abcea6e640ce31cd78ea58910d31e650",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
         "lastModified": 1748190013,
         "narHash": "sha256-R5HJFflOfsP5FBtk+zE8FpL8uqE7n62jqOsADvVshhE=",
         "owner": "NixOS",
@@ -229,13 +263,13 @@
         "type": "github"
       }
     },
-    "nixpkgs_2": {
+    "nixpkgs_3": {
       "locked": {
-        "lastModified": 1748217807,
-        "narHash": "sha256-P3u2PXxMlo49PutQLnk2PhI/imC69hFl1yY4aT5Nax8=",
+        "lastModified": 1748248602,
+        "narHash": "sha256-LanRAm0IRpL36KpCKSknEwkBFvTLc9mDHKeAmfTrHwg=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3108eaa516ae22c2360928589731a4f1581526ef",
+        "rev": "ad331efcaf680eb1c838cb339472399ea7b3cdab",
         "type": "github"
       },
       "original": {
@@ -247,10 +281,11 @@
     },
     "root": {
       "inputs": {
+        "catppuccin": "catppuccin",
         "chaotic": "chaotic",
         "home-manager": "home-manager_2",
         "lix-module": "lix-module",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_3"
       }
     },
     "rust-analyzer-src": {

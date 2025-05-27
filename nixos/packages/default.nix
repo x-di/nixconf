@@ -10,8 +10,12 @@
       # brave
       bruno
       # capitaine-cursors-themed
-      # catppuccin-kde
-      catppuccin-sddm
+      # catppuccin-sddm.override
+      # {
+      #   flavor = "mocha";
+      #   font = "Noto Sans";
+      #   fontSize = "11";
+      # }
       # celluloid
       clinfo
       cpu-x
@@ -25,7 +29,7 @@
       # ddcutil
       devenv
       # drawio
-      easyeffects
+      # easyeffects
       # endeavour
       ffmpeg-full
       # floorp
@@ -41,6 +45,7 @@
       haruna
       hunspell
       # inkscape
+      jamesdsp
       # jre
       kdiskmark
       # keypunch
@@ -145,5 +150,12 @@
     ])
     ++ [
       (lib.hiPrio pkgs.uutils-coreutils-noprefix)
+    ]
+    ++ [
+      (pkgs.catppuccin-kde.override {
+        flavour = [ "mocha" ];
+        accents = [ "rosewater" ];
+        winDecStyles = [ "classic" ];
+      })
     ];
 }

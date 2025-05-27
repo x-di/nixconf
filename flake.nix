@@ -6,7 +6,7 @@
     # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    # catppuccin.url = "github:catppuccin/nix";
+    catppuccin.url = "github:catppuccin/nix";
     # nixvim = {
     #   url = "github:nix-community/nixvim";
     #   # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
@@ -30,7 +30,7 @@
       nixpkgs,
       home-manager,
       # nixvim,
-      # catppuccin,
+      catppuccin,
       chaotic,
       lix-module,
       # lanzaboote,
@@ -54,23 +54,23 @@
         modules = [
           ./hardware-configuration.nix
           ./nixos
-          # catppuccin.nixosModules.catppuccin
+          catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager
           chaotic.nixosModules.default # OUR DEFAULT MODULE
           lix-module.nixosModules.default
           # lanzaboote.nixosModules.lanzaboote
           {
-            # catppuccin = {
-            #   enable = false;
-            #   accent = "flamingo"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
-            #   flavor = "mocha"; # Type: one of “latte”, “frappe”, “macchiato”, “mocha”
-            # };
+            catppuccin = {
+              enable = true;
+              accent = "rosewater"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
+              flavor = "mocha"; # Type: one of “latte”, “frappe”, “macchiato”, “mocha”
+            };
             home-manager.backupFileExtension = ".backup"; # remove duplicates from ~/.config/fontconfig/conf.d/
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.sharedModules = [
               # nixvim.homeManagerModules.nixvim
-              # catppuccin.homeManagerModules.catppuccin
+              catppuccin.homeModules.catppuccin
             ];
             home-manager.users.dim = (import ./home inputs);
           }

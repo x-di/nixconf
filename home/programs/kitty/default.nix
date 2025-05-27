@@ -3,7 +3,7 @@
   programs.kitty = {
     enable = false;
     shellIntegration.enableFishIntegration = false;
-    themeFile = "gruvbox-dark";
+    # themeFile = "gruvbox-dark";
     font = {
       name = "IBM Plex Mono";
       size = 14;
