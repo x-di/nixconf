@@ -27,9 +27,20 @@
         };
 
         server_names = [
-          # "dnscry.pt-singapore02-ipv4"
-          # "dnscry.pt-singapore-ipv4"
-          # "dnscry.pt-jakarta-ipv4"
+          "saldns01-conoha-ipv4"
+          "saldns02-conoha-ipv4"
+          "saldns03-conoha-ipv4"
+          "serbica"
+          "cs-singapore"
+          "dnscry.pt-singapore02-ipv4"
+          "doh.tiar.app"
+          "doh.tiar.app-doh"
+          "doh.tiarap.org"
+          "jp.tiar.app"
+          "jp.tiar.app-doh"
+          "jp.tiarap.org"
+          "mullvad-base-doh"
+          "cs-tokyo"
         ];
 
         anonymized_dns = {
@@ -37,50 +48,69 @@
             {
               server_name = "*";
               via = [
-                "*"
-                # "anon-tiarap"
-                # "anon-cs-singapore"
-                # "dnscry.pt-anon-singapore-ipv4"
-                # "dnscry.pt-anon-singapore02-ipv4"
-                # "anon-cs-tokyo"
-                # "dnscry.pt-anon-tokyo-ipv4"
-                # "dnscry.pt-anon-tokyo02-ipv4"
+                "dnscry.pt-anon-tokyo02-ipv4"
+                "dnscry.pt-anon-tokyo-ipv4"
+                "dnscry.pt-anon-singapore02-ipv4"
+                "dnscry.pt-anon-singapore-ipv4"
+                "anon-serbica"
+                "anon-tiarap"
+                "anon-saldns03-conoha-ipv4"
+                "anon-saldns02-conoha-ipv4"
+                "anon-saldns01-conoha-ipv4"
+                "anon-dnswarden-swiss"
+                "anon-cs-tokyo"
+                "anon-cs-singapore"
               ];
             }
             # {
             #   server_name = "dnscry.pt-jakarta-ipv4";
             #   via = [
-            #     "anon-tiarap"
-            #     "anon-cs-singapore"
-            #     "dnscry.pt-anon-singapore-ipv4"
-            #     "dnscry.pt-anon-singapore02-ipv4"
-            #     "anon-cs-tokyo"
-            #     "dnscry.pt-anon-tokyo-ipv4"
             #     "dnscry.pt-anon-tokyo02-ipv4"
+            #     "dnscry.pt-anon-tokyo-ipv4"
+            #     "dnscry.pt-anon-singapore02-ipv4"
+            #     "dnscry.pt-anon-singapore-ipv4"
+            #     "anon-serbica"
+            #     "anon-tiarap"
+            #     "anon-saldns03-conoha-ipv4"
+            #     "anon-saldns02-conoha-ipv4"
+            #     "anon-saldns01-conoha-ipv4"
+            #     "anon-dnswarden-swiss"
+            #     "anon-cs-tokyo"
+            #     "anon-cs-singapore"
             #   ];
             # }
             # {
             #   server_name = "dnscry.pt-singapore-ipv4";
             #   via = [
-            #     "anon-tiarap"
-            #     "anon-cs-singapore"
-            #     "dnscry.pt-anon-singapore-ipv4"
-            #     "dnscry.pt-anon-singapore02-ipv4"
-            #     "anon-cs-tokyo"
-            #     "dnscry.pt-anon-tokyo-ipv4"
             #     "dnscry.pt-anon-tokyo02-ipv4"
+            #     "dnscry.pt-anon-tokyo-ipv4"
+            #     "dnscry.pt-anon-singapore02-ipv4"
+            #     "dnscry.pt-anon-singapore-ipv4"
+            #     "anon-serbica"
+            #     "anon-tiarap"
+            #     "anon-saldns03-conoha-ipv4"
+            #     "anon-saldns02-conoha-ipv4"
+            #     "anon-saldns01-conoha-ipv4"
+            #     "anon-dnswarden-swiss"
+            #     "anon-cs-tokyo"
+            #     "anon-cs-singapore"
             #   ];
             # }
             # {
             #   server_name = "dnscry.pt-singapore02-ipv4";
             #   via = [
-            #     "anon-tiarap"
-            #     "anon-cs-singapore"
-            #     "dnscry.pt-anon-singapore-ipv4"
-            #     "dnscry.pt-anon-singapore02-ipv4"
-            #     "anon-cs-tokyo"
-            #     "dnscry.pt-anon-tokyo-ipv4"
             #     "dnscry.pt-anon-tokyo02-ipv4"
+            #     "dnscry.pt-anon-tokyo-ipv4"
+            #     "dnscry.pt-anon-singapore02-ipv4"
+            #     "dnscry.pt-anon-singapore-ipv4"
+            #     "anon-serbica"
+            #     "anon-tiarap"
+            #     "anon-saldns03-conoha-ipv4"
+            #     "anon-saldns02-conoha-ipv4"
+            #     "anon-saldns01-conoha-ipv4"
+            #     "anon-dnswarden-swiss"
+            #     "anon-cs-tokyo"
+            #     "anon-cs-singapore"
             #   ];
             # }
           ];
