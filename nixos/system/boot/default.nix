@@ -24,7 +24,7 @@
     # kernelPackages = pkgs.linuxPackages_cachyos-hardened;
     kernel = {
       sysctl = {
-        "vm.swappiness" = 180;
+        "vm.swappiness" = 150;
         "vm.watermark_boost_factor" = 0;
         "vm.watermark_scale_factor" = 125;
         "vm.vfs_cache_pressure" = 50;
@@ -48,9 +48,9 @@
     };
 
     tmp = {
-      useTmpfs = false;
+      useTmpfs = true;
       cleanOnBoot = true;
-      tmpfsSize = "50%";
+      tmpfsSize = "10%";
     };
 
     plymouth = {
