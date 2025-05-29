@@ -5,6 +5,7 @@
       enable = true;
       settings = {
         ipv6_servers = false;
+        dnscrypt_servers = true;
         require_dnssec = true;
         doh_servers = false;
         sources.public-resolvers = {
@@ -14,7 +15,7 @@
           ];
           cache_file = "/var/lib/dnscrypt-proxy2/public-resolvers.md";
           minisign_key = "RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3";
-          refresh_delay = 24;
+          refresh_delay = 72;
         };
         sources.relays = {
           urls = [
@@ -23,24 +24,24 @@
           ];
           cache_file = "/var/lib/dnscrypt-proxy2/relays.md";
           minisign_key = "RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3";
-          refresh_delay = 24;
+          refresh_delay = 72;
         };
 
         server_names = [
-          "saldns01-conoha-ipv4"
-          "saldns02-conoha-ipv4"
-          "saldns03-conoha-ipv4"
-          "serbica"
-          "cs-singapore"
-          "dnscry.pt-singapore02-ipv4"
-          "doh.tiar.app"
-          "doh.tiar.app-doh"
-          "doh.tiarap.org"
-          "jp.tiar.app"
-          "jp.tiar.app-doh"
-          "jp.tiarap.org"
-          "mullvad-base-doh"
-          "cs-tokyo"
+          # "saldns01-conoha-ipv4"
+          # "saldns02-conoha-ipv4"
+          # "saldns03-conoha-ipv4"
+          # "serbica"
+          # "cs-singapore"
+          # "dnscry.pt-singapore02-ipv4"
+          # "doh.tiar.app"
+          # "doh.tiar.app-doh"
+          # "doh.tiarap.org"
+          # "jp.tiar.app"
+          # "jp.tiar.app-doh"
+          # "jp.tiarap.org"
+          # "mullvad-base-doh"
+          # "cs-tokyo"
         ];
 
         anonymized_dns = {

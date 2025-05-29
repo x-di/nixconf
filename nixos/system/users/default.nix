@@ -10,7 +10,7 @@ in
         isNormalUser = true;
         description = "${fullname}";
         extraGroups = [
-          "dnscrypt-proxy2"
+          # "dnscrypt-proxy2"
           "networkmanager"
           "wheel"
           "i2c"

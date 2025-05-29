@@ -7,7 +7,7 @@
     ./cachefilesd
     ./dbus
     ./desktop-environment
-    ./dnscrypt
+    # ./dnscrypt
     ./earlyoom
     ./flatpak
     ./fstrim
@@ -24,6 +24,7 @@
     ./scx
     ./switcherooControl
     # ./system76
+    ./systemd-resolved
     ./thermald
     # ./throttled
     ./timesyncd
