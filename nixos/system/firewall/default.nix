@@ -11,8 +11,12 @@
         80 # http
         443 # https
         # 3000 # adguard
+        5355 # llmnr
         # 8384 # syncthing
         # 22000 # syncthing
+      ];
+      allowedUDPPorts = [
+        5355 # llmnr
       ];
       allowedTCPPortRanges = [
         {
