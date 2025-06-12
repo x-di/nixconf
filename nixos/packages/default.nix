@@ -81,6 +81,7 @@
       # tlrc
       # thunderbird
       # ungoogled-chromium
+      universal-android-debloater
       unzip
       unrar
       vscode-fhs
