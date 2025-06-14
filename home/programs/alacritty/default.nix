@@ -21,7 +21,7 @@
           family = "GeistMono Nerd Font";
           style = "Bold Italic";
         };
-        size = 16;
+        size = 14;
       };
       scrolling = {
         history = 20000;
