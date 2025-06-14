@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./adb
     ./appimage
     ./ccache
     ./dconf
