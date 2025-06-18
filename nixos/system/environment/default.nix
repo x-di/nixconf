@@ -13,8 +13,8 @@
         pkgs.gst_all_1.gst-libav
       ];
     };
-    # etc."chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json".source =
-    #   "${pkgs.kdePackages.plasma-browser-integration}/etc/chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json";
+    etc."chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json".source =
+      "${pkgs.kdePackages.plasma-browser-integration}/etc/chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json";
     # memoryAllocator.provider = "scudo";
   };
 }
