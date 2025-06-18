@@ -7,7 +7,7 @@
       # anytype
       aspell
       # bibata-cursors
-      # brave
+      brave
       bruno
       # capitaine-cursors-themed
       # catppuccin-sddm.override
@@ -22,8 +22,8 @@
       # code-cursor
       # colloid-icon-theme
       crow-translate
-      cryfs
-      dav1d
+      # cryfs
+      # dav1d
       # dbeaver-bin
       dbgate
       # ddcutil
@@ -50,7 +50,7 @@
       kdiskmark
       # keypunch
       libdbusmenu
-      libde265
+      # libde265
       # libreoffice-fresh
       libreoffice-qt6-fresh
       libva-utils
@@ -75,7 +75,7 @@
       smartmontools
       # smile
       sqlite
-      svt-av1
+      # svt-av1
       # tela-icon-theme
       telegram-desktop
       # tlrc
@@ -88,7 +88,7 @@
       vulkan-tools
       wget
       wl-clipboard
-      x265
+      # x265
       zed-editor_git
     ])
     ++ (with pkgs.gst_all_1; [
