@@ -22,7 +22,7 @@
       # code-cursor
       # colloid-icon-theme
       crow-translate
-      # cryfs
+      cryfs
       # dav1d
       # dbeaver-bin
       dbgate
@@ -71,7 +71,7 @@
       # peazip
       # postman
       sbctl
-      # sirikali
+      sirikali
       smartmontools
       # smile
       sqlite
