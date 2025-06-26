@@ -19,7 +19,8 @@
     # kernelPackages = pkgs.linuxPackages_xanmod_latest;
     # kernelPackages = pkgs.linuxPackages_zen;
     # kernelPackages = pkgs.linuxPackages_lqx;
-    kernelPackages = pkgs.linuxPackages_cachyos;
+    # kernelPackages = pkgs.linuxPackages_cachyos;
+    kernelPackages = pkgs.linuxPackages_cachyos-lto;
     # kernelPackages = pkgs.linuxPackages_cachyos-rc;
     # kernelPackages = pkgs.linuxPackages_cachyos-hardened;
     kernel = {
@@ -79,8 +80,8 @@
       "i915.enable_fbc=1"
       "i915.enable_psr=2"
       "i915.fastboot=1"
-      "radeon.si_support=0"
-      "amdgpu.si_support=1"
+      # "radeon.si_support=0"
+      # "amdgpu.si_support=1"
     ];
     # Hide the OS choice for bootloaders.
     # It's still possible to open the bootloader list by pressing any key
