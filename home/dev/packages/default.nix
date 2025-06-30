@@ -6,7 +6,7 @@
       [
         frankenphp
         gcc
-        nodejs_latest
+        # nodejs_latest
         php
       ]
     );
