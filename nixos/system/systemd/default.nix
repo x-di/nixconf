@@ -16,7 +16,7 @@
       # };
     };
     oomd = {
-      enable = true; # Switch to earlyoom.
+      enable = false; # Switch to earlyoom.
       extraConfig = {
         SwapUsedLimit = "90%";
         DefaultMemoryPressureLimit = "80%";
