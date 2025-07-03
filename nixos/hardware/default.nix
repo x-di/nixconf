@@ -6,6 +6,6 @@
     # ./filesystem
     ./firmware
     # ./gpu
-    # ./i2c
+    ./i2c
   ];
 }

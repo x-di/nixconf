@@ -7,9 +7,9 @@
     ./dconf
     ./firefox
     ./gnupg
-    ./kde-partition-manager
-    ./kde-pim
-    ./kdeconnect
+    # ./kde-partition-manager
+    # ./kde-pim
+    # ./kdeconnect
     ./nh
     ./nix-ld
   ];

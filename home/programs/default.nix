@@ -28,7 +28,7 @@
     ./ripgrep
     ./starship
     ./tealdeer
-    ./xdg
+    # ./xdg
     ./yazi
     ./yt-dlp
     # ./zed-editor

@@ -2,10 +2,10 @@
 {
   environment.systemPackages =
     (with pkgs; [
-      # adw-gtk3
+      adw-gtk3
       # adwaita-icon-theme
       # anytype
-      aspell
+      # aspell
       # bibata-cursors
       brave
       bruno
@@ -16,20 +16,20 @@
       #   font = "Noto Sans";
       #   fontSize = "11";
       # }
-      # celluloid
+      celluloid
       clinfo
       cpu-x
       # code-cursor
       # colloid-icon-theme
-      crow-translate
-      cryfs
+      # crow-translate
+      # cryfs
       # dav1d
       # dbeaver-bin
       dbgate
       # ddcutil
       devenv
       # drawio
-      # easyeffects
+      easyeffects
       # endeavour
       ffmpeg-full
       # floorp
@@ -38,21 +38,21 @@
       # gimp
       glxinfo
       # gnome.gnome-keyring
-      # gnome-tweaks
+      gnome-tweaks
       ghostscript
       # google-chrome
       # gruvbox-plus-icons
-      haruna
-      hunspell
+      # haruna
+      # hunspell
       # inkscape
-      jamesdsp
+      # jamesdsp
       # jre
-      kdiskmark
+      # kdiskmark
       # keypunch
-      libdbusmenu
+      # libdbusmenu
       # libde265
-      # libreoffice-fresh
-      libreoffice-qt6-fresh
+      libreoffice-fresh
+      # libreoffice-qt6-fresh
       libva-utils
       # kde-gruvbox
       # megasync
@@ -71,7 +71,7 @@
       # peazip
       # postman
       sbctl
-      sirikali
+      # sirikali
       smartmontools
       # smile
       sqlite
@@ -101,62 +101,65 @@
       gst-vaapi
     ])
     ++ (with pkgs.kdePackages; [
-      juk
-      kclock
-      kdenlive
-      kdeplasma-addons
-      kget
-      ktorrent
-      qtwebengine
-      qtmultimedia
-      falkon
-      kaccounts-providers
-      kaccounts-integration
-      kio-extras
-      kio-gdrive
-      kdepim-addons
-      signond
-      krdc
-      # plasma-vault
-      kleopatra
-      plasma-browser-integration
-      filelight
-      sonnet
+      # juk
+      # kclock
+      # kdenlive
+      # kdeplasma-addons
+      # kget
+      # ktorrent
+      # qtwebengine
+      # qtmultimedia
+      # falkon
+      # kaccounts-providers
+      # kaccounts-integration
+      # kio-extras
+      # kio-gdrive
+      # kdepim-addons
+      # signond
+      # krdc
+      # # plasma-vault
+      # kleopatra
+      # plasma-browser-integration
+      # filelight
+      # sonnet
     ])
     ++ (with pkgs.gnomeExtensions; [
-      # appindicator
-      # blur-my-shell
-      # caffeine
-      # clipboard-indicator
-      # notification-counter
-      # just-perfection
-      # # smile-complementary-extension
-      # top-panel-notification-icons-revived
-      # emoji-copy
-      # alphabetical-app-grid
-      # vitals
-      # app-menu-is-back
-      # brightness-control-using-ddcutil
-      # # easyeffects-preset-selector
-      # # pop-shell
+      appindicator
+      blur-my-shell
+      caffeine
+      clipboard-indicator
+      notification-counter
+      just-perfection
+      # smile-complementary-extension
+      top-panel-notification-icons-revived
+      emoji-copy
+      alphabetical-app-grid
+      vitals
+      app-menu-is-back
+      brightness-control-using-ddcutil
+      # thinkpad-battery-threshold
+      battery-health-charging
+      # no-titlebar-when-maximized
+      # easyeffects-preset-selector
+      # pop-shell
       # # ...
     ])
     ++ (with pkgs.hunspellDicts; [
-      en_US-large
-      id_ID
+      # en_US-large
+      # id_ID
     ])
     ++ (with pkgs.aspellDicts; [
-      en
-      id
+      # en
+      # id
     ])
     ++ [
       (lib.hiPrio pkgs.uutils-coreutils-noprefix)
     ]
     ++ [
-      (pkgs.catppuccin-kde.override {
-        flavour = [ "mocha" ];
-        accents = [ "rosewater" ];
-        winDecStyles = [ "classic" ];
-      })
+      # (pkgs.catppuccin-kde.override {
+      #   flavour = [ "mocha" ];
+      #   accents = [ "rosewater" ];
+      #   winDecStyles = [ "classic" ];
+      # })
     ];
 }
