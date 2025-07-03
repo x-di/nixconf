@@ -28,6 +28,7 @@
       dbgate
       # ddcutil
       devenv
+      dialect
       # drawio
       easyeffects
       # endeavour
@@ -38,6 +39,7 @@
       # gimp
       glxinfo
       # gnome.gnome-keyring
+      gnome-solanum
       gnome-tweaks
       ghostscript
       # google-chrome
@@ -84,6 +86,7 @@
       universal-android-debloater
       unzip
       unrar
+      varia
       vscode-fhs
       vulkan-tools
       wget
