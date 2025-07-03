@@ -9,7 +9,7 @@
     ./gnupg
     # ./kde-partition-manager
     # ./kde-pim
-    # ./kdeconnect
+    ./kdeconnect
     ./nh
     ./nix-ld
   ];
