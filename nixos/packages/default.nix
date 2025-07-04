@@ -33,7 +33,7 @@
       easyeffects
       # endeavour
       ffmpeg-full
-      # floorp
+      floorp
       # gcc
       # ghostty
       # gimp
