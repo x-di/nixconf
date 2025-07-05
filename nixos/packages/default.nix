@@ -55,6 +55,7 @@
       # libde265
       libreoffice-fresh
       # libreoffice-qt6-fresh
+      librewolf
       libva-utils
       # kde-gruvbox
       # megasync
