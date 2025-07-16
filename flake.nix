@@ -2,8 +2,8 @@
   description = "NixOS configuration";
   inputs = {
     # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     catppuccin.url = "github:catppuccin/nix";
@@ -13,10 +13,10 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-    lix-module = {
-      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.93.2-1.tar.gz";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # lix-module = {
+    #   url = "https://git.lix.systems/lix-project/nixos-module/archive/2.93.2-1.tar.gz";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
     # lanzaboote = {
     #   url = "github:nix-community/lanzaboote/v0.4.2";
 
@@ -32,7 +32,7 @@
       # nixvim,
       catppuccin,
       chaotic,
-      lix-module,
+      # lix-module,
       # lanzaboote,
       ...
     }:
@@ -57,7 +57,7 @@
           catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager
           chaotic.nixosModules.default # OUR DEFAULT MODULE
-          lix-module.nixosModules.default
+          # lix-module.nixosModules.default
           # lanzaboote.nixosModules.lanzaboote
           {
             catppuccin = {
