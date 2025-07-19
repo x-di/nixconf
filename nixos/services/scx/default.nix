@@ -2,10 +2,12 @@
 {
   services.scx = {
     enable = true;
-    package = pkgs.scx_git.rustscheds;
-    scheduler = "scx_lavd";
+    package = pkgs.scx.rustscheds;
+    scheduler = "scx_bpfland";
     extraArgs = [
-      "--autopower"
+      "-f"
+      "-p"
+      "-k"
     ];
   };
 }
