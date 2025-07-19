@@ -8,7 +8,7 @@
     # with pkgs.rubyPackages;
     [
       # ansible-language-server # ansible
-      bash-language-server # bash
+      # bash-language-server # bash
       # clang-tools # c, c++
       # clojure-lsp # clojure
       # cmake-language-server # cmake
