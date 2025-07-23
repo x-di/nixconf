@@ -20,8 +20,9 @@
     # kernelPackages = pkgs.linuxPackages_zen;
     # kernelPackages = pkgs.linuxPackages_lqx;
     # kernelPackages = pkgs.linuxPackages_cachyos;
-    kernelPackages = pkgs.linuxPackages_cachyos-lto;
-    # kernelPackages = pkgs.linuxPackages_cachyos-rc;
+    # kernelPackages = pkgs.linuxPackages_cachyos.cachyOverride { mArch = "GENERIC_V3"; };
+    # kernelPackages = pkgs.linuxPackages_cachyos-lto;
+    kernelPackages = pkgs.linuxPackages_cachyos-rc;
     # kernelPackages = pkgs.linuxPackages_cachyos-hardened;
     kernel = {
       sysctl = {
