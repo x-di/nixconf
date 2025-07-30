@@ -32,6 +32,7 @@
       # drawio
       easyeffects
       # endeavour
+      errands
       ffmpeg-full
       floorp
       # gcc
