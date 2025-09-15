@@ -9,8 +9,8 @@
       LIBVA_DRIVER_NAME = "iHD";
       GST_PLUGIN_PATH = "/run/current-system/sw/lib/gstreamer-1.0/";
     };
-    # etc."chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json".source =
-    #   "${pkgs.kdePackages.plasma-browser-integration}/etc/chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json";
+    etc."chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json".source =
+      "${pkgs.kdePackages.plasma-browser-integration}/etc/chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json";
     # memoryAllocator.provider = "scudo";
   };
 }

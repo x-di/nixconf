@@ -2,7 +2,7 @@
 {
   environment.systemPackages =
     (with pkgs; [
-      adw-gtk3
+      # adw-gtk3
       # adwaita-icon-theme
       # anytype
       # aspell
@@ -16,46 +16,46 @@
       #   font = "Noto Sans";
       #   fontSize = "11";
       # }
-      celluloid
+      # celluloid
       clinfo
-      cpu-x
+      # cpu-x
       # code-cursor
       # colloid-icon-theme
-      # crow-translate
+      crow-translate
       # cryfs
       # dav1d
       # dbeaver-bin
       dbgate
       # ddcutil
       devenv
-      dialect
+      # dialect
       # drawio
-      easyeffects
+      # easyeffects
       # endeavour
-      errands
+      # errands
       ffmpeg-full
-      floorp
+      floorp-bin
       # gcc
       # ghostty
       # gimp
       glxinfo
       # gnome.gnome-keyring
-      gnome-solanum
-      gnome-tweaks
+      # gnome-solanum
+      # gnome-tweaks
       ghostscript
       # google-chrome
       # gruvbox-plus-icons
-      # haruna
+      haruna
       # hunspell
       # inkscape
-      # jamesdsp
+      jamesdsp
       # jre
       # kdiskmark
       # keypunch
-      # libdbusmenu
+      libdbusmenu
       # libde265
-      libreoffice-fresh
-      # libreoffice-qt6-fresh
+      # libreoffice-fresh
+      libreoffice-qt6-fresh
       librewolf
       libva-utils
       # kde-gruvbox
@@ -88,7 +88,7 @@
       universal-android-debloater
       unzip
       unrar
-      varia
+      # varia
       vscode-fhs
       vulkan-tools
       wget
@@ -106,48 +106,48 @@
       gst-vaapi
     ])
     ++ (with pkgs.kdePackages; [
-      # juk
-      # kclock
+      juk
+      kclock
       # kdenlive
-      # kdeplasma-addons
+      kdeplasma-addons
       # kget
       # ktorrent
-      # qtwebengine
-      # qtmultimedia
+      qtwebengine
+      qtmultimedia
       # falkon
-      # kaccounts-providers
-      # kaccounts-integration
-      # kio-extras
-      # kio-gdrive
-      # kdepim-addons
-      # signond
-      # krdc
+      kaccounts-providers
+      kaccounts-integration
+      kio-extras
+      kio-gdrive
+      kdepim-addons
+      signond
+      krdc
       # # plasma-vault
       # kleopatra
-      # plasma-browser-integration
+      plasma-browser-integration
       # filelight
       # sonnet
     ])
     ++ (with pkgs.gnomeExtensions; [
-      appindicator
-      blur-my-shell
-      caffeine
-      clipboard-indicator
-      notification-counter
-      just-perfection
-      # smile-complementary-extension
-      top-panel-notification-icons-revived
-      emoji-copy
-      alphabetical-app-grid
-      vitals
-      app-menu-is-back
-      brightness-control-using-ddcutil
-      # thinkpad-battery-threshold
-      battery-health-charging
-      # no-titlebar-when-maximized
-      # easyeffects-preset-selector
-      # pop-shell
-      # # ...
+      # appindicator
+      # blur-my-shell
+      # caffeine
+      # clipboard-indicator
+      # notification-counter
+      # just-perfection
+      # # smile-complementary-extension
+      # top-panel-notification-icons-revived
+      # emoji-copy
+      # alphabetical-app-grid
+      # vitals
+      # app-menu-is-back
+      # brightness-control-using-ddcutil
+      # # thinkpad-battery-threshold
+      # battery-health-charging
+      # # no-titlebar-when-maximized
+      # # easyeffects-preset-selector
+      # # pop-shell
+      # # # ...
     ])
     ++ (with pkgs.hunspellDicts; [
       # en_US-large
