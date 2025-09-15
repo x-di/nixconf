@@ -23,6 +23,15 @@
         default = true;
       };
 
+    computeRuntime = lib.mkOption {
+      description = "intel-compute-runtime variant to use";
+      type = lib.types.enum [
+        "default"
+        "legacy"
+      ];
+      default = "default";
+    };
+
     vaapiDriver = lib.mkOption {
       description = "Intel VAAPI driver to use (use null to use both)";
       type = lib.types.nullOr (
@@ -59,7 +68,11 @@
       useIntelMediaDriver = cfg.vaapiDriver == "intel-media-driver" || cfg.vaapiDriver == null;
       intel-media-driver = pkgs.intel-media-driver;
       intel-media-driver-32 = pkgs.driversi686Linux.intel-media-driver;
-      intel-compute-runtime = pkgs.intel-compute-runtime;
+      intel-compute-runtime =
+        if cfg.computeRuntime == "legacy" then
+          pkgs.intel-compute-runtime-legacy1
+        else
+          pkgs.intel-compute-runtime;
       vpl-gpu-rt = pkgs.vpl-gpu-rt or pkgs.onevpl-intel-gpu;
     in
     {
@@ -78,15 +91,10 @@
         lib.optionals useIntelVaapiDriver [ intel-vaapi-driver-32 ]
         ++ lib.optionals useIntelMediaDriver [ intel-media-driver-32 ];
 
-      hardware.intelgpu.vaapiDriver = "intel-media-driver";
-
-      hardware.graphics = {
-        enable = lib.mkDefault true;
-        # enable32Bit = lib.mkDefault true;
+      hardware.intelgpu = {
+        computeRuntime = "legacy";
+        vaapiDriver = "intel-media-driver";
       };
-
-      hardware.amdgpu.initrd.enable = lib.mkDefault true;
-      # hardware.amdgpu.amdvlk.enable = lib.mkDefault true;
 
       assertions = [
         {
