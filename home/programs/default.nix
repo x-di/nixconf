@@ -12,7 +12,7 @@
     ./eza
     ./fastfetch
     ./fish
-    # ./floorp
+    ./floorp
     ./fzf
     ./gh
     ./git
