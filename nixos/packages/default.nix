@@ -75,6 +75,7 @@
       # peazip
       # postman
       sbctl
+      scrcpy
       # sirikali
       smartmontools
       # smile
