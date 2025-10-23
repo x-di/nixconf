@@ -2,7 +2,8 @@
 {
   programs.go = {
     enable = true;
-    goBin = ".go/bin";
-    goPath = ".go";
+    env = {
+      GOPATH = ".go";
+    };
   };
 }
