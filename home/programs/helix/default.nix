@@ -1667,7 +1667,7 @@ with pkgs;
 
           # docker
           docker-langserver = {
-            command = "${dockerfile-language-server-nodejs}/bin/docker-langserver";
+            command = "${dockerfile-language-server}/bin/docker-langserver";
             args = [ "--stdio" ];
           };
 
