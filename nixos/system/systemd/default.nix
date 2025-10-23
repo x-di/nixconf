@@ -17,10 +17,12 @@
     };
     oomd = {
       enable = false; # Switch to earlyoom.
-      extraConfig = {
-        SwapUsedLimit = "90%";
-        DefaultMemoryPressureLimit = "80%";
-        DefaultMemoryPressureDurationSec = "5s";
+      settings = {
+        OOM = {
+          SwapUsedLimit = "90%";
+          DefaultMemoryPressureLimit = "80%";
+          DefaultMemoryPressureDurationSec = "5s";
+        };
       };
     };
     sleep.extraConfig = ''
