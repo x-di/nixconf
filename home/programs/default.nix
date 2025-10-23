@@ -8,6 +8,7 @@
     ./carapace
     ./chromium
     # ./dconf
+    ./delta
     ./direnv
     ./eza
     ./fastfetch
