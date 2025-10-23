@@ -8,17 +8,16 @@ in
 {
   programs.git = {
     enable = true;
-    userName = "${userName}";
-    userEmail = "${userEmail}";
     signing = {
       signByDefault = true;
       key = "${signingkey}";
       # format = "openpgp";
     };
-    delta = {
-      enable = true;
-    };
-    extraConfig = {
+    settings = {
+      user = {
+        email = "${userEmail}";
+        name = "${userName}";
+      };
       delta = {
         side-by-side = true;
       };
