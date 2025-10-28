@@ -1,9 +1,24 @@
-{ config, lib, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 {
   nixpkgs = {
     config = {
       allowUnfree = true;
     };
+    overlays = [
+      (final: prev: {
+        inherit (prev.lixPackageSets.stable)
+          nixpkgs-review
+          nix-eval-jobs
+          nix-fast-build
+          colmena
+          ;
+      })
+    ];
     # hostPlatform = {
     #   system = "x86_64-linux";
     #   gcc.arch = "x86-64-v3";
@@ -48,7 +63,7 @@
       #   "nixos-test"
       # ];
     };
-    # package = pkgs.lix;
+    package = pkgs.lixPackageSets.latest.lix;
     # nixPath = ''
     #   nixos-config=/home/dim/.config/nixconf/flake.nix
     # '';
