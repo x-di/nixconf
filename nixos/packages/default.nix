@@ -38,7 +38,7 @@
       # gcc
       # ghostty
       # gimp
-      glxinfo
+      # glxinfo # mesa-demos
       # gnome.gnome-keyring
       # gnome-solanum
       # gnome-tweaks
@@ -60,6 +60,7 @@
       libva-utils
       # kde-gruvbox
       # megasync
+      mesa-demos
       neovim
       # nil
       # nixd
@@ -68,7 +69,7 @@
       # nodejs_latest
       nvme-cli
       nvtopPackages.intel
-      onlyoffice-bin_latest
+      onlyoffice-desktopeditors
       openssl
       p7zip
       # papirus-icon-theme
