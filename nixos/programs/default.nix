@@ -4,6 +4,7 @@
     ./adb
     ./appimage
     ./ccache
+    ./chromium
     ./dconf
     ./firefox
     ./gnupg
