@@ -52,4 +52,12 @@
   #   platformTheme = "gnome";
   #   style = "adwaita-dark";
   # };
+
+  # # Enable the COSMIC login manager
+  # services.displayManager.cosmic-greeter.enable = false;
+
+  # # Enable the COSMIC desktop environment
+  # services.desktopManager.cosmic.enable = false;
+
+  # services.desktopManager.cosmic.xwayland.enable = false;
 }
