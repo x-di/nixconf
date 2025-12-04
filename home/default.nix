@@ -5,11 +5,11 @@ let
   stateVersion = "26.05";
 in
 {
-  catppuccin = {
-    enable = true;
-    accent = "rosewater"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
-    flavor = "mocha"; # Type: one of “latte”, “frappe”, “macchiato”, “mocha”
-  };
+  # catppuccin = {
+  #   enable = true;
+  #   accent = "rosewater"; # Type: one of “blue”, “flamingo”, “green”, “lavender”, “maroon”, “mauve”, “peach”, “pink”, “red”, “rosewater”, “sapphire”, “sky”, “teal”, “yellow”
+  #   flavor = "mocha"; # Type: one of “latte”, “frappe”, “macchiato”, “mocha”
+  # };
   home = {
     username = "${name}";
     homeDirectory = "${homeDirectory}";
