@@ -15,7 +15,7 @@
       ];
     };
     auditd = {
-      enable = true;
+      enable = false;
     };
     sudo-rs = {
       enable = true;
