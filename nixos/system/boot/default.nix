@@ -52,8 +52,12 @@
 
     tmp = {
       useTmpfs = false;
+      useZram = true;
+      zramSettings = {
+        zram-size = "ram * 1";
+      };
       cleanOnBoot = true;
-      tmpfsSize = "10%";
+      # tmpfsSize = "10%";
     };
 
     plymouth = {
