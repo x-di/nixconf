@@ -8,7 +8,7 @@
       enable = true;
     };
     apparmor = {
-      enable = true;
+      enable = false;
       enableCache = true;
       packages = with pkgs; [
         apparmor-profiles

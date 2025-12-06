@@ -2,7 +2,7 @@
 {
   services.dbus = {
     enable = true;
-    apparmor = "enabled";
+    # apparmor = "enabled";
     implementation = "broker"; # use new dbus-broker
   };
 }
