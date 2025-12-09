@@ -96,7 +96,7 @@
       wget
       wl-clipboard
       # x265
-      zed-editor_git
+      zed-editor
     ])
     ++ (with pkgs.gst_all_1; [
       gstreamer
