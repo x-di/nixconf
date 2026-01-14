@@ -4,6 +4,7 @@
     (with pkgs; [
       # adw-gtk3
       # adwaita-icon-theme
+      android-tools
       # anytype
       # aspell
       # bibata-cursors

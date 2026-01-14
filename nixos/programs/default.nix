@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./adb
+    # ./adb
     ./appimage
     ./ccache
     ./chromium
