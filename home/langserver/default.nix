@@ -36,7 +36,8 @@
       # mint # mint
       nil
       nixd
-      nixfmt-rfc-style
+      # nixfmt-rfc-style
+      nixfmt
       nixpkgs-fmt
       # nimlsp # nim
       # nls # nickel
