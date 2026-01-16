@@ -69,6 +69,6 @@
 
       # sourcekit-lsp # swift & objective-c # too much storage
       # haskell-language-server # haskell # too much storage
-      # intelephense # php # unfree package
+      intelephense # php # unfree package
     ];
 }
