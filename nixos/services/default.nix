@@ -22,9 +22,10 @@
     ./printing
     ./redis
     ./scx
+    ./stubby
     ./switcherooControl
     # ./system76
-    ./systemd-resolved
+    # ./systemd-resolved
     ./thermald
     # ./throttled
     ./timesyncd
