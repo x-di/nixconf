@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   systemd = {
     services = {
@@ -14,6 +14,16 @@
       #     # ReadWritePaths = "/var/lib/dnscrypt-proxy"; # Cache directory for dnscrypt-proxy2, persist this
       #   };
       # };
+      lenovo-conservation-mode = {
+        description = "Enable Lenovo IdeaPad battery conservation mode";
+        after = [ "multi-user.target" ];
+        wantedBy = [ "multi-user.target" ];
+        serviceConfig = {
+          Type = "oneshot";
+          ExecStart = "${pkgs.bash}/bin/bash -c 'echo 1 > /sys/class/power_supply/BAT2/extensions/ideapad_laptop/conservation_mode'";
+          RemainAfterExit = true;
+        };
+      };
     };
     oomd = {
       enable = false; # Switch to earlyoom.
