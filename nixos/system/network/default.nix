@@ -7,7 +7,7 @@ in
     hostName = "${hostname}";
     networkmanager = {
       enable = true;
-      dns = "none";
+      dns = "systemd-resolved";
       wifi.macAddress = "random";
       ethernet.macAddress = "random";
     };

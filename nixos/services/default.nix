@@ -21,11 +21,11 @@
     ./postgresql
     ./printing
     ./redis
-    ./scx
-    ./stubby
+    # ./scx
+    # ./stubby
     ./switcherooControl
-    # ./system76
-    # ./systemd-resolved
+    ./system76
+    ./systemd-resolved
     ./thermald
     # ./throttled
     ./timesyncd
