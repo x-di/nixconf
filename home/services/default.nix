@@ -4,6 +4,6 @@
     ./easyeffects
     ./espanso
     # ./kdeconnect
-    ./lorri
+    # ./lorri
   ];
 }

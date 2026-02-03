@@ -57,7 +57,7 @@
       # libde265
       # libreoffice-fresh
       libreoffice-qt6-fresh
-      # librewolf
+      librewolf
       libva-utils
       # kde-gruvbox
       # megasync
@@ -118,12 +118,12 @@
       qtwebengine
       qtmultimedia
       # falkon
-      kaccounts-providers
-      kaccounts-integration
-      kio-extras
-      kio-gdrive
-      kdepim-addons
-      signond
+      # kaccounts-providers
+      # kaccounts-integration
+      # kio-extras
+      # kio-gdrive
+      # kdepim-addons
+      # signond
       krdc
       # # plasma-vault
       # kleopatra

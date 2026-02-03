@@ -3,13 +3,13 @@
   imports = [
     # ./adb
     ./appimage
-    ./ccache
+    # ./ccache
     ./chromium
     ./dconf
     ./firefox
     ./gnupg
-    ./kde-partition-manager
-    ./kde-pim
+    # ./kde-partition-manager
+    # ./kde-pim
     ./kdeconnect
     ./nh
     ./nix-ld

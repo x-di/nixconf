@@ -20,6 +20,7 @@
     };
   };
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    discover
     # plasma-browser-integration
     # konsole
     kate

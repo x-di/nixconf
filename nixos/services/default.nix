@@ -4,7 +4,7 @@
     # ./ananicy
     ./btrbk
     ./btrfs
-    ./cachefilesd
+    # ./cachefilesd
     ./dbus
     ./desktop-environment
     # ./dnscrypt
