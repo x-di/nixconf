@@ -23,7 +23,7 @@
       # code-cursor
       # colloid-icon-theme
       crow-translate
-      # cryfs
+      cryfs
       # dav1d
       # dbeaver-bin
       dbgate
@@ -44,6 +44,7 @@
       # gnome-solanum
       # gnome-tweaks
       ghostscript
+      gocryptfs
       # google-chrome
       # gruvbox-plus-icons
       haruna
@@ -77,8 +78,9 @@
       # peazip
       # postman
       sbctl
-      scrcpy
-      # sirikali
+      # scrcpy
+      qtscrcpy
+      sirikali
       smartmontools
       # smile
       sqlite
