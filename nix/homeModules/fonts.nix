@@ -11,6 +11,9 @@
     mplus-outline-fonts.githubRelease
     dina-font
     proggyfonts
-    nerd-fonts
+    nerd-fonts.fira-code
+    nerd-fonts.geist-mono
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.zed-mono
   ];
 }
