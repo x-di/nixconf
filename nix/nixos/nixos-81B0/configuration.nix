@@ -220,10 +220,10 @@
       inputs.self.homeModules.fzf
       inputs.self.homeModules.gh
       inputs.self.homeModules.git
-      inputs.self.homeModules.helix
+      # inputs.self.homeModules.helix  # Commented - not imported in original
       inputs.self.homeModules.htop
       inputs.self.homeModules.kitty
-      inputs.self.homeModules.nixvim
+      # inputs.self.homeModules.nixvim  # Commented - not imported in original
       inputs.self.homeModules.nu
       inputs.self.homeModules.obs-studio
       inputs.self.homeModules.ripgrep
@@ -234,7 +234,7 @@
       inputs.self.homeModules.xdg
       inputs.self.homeModules.yazi
       inputs.self.homeModules.yt-dlp
-      inputs.self.homeModules.zed-editor
+      # inputs.self.homeModules.zed-editor  # Commented - not imported in original
       inputs.self.homeModules.zellij
       inputs.self.homeModules.zoxide
       inputs.self.homeModules.dev
