@@ -206,14 +206,37 @@
       ./home.nix
       # Home Modules (auto-exported by flakelight)
       inputs.self.homeModules.alacritty
+      inputs.self.homeModules.aria2
+      inputs.self.homeModules.bat
+      inputs.self.homeModules.bottom
+      inputs.self.homeModules.chromium
+      inputs.self.homeModules.dconf
+      inputs.self.homeModules.delta
+      inputs.self.homeModules.direnv
+      inputs.self.homeModules.eza
+      inputs.self.homeModules.fastfetch
       inputs.self.homeModules.fish
+      inputs.self.homeModules.floorp
+      inputs.self.homeModules.fzf
+      inputs.self.homeModules.gh
       inputs.self.homeModules.git
+      inputs.self.homeModules.helix
+      inputs.self.homeModules.htop
       inputs.self.homeModules.kitty
+      inputs.self.homeModules.nixvim
       inputs.self.homeModules.nu
-      inputs.self.homeModules.programs
+      inputs.self.homeModules.obs-studio
+      inputs.self.homeModules.ripgrep
       inputs.self.homeModules.services
+      inputs.self.homeModules.simple
       inputs.self.homeModules.starship
+      inputs.self.homeModules.tealdeer
+      inputs.self.homeModules.xdg
       inputs.self.homeModules.yazi
+      inputs.self.homeModules.yt-dlp
+      inputs.self.homeModules.zed-editor
+      inputs.self.homeModules.zellij
+      inputs.self.homeModules.zoxide
       inputs.self.homeModules.dev
       inputs.self.homeModules.packages
       inputs.self.homeModules.fonts

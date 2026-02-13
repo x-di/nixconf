@@ -1,6 +1,6 @@
 { ... }:
 {
-  # Nushell (disabled but with config)
+  # Nushell (disabled)
   programs.nushell = {
     enable = false;
     extraConfig = ''

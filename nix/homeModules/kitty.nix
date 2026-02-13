@@ -1,6 +1,6 @@
 { ... }:
 {
-  # Kitty terminal (disabled but with config)
+  # Kitty terminal (disabled)
   programs.kitty = {
     enable = false;
     shellIntegration.enableFishIntegration = false;

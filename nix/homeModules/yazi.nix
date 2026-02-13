@@ -1,6 +1,6 @@
 { ... }:
 {
-  # Yazi file manager (disabled but with config)
+  # Yazi file manager (disabled)
   programs.yazi = {
     enable = false;
     settings = {

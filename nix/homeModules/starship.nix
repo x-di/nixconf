@@ -1,6 +1,6 @@
 { ... }:
 {
-  # Starship prompt configuration
+  # Starship prompt
   programs.starship = {
     enable = true;
     settings = {
