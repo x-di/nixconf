@@ -17,7 +17,6 @@
     dockerfile-language-server-nodejs
     marksman
     texlab
-    ansible-language-server
     helm-ls
     terraform-ls
   ];
