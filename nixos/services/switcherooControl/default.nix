@@ -1,4 +1,0 @@
-{ ... }:
-{
-  services.switcherooControl.enable = true;
-}

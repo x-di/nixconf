@@ -1,4 +1,0 @@
-{ ... }:
-{
-  programs.ccache.enable = true;
-}

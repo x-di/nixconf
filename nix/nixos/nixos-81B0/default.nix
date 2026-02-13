@@ -1,0 +1,5 @@
+{
+  modules = [
+    ./configuration.nix
+  ];
+}

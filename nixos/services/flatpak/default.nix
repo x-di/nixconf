@@ -1,4 +1,0 @@
-{ ... }:
-{
-  services.flatpak.enable = false;
-}
