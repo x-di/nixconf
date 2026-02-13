@@ -1,9 +1,10 @@
-{ inputs
-, modulesPath
-, config
-, lib
-, pkgs
-, ...
+{
+  inputs,
+  modulesPath,
+  config,
+  lib,
+  pkgs,
+  ...
 }:
 {
   imports = [
@@ -209,7 +210,7 @@
       inputs.self.homeModules.bat
       inputs.self.homeModules.bottom
       inputs.self.homeModules.chromium
-      inputs.self.homeModules.dconf
+      # inputs.self.homeModules.dconf
       inputs.self.homeModules.delta
       inputs.self.homeModules.direnv
       inputs.self.homeModules.eza
@@ -230,7 +231,7 @@
       inputs.self.homeModules.simple
       inputs.self.homeModules.starship
       inputs.self.homeModules.tealdeer
-      inputs.self.homeModules.xdg
+      # inputs.self.homeModules.xdg
       inputs.self.homeModules.yazi
       inputs.self.homeModules.yt-dlp
       # inputs.self.homeModules.zed-editor  # Commented - not imported in original

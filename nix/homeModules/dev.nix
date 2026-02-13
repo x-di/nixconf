@@ -6,6 +6,10 @@
       enable = true;
       env.GOPATH = ".go";
     };
+    java = {
+      enable = true;
+      package = pkgs.jre;
+    };
   };
 
   home.packages = with pkgs; [
@@ -13,5 +17,7 @@
     go
     gopls
     gotools
+    gcc
+    nodejs_latest
   ];
 }

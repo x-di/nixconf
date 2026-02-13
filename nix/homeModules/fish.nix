@@ -9,12 +9,17 @@
       set -gx PATH $PATH $HOME/.config/composer/vendor/bin
     '';
     shellAbbrs = {
+      # Nix commands
       nrs = "sudo nixos-rebuild switch --flake .";
       nrb = "sudo nixos-rebuild boot --flake .";
       ns = "nix-shell --command fish -p";
+
+      # Safety aliases
       cp = "cp -i";
       mv = "mv -i";
       rm = "rm -i";
+
+      # Utilities
       df = "df -h";
       free = "free -m";
       nd = "mkdir -p";
@@ -22,13 +27,19 @@
       grep = "grep --color=auto";
       egrep = "egrep --color=auto";
       fgrep = "fgrep --color=auto";
+
+      # Editors
       n = "nvim .";
       h = "hx .";
       e = "zeditor .";
+
+      # Vault/Crypto management
       priv = "cryfs-unmount '/mnt/data/Vaults/mount'";
       unpriv = "cryfs /mnt/data/Vaults/.priv /mnt/data/Vaults/mount";
       megaLock = "cryfs-unmount '/mnt/data/MEGAsync'";
       megaUnlock = "cryfs /mnt/data/.Mega /mnt/data/MEGAsync";
+
+      # Git commands
       gad = "git add";
       gal = "git add --all";
       gb = "git branch";
@@ -42,6 +53,8 @@
       gst = "git status -sbu";
       gts = "git tag -s";
       gur = "git pull --rebase";
+
+      # yt-dlp video downloader
       yt = "yt-dlp";
       ytm = "yt-dlp -o '%(title)s.%(ext)s' -f bestaudio";
       ytl = "yt-dlp -o '%(title)s.%(ext)s' -f 'bestvideo[height<=720]+bestaudio/best[height<=720]'";
