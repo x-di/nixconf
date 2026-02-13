@@ -2,7 +2,7 @@
 {
   # Tealdeer tldr client
   programs.tealdeer = {
-    enable = true;
+    enable = false;
     settings = {
       display = {
         compact = false;

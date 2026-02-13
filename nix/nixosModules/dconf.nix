@@ -1,3 +1,4 @@
+# Dconf configuration
 { ... }:
 {
   # Desktop configuration database

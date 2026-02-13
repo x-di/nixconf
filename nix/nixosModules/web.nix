@@ -1,3 +1,4 @@
+# Web servers configuration
 { config, pkgs, ... }:
 {
   # Web servers (all disabled)

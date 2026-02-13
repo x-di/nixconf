@@ -1,3 +1,4 @@
+# Hardware firmware configuration
 { pkgs, ... }:
 {
   # Hardware firmware configuration

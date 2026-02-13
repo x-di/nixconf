@@ -1,3 +1,4 @@
+# Chromium browser configuration
 { pkgs, ... }:
 {
   # Chromium browser with Plasma integration

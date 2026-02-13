@@ -1,3 +1,4 @@
+# BTRFS backup configuration
 { ... }:
 {
   # BTRFS backup configuration

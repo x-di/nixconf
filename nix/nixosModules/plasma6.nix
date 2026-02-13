@@ -1,6 +1,7 @@
+# KDE Plasma 6 desktop environment configuration
 { pkgs, ... }:
 {
-  # KDE Plasma 6 desktop environment configuration
+  # KDE Plasma 6 desktop environment
   services = {
     displayManager.sddm = {
       enable = true;
@@ -22,4 +23,18 @@
     oxygen
     elisa
   ];
+
+  # KDE Connect for device integration
+  programs.kdeconnect.enable = true;
+
+  # KDE Partition Manager
+  programs.partition-manager.enable = true;
+
+  # KDE PIM (mail, calendar, contacts)
+  programs.kde-pim = {
+    enable = true;
+    kmail = true;
+    merkuro = true;
+    kontact = true;
+  };
 }

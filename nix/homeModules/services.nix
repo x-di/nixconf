@@ -2,7 +2,7 @@
 {
   # User services
   services = {
-    easyeffects.enable = true;
-    espanso.enable = true;
+    easyeffects.enable = false;
+    espanso.enable = false;
   };
 }

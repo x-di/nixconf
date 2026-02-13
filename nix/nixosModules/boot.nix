@@ -1,3 +1,4 @@
+# Boot loader configuration
 { pkgs, lib, ... }:
 {
   # Boot loader configuration with systemd-boot

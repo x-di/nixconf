@@ -1,3 +1,4 @@
+# Fonts configuration
 { pkgs, ... }:
 {
   # Fonts configuration

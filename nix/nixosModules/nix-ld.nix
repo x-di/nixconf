@@ -1,3 +1,4 @@
+# Nix LD configuration
 { pkgs, ... }:
 {
   # Nix LD for running non-Nix binaries

@@ -1,7 +1,9 @@
-{ config
-, lib
-, pkgs
-, ...
+# Nix configuration
+{
+  config,
+  lib,
+  pkgs,
+  ...
 }:
 {
   # Nixpkgs configuration

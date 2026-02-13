@@ -1,3 +1,4 @@
+# Firefox browser configuration
 { pkgs, ... }:
 {
   # Firefox browser (disabled)

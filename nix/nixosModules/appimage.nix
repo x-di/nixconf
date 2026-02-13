@@ -1,3 +1,4 @@
+# AppImage support configuration
 { ... }:
 {
   # AppImage support (disabled)

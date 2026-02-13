@@ -1,3 +1,4 @@
+# Nix helper CLI configuration
 { ... }:
 {
   # Nix helper CLI

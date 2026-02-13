@@ -1,3 +1,4 @@
+# GnuPG agent configuration
 { ... }:
 {
   # GnuPG agent for SSH authentication

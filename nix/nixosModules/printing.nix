@@ -1,3 +1,4 @@
+# Printing service configuration
 { ... }:
 {
   # Printing service (disabled)

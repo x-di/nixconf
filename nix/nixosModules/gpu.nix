@@ -1,7 +1,9 @@
-{ config
-, lib
-, pkgs
-, ...
+# GPU configuration
+{
+  config,
+  lib,
+  pkgs,
+  ...
 }:
 {
   # Intel GPU configuration options

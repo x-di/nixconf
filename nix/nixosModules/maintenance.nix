@@ -1,29 +1,48 @@
-{ ... }:
+# System maintenance services
+{ lib, ... }:
 {
-  # System maintenance services
   services = {
     # BTRFS scrub
-    btrfs.autoScrub.enable = true;
+    btrfs.autoScrub = {
+      enable = true;
+      interval = "weekly";
+      fileSystems = [
+        "/"
+        "/mnt/data"
+      ];
+    };
 
     # Early out-of-memory killing
-    earlyoom.enable = true;
+    earlyoom = {
+      enable = true;
+      freeMemThreshold = 5;
+    };
 
     # SSD TRIM
-    fstrim.enable = true;
+    fstrim.enable = lib.mkDefault true;
 
     # Firmware updates
-    fwupd.enable = true;
+    fwupd.enable = lib.mkDefault true;
 
     # Journal size limits
     journald.extraConfig = ''
-      SystemMaxUse=500M
-      MaxFileSec=7day
+      SystemMaxUse=50M
     '';
 
     # Thermal management
-    thermald.enable = true;
+    thermald.enable = lib.mkDefault true;
 
     # NTP time sync
-    timesyncd.enable = true;
+    timesyncd = {
+      enable = true;
+      servers = [ "time.cloudflare.com" ];
+      fallbackServers = [
+        "time.google.com"
+        "0.arch.pool.ntp.org"
+        "1.arch.pool.ntp.org"
+        "2.arch.pool.ntp.org"
+        "3.arch.pool.ntp.org"
+      ];
+    };
   };
 }

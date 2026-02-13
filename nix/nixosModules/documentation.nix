@@ -1,8 +1,12 @@
+# Documentation configuration
 { ... }:
 {
-  # Documentation configuration
   documentation = {
-    enable = true;
-    man.enable = true;
+    doc.enable = false;
+    info.enable = false;
+    nixos.enable = false;
+    man = {
+      generateCaches = true;
+    };
   };
 }

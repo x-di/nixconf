@@ -1,25 +1,21 @@
-{ pkgs, ... }:
+# Desktop services configuration
+{ pkgs, lib, ... }:
 {
-  # Desktop services configuration
   services = {
-    # X11 server
+    # X11 server (disabled - using Wayland)
     xserver = {
-      enable = true;
-      xkb = {
-        layout = "us";
-        variant = "";
-      };
+      enable = lib.mkForce false;
+      videoDrivers = [ "modesetting" ];
+      excludePackages = [ pkgs.xterm ];
     };
 
     # D-Bus
-    dbus.enable = true;
-
-    # Note: android-udev-rules removed (now built into systemd uaccess)
+    dbus = {
+      enable = true;
+      implementation = "broker";
+    };
 
     # GPU switching
     switcherooControl.enable = true;
-
-    # System76 scheduler
-    system76-scheduler.enable = true;
   };
 }

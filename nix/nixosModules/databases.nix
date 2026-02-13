@@ -1,3 +1,4 @@
+# Database services configuration
 { pkgs, ... }:
 {
   # Database services (mostly disabled)

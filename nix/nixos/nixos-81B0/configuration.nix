@@ -24,14 +24,14 @@
     inputs.self.nixosModules.dconf
     inputs.self.nixosModules.firefox
     inputs.self.nixosModules.gnupg
-    inputs.self.nixosModules.kdeconnect
     inputs.self.nixosModules.nh
     inputs.self.nixosModules.nix-ld
     inputs.self.nixosModules.audio
     inputs.self.nixosModules.backup
     inputs.self.nixosModules.databases
     inputs.self.nixosModules.desktop-services
-    inputs.self.nixosModules.dns
+    inputs.self.nixosModules.cpu-schedulers
+    inputs.self.nixosModules.dns-privacy
     inputs.self.nixosModules.maintenance
     inputs.self.nixosModules.printing
     inputs.self.nixosModules.virtualization
@@ -39,7 +39,6 @@
     inputs.self.nixosModules.bluetooth
     inputs.self.nixosModules.documentation
     inputs.self.nixosModules.environment
-    inputs.self.nixosModules.filesystem
     inputs.self.nixosModules.firewall
     inputs.self.nixosModules.fonts
     inputs.self.nixosModules.locale

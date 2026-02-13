@@ -1,3 +1,4 @@
+# Network configuration
 { ... }:
 {
   # Network configuration with NetworkManager

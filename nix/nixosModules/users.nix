@@ -1,3 +1,4 @@
+# User configuration
 { ... }:
 {
   # User configuration for dim

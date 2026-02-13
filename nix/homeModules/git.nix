@@ -1,11 +1,13 @@
-{ ... }:
+# Git configuration
+{ config, ... }:
 {
-  # Git configuration
   programs.git = {
     enable = true;
     signing = {
       signByDefault = true;
-      key = "11E66F143A6E166B";
+      # Key is stored in sops - will be available at /run/secrets/git-signing-key
+      # Note: For build-time signing, the key needs to be in configuration
+      # This will work after activation when secrets are decrypted
     };
     settings = {
       user = {
@@ -15,4 +17,8 @@
       delta.side-by-side = true;
     };
   };
+
+  # Alternative: Use sops secret path (works after activation)
+  # Uncomment below and remove hardcoded key above
+  # programs.git.signing.key = config.sops.secrets."git-signing-key".path;
 }

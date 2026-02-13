@@ -1,3 +1,4 @@
+# Security configuration
 { pkgs, ... }:
 {
   # Security configuration
