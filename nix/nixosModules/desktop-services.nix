@@ -14,8 +14,7 @@
     # D-Bus
     dbus.enable = true;
 
-    # Udev rules for Android devices
-    udev.packages = with pkgs; [ android-udev-rules ];
+    # Note: android-udev-rules removed (now built into systemd uaccess)
 
     # GPU switching
     switcherooControl.enable = true;
