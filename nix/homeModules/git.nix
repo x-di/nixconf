@@ -5,6 +5,7 @@
     enable = true;
     signing = {
       signByDefault = true;
+      key = "11E66F143A6E166B";
       # Key is stored in sops - will be available at /run/secrets/git-signing-key
       # Note: For build-time signing, the key needs to be in configuration
       # This will work after activation when secrets are decrypted
