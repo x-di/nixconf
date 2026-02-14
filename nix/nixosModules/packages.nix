@@ -60,6 +60,7 @@
       # libreoffice-fresh
       libreoffice-qt6-fresh
       librewolf
+      libsecret
       libva-utils
       # kde-gruvbox
       # megasync
@@ -100,7 +101,7 @@
       wget
       wl-clipboard
       # x265
-      zed-editor-fhs
+      zed-editor
     ])
     ++ (with pkgs.gst_all_1; [
       gstreamer

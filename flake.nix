@@ -9,13 +9,26 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    zed = {
+      url = "github:zed-industries/zed";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
     { flakelight, ... }@inputs:
+    let
+      zed-overlay = final: prev: {
+        zed-editor = inputs.zed.packages.${final.system}.default;
+      };
+    in
     flakelight ./. {
       inherit inputs;
       nixpkgs.config.allowUnfree = true;
+      withOverlays = [
+        inputs.self.overlays.lix
+        zed-overlay
+      ];
       legacyPackages = pkgs: pkgs;
     };
 
