@@ -28,13 +28,13 @@
   programs.kdeconnect.enable = true;
 
   # KDE Partition Manager
-  programs.partition-manager.enable = true;
+  programs.partition-manager.enable = false;
 
   # KDE PIM (mail, calendar, contacts)
   programs.kde-pim = {
-    enable = true;
-    kmail = true;
-    merkuro = true;
-    kontact = true;
+    enable = false;
+    kmail = false;
+    merkuro = false;
+    kontact = false;
   };
 }
