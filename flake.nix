@@ -17,17 +17,12 @@
 
   outputs =
     { flakelight, ... }@inputs:
-    let
-      zed-overlay = final: prev: {
-        zed-editor = inputs.zed.packages.${final.system}.default;
-      };
-    in
     flakelight ./. {
       inherit inputs;
       nixpkgs.config.allowUnfree = true;
       withOverlays = [
         inputs.self.overlays.lix
-        zed-overlay
+        inputs.self.overlays.zed
       ];
       legacyPackages = pkgs: pkgs;
     };

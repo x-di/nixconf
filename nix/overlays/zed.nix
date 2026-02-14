@@ -1,4 +1,3 @@
-inputs@{ final, prev, ... }:
-{
-  zed-editor = inputs.zed.packages.${final.system}.default;
+final: prev: {
+  zed-editor = final.inputs'.zed.packages.default;
 }
