@@ -35,7 +35,7 @@
     inputs.self.nixosModules.maintenance
     inputs.self.nixosModules.printing
     inputs.self.nixosModules.virtualization
-    inputs.self.nixosModules.web
+    # inputs.self.nixosModules.web
     inputs.self.nixosModules.bluetooth
     inputs.self.nixosModules.documentation
     inputs.self.nixosModules.environment
@@ -44,6 +44,7 @@
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.systemd
     inputs.self.nixosModules.timezone
+    inputs.self.nixosModules.xdg
     inputs.self.nixosModules.zram
     inputs.self.nixosModules.packages
 
