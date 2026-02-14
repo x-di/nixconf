@@ -3,7 +3,7 @@
 
 let
   # Choose one: "ananicy", "scx", "system76", or "none"
-  scheduler = "none";
+  scheduler = "system76";
 in
 {
   # Ananicy (CachyOS scheduler)
