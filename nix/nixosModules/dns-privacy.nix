@@ -35,7 +35,7 @@ in
   };
 
   # DNSCrypt-proxy2
-  services.dnscrypt-proxy2 = {
+  services.dnscrypt-proxy = {
     enable = dnsProvider == "dnscrypt";
     settings = {
       ipv6_servers = false;
