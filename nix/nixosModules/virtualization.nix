@@ -1,5 +1,5 @@
 # Virtualization and container configuration
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   # Virtualization and container configuration
   virtualisation = {
@@ -14,7 +14,7 @@
   };
 
   # Flatpak support
-  services.flatpak.enable = true;
+  services.flatpak.enable = lib.mkForce false;
 
   # Container tools
   environment.systemPackages = with pkgs; [
