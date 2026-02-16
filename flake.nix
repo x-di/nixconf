@@ -11,7 +11,6 @@
     };
     zed = {
       url = "github:zed-industries/zed";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
