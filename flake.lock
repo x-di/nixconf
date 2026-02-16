@@ -35,7 +35,9 @@
     },
     "flakelight": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1770643227,
@@ -53,14 +55,16 @@
     },
     "home-manager": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
-        "lastModified": 1770995331,
-        "narHash": "sha256-MZOF7PVKDOMAOp6bJpzuKOb1DVcyUT84568r8y3iVGg=",
+        "lastModified": 1771188132,
+        "narHash": "sha256-qLXxN/tPrZtnekaLBQuVtxQfvqqs5cT5WbyH4zZaTGI=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "5e90b62996d56da9acb21e502c078e7c4e6ab40f",
+        "rev": "ae8003d8b61d0d373e7ca3da1a48f9c870d15df9",
         "type": "github"
       },
       "original": {
@@ -71,11 +75,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1770843696,
-        "narHash": "sha256-LovWTGDwXhkfCOmbgLVA10bvsi/P8eDDpRudgk68HA8=",
+        "lastModified": 1771147098,
+        "narHash": "sha256-jpfPdBjKO232s5NueoNEvvVzpndiUzPLNYcH4/Ov0gY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2343bbb58f99267223bc2aac4fc9ea301a155a16",
+        "rev": "e3cb16bccd9facebae3ba29c6a76a4cc1b73462a",
         "type": "github"
       },
       "original": {
@@ -110,7 +114,10 @@
     },
     "rust-overlay": {
       "inputs": {
-        "nixpkgs": ["zed", "nixpkgs"]
+        "nixpkgs": [
+          "zed",
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1770001842,
@@ -130,15 +137,17 @@
       "inputs": {
         "crane": "crane",
         "flake-parts": "flake-parts",
-        "nixpkgs": ["nixpkgs"],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1770999583,
-        "narHash": "sha256-Jl2K0CmXNBUAlKQroSpO7QMaFldi3/PdZB32GA9kgFc=",
+        "lastModified": 1771196356,
+        "narHash": "sha256-GkLGyFHYGXBDs4YO+P28AQCY83uF9Rqbr9LfMSptU9A=",
         "owner": "zed-industries",
         "repo": "zed",
-        "rev": "8afc67345fdd5db4bc8ab0e5a9c72b53c706a821",
+        "rev": "e2f3d5ed8e5a2d8532ef0a82d3594593f0523804",
         "type": "github"
       },
       "original": {
