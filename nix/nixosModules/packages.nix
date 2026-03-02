@@ -58,7 +58,7 @@
       libdbusmenu
       # libde265
       # libreoffice-fresh
-      libreoffice-qt6-fresh
+      # libreoffice-qt6-fresh
       librewolf
       libsecret
       libva-utils
@@ -73,7 +73,7 @@
       # nodejs_latest
       nvme-cli
       nvtopPackages.intel
-      onlyoffice-desktopeditors
+      # onlyoffice-desktopeditors
       openssl
       p7zip
       # papirus-icon-theme
