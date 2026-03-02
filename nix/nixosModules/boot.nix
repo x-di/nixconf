@@ -12,7 +12,7 @@
     };
 
     # Linux kernel selection
-    kernelPackages = pkgs.linuxPackages_lqx;
+    kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest-lto-x86_64-v3;
 
     # Kernel sysctl optimizations for desktop use
     kernel.sysctl = {
