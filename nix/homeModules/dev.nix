@@ -7,13 +7,13 @@
       env.GOPATH = ".go";
     };
     java = {
-      enable = true;
+      enable = false;
       package = pkgs.jre;
     };
   };
 
   home.packages = with pkgs; [
-    jdk
+    # jdk
     go
     gopls
     gotools
