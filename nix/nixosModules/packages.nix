@@ -23,7 +23,7 @@
       # cpu-x
       # code-cursor
       # colloid-icon-theme
-      crow-translate
+      # crow-translate
       cryfs
       # dav1d
       # dbeaver-bin
@@ -31,6 +31,7 @@
       # ddcutil
       devenv
       # dialect
+      # dooit
       # drawio
       # easyeffects
       # endeavour
@@ -47,8 +48,10 @@
       ghostscript
       gocryptfs
       # google-chrome
+      graphite-cursors
+      graphite-gtk-theme
       # gruvbox-plus-icons
-      haruna
+      # haruna
       # hunspell
       # inkscape
       jamesdsp
@@ -113,27 +116,27 @@
       gst-vaapi
     ])
     ++ (with pkgs.kdePackages; [
-      juk
-      kclock
-      # kdenlive
-      kdeplasma-addons
-      # kget
-      # ktorrent
-      qtwebengine
-      qtmultimedia
-      # falkon
-      # kaccounts-providers
-      # kaccounts-integration
-      # kio-extras
-      # kio-gdrive
-      # kdepim-addons
-      # signond
-      krdc
-      # # plasma-vault
-      # kleopatra
-      plasma-browser-integration
-      # filelight
-      # sonnet
+      # juk
+      # kclock
+      # # kdenlive
+      # kdeplasma-addons
+      # # kget
+      # # ktorrent
+      # qtwebengine
+      # qtmultimedia
+      # # falkon
+      # # kaccounts-providers
+      # # kaccounts-integration
+      # # kio-extras
+      # # kio-gdrive
+      # # kdepim-addons
+      # # signond
+      # krdc
+      # # # plasma-vault
+      # # kleopatra
+      # plasma-browser-integration
+      # # filelight
+      # # sonnet
     ])
     ++ (with pkgs.gnomeExtensions; [
       # appindicator

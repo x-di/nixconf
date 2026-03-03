@@ -18,7 +18,7 @@
     inputs.self.nixosModules.security
     inputs.self.nixosModules.firmware
     inputs.self.nixosModules.gpu
-    inputs.self.nixosModules.plasma6
+    # inputs.self.nixosModules.plasma6
     inputs.self.nixosModules.appimage
     inputs.self.nixosModules.chromium
     inputs.self.nixosModules.dconf
@@ -47,6 +47,11 @@
     inputs.self.nixosModules.xdg
     inputs.self.nixosModules.zram
     inputs.self.nixosModules.packages
+
+    # DE program
+    inputs.self.nixosModules.dms-shell
+    inputs.self.nixosModules.niri
+    inputs.self.nixosModules.upower
 
     # Home Manager integration
     inputs.home-manager.nixosModules.home-manager
