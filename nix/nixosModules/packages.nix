@@ -3,7 +3,7 @@
 {
   environment.systemPackages =
     (with pkgs; [
-      # adw-gtk3
+      adw-gtk3
       # adwaita-icon-theme
       android-tools
       # anytype
@@ -48,8 +48,8 @@
       ghostscript
       gocryptfs
       # google-chrome
-      graphite-cursors
-      graphite-gtk-theme
+      # graphite-cursors
+      # graphite-gtk-theme
       # gruvbox-plus-icons
       # haruna
       # hunspell
@@ -79,7 +79,7 @@
       # onlyoffice-desktopeditors
       openssl
       p7zip
-      # papirus-icon-theme
+      papirus-icon-theme
       # peazap
       # postman
       sbctl
@@ -90,7 +90,7 @@
       # smile
       sqlite
       # svt-av1
-      # tela-icon-theme
+      tela-icon-theme
       telegram-desktop
       # tlrc
       # thunderbird
