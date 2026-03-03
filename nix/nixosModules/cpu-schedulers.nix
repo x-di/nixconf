@@ -31,14 +31,14 @@ in
   services.scx = {
     enable = scheduler == "scx";
     package = pkgs.scx.rustscheds;
-    scheduler = "scx_flash";
+    scheduler = "scx_cosmos";
     extraArgs = [
+      "-s"
+      "20000"
+      "-d"
+      "-c"
+      "0"
       "-p"
-      "-k"
-      "-m"
-      "performance"
-      "-w"
-      "-C"
       "0"
     ];
   };
