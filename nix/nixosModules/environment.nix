@@ -10,6 +10,12 @@
       MOZ_USE_XINPUT2 = "1";
       LIBVA_DRIVER_NAME = "iHD";
       GST_PLUGIN_PATH = "/run/current-system/sw/lib/gstreamer-1.0/";
+      # niri
+      XDG_CURRENT_DESKTOP = "niri";
+      QT_QPA_PLATFORM = "wayland";
+      ELECTRON_OZONE_PLATFORM_HINT = "auto";
+      QT_QPA_PLATFORMTHEME = "qt6ct";
+      QT_QPA_PLATFORMTHEME_QT6 = "qt6ct";
     };
     # etc."chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json".source =
     #   "${pkgs.kdePackages.plasma-browser-integration}/etc/chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json";
