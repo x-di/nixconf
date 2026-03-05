@@ -19,7 +19,7 @@
       };
     };
     oomd = {
-      enable = false;
+      enable = true;
       settings = {
         OOM = {
           SwapUsedLimit = "90%";

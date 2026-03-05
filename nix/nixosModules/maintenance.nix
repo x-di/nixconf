@@ -14,7 +14,7 @@
 
     # Early out-of-memory killing
     earlyoom = {
-      enable = true;
+      enable = false;
       freeMemThreshold = 5;
     };
 
