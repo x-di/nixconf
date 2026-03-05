@@ -2,7 +2,7 @@
 {
   # Floorp browser
   programs.floorp = {
-    enable = true;
+    enable = false;
     nativeMessagingHosts = [
       pkgs.kdePackages.plasma-browser-integration
     ];

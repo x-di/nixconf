@@ -37,7 +37,7 @@
       # endeavour
       # errands
       ffmpeg-full
-      # floorp-bin
+      floorp-bin
       # gcc
       # ghostty
       # gimp
