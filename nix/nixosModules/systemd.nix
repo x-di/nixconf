@@ -28,8 +28,8 @@
         };
       };
     };
-    sleep.extraConfig = ''
-      AllowHibernation=no
-    '';
+    sleep.settings.Sleep = {
+      AllowHibernation = "no";
+    };
   };
 }
