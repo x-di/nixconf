@@ -14,8 +14,8 @@
       XDG_CURRENT_DESKTOP = "niri";
       QT_QPA_PLATFORM = "wayland";
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
-      QT_QPA_PLATFORMTHEME = "qt6ct";
-      QT_QPA_PLATFORMTHEME_QT6 = "qt6ct";
+      QT_QPA_PLATFORMTHEME = "gtk3";
+      QT_QPA_PLATFORMTHEME_QT6 = "gtk3";
     };
     # etc."chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json".source =
     #   "${pkgs.kdePackages.plasma-browser-integration}/etc/chromium/native-messaging-hosts/org.kde.plasma.browser_integration.json";
