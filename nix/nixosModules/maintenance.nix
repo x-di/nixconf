@@ -30,7 +30,35 @@
     '';
 
     # Thermal management
-    thermald.enable = lib.mkDefault true;
+    thermald.enable = lib.mkDefault false;
+
+    throttled = {
+      enable = lib.mkDefault true;
+      extraConfig = ''
+        [GENERAL]
+        Enabled: True
+        Autoreload: True
+
+        [UNDERVOLT]
+        CORE: -105
+        GPU: -85
+        CACHE: -105
+        UNCORE: -85
+        ANALOGIO: 0
+
+        [AC]
+        Update_Rate_s: 5
+        PL1_Tdp_W: 44
+        PL2_Tdp_W: 44
+        Trip_Temp_C: 89
+
+        [BATTERY]
+        Update_Rate_s: 30
+        PL1_Tdp_W: 29
+        PL2_Tdp_W: 44
+        Trip_Temp_C: 85
+      '';
+    };
 
     # NTP time sync
     timesyncd = {
