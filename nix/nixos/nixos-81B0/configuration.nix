@@ -47,6 +47,7 @@
     inputs.self.nixosModules.xdg
     inputs.self.nixosModules.zram
     inputs.self.nixosModules.packages
+    inputs.self.nixosModules.udev
 
     # DE program
     inputs.self.nixosModules.dms-shell
