@@ -101,9 +101,7 @@
     },
     "flakelight": {
       "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": ["nixpkgs"]
       },
       "locked": {
         "lastModified": 1773062095,
@@ -121,9 +119,7 @@
     },
     "home-manager": {
       "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": ["nixpkgs"]
       },
       "locked": {
         "lastModified": 1773332277,
@@ -242,9 +238,7 @@
     },
     "quickshell": {
       "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": ["nixpkgs"]
       },
       "locked": {
         "lastModified": 1773313344,
@@ -272,10 +266,7 @@
     },
     "rust-overlay": {
       "inputs": {
-        "nixpkgs": [
-          "zed",
-          "nixpkgs"
-        ]
+        "nixpkgs": ["zed", "nixpkgs"]
       },
       "locked": {
         "lastModified": 1770001842,
