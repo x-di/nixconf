@@ -33,7 +33,7 @@
       # dialect
       # dooit
       # drawio
-      # easyeffects
+      easyeffects
       # endeavour
       # errands
       ffmpeg-full
@@ -54,13 +54,13 @@
       # haruna
       # hunspell
       # inkscape
-      jamesdsp
+      # jamesdsp
       # jre
       # kdiskmark
       # keypunch
       libdbusmenu
       # libde265
-      # libreoffice-fresh
+      libreoffice-fresh
       # libreoffice-qt6-fresh
       librewolf
       libsecret
