@@ -4,7 +4,7 @@
   home.packages =
     with pkgs;
     # with pkgs.elmPackages;
-    with pkgs.nodePackages;
+    # with pkgs.nodePackages;
     # with pkgs.ocamlPackages;
     # with pkgs.rubyPackages;
     [
