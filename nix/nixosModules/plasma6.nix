@@ -3,12 +3,8 @@
 {
   # KDE Plasma 6 desktop environment
   services = {
-    displayManager.sddm = {
+    displayManager.plasma-login-manager = {
       enable = true;
-      wayland = {
-        enable = true;
-        compositor = "kwin";
-      };
     };
     desktopManager.plasma6 = {
       enable = true;
@@ -25,7 +21,7 @@
   ];
 
   # KDE Connect for device integration
-  programs.kdeconnect.enable = true;
+  programs.kdeconnect.enable = false;
 
   # KDE Partition Manager
   programs.partition-manager.enable = false;
