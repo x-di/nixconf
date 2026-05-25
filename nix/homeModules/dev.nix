@@ -16,7 +16,7 @@
     # jdk
     go
     gopls
-    gotools
+    # gotools
     gcc
     nodejs_latest
   ];
