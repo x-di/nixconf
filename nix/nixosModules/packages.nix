@@ -6,6 +6,7 @@
       adw-gtk3
       # adwaita-icon-theme
       android-tools
+      application-title-bar
       # anytype
       # aspell
       # bibata-cursors
@@ -23,7 +24,7 @@
       # cpu-x
       # code-cursor
       # colloid-icon-theme
-      # crow-translate
+      crow-translate
       cryfs
       # dav1d
       # dbeaver-bin
@@ -51,23 +52,25 @@
       # graphite-cursors
       # graphite-gtk-theme
       # gruvbox-plus-icons
-      # haruna
+      haruna
       # hunspell
       # inkscape
       # jamesdsp
       # jre
+      kara
       # kdiskmark
       # keypunch
       libdbusmenu
       # libde265
-      libreoffice-fresh
-      # libreoffice-qt6-fresh
+      # libreoffice-fresh
+      libreoffice-qt6-fresh
       librewolf
       libsecret
       libva-utils
       # kde-gruvbox
       # megasync
       mesa-demos
+      # nautilus
       neovim
       # nil
       # nixd
@@ -79,7 +82,7 @@
       # onlyoffice-desktopeditors
       openssl
       p7zip
-      papirus-icon-theme
+      # papirus-icon-theme
       # peazap
       # postman
       sbctl
@@ -92,7 +95,7 @@
       # smile
       sqlite
       # svt-av1
-      tela-icon-theme
+      # tela-icon-theme
       telegram-desktop
       # tlrc
       # thunderbird
@@ -118,27 +121,27 @@
       gst-vaapi
     ])
     ++ (with pkgs.kdePackages; [
-      # juk
-      # kclock
-      # # kdenlive
-      # kdeplasma-addons
-      # # kget
-      # # ktorrent
-      # qtwebengine
-      # qtmultimedia
-      # # falkon
-      # # kaccounts-providers
-      # # kaccounts-integration
-      # # kio-extras
-      # # kio-gdrive
-      # # kdepim-addons
-      # # signond
-      # krdc
-      # # # plasma-vault
-      # # kleopatra
-      # plasma-browser-integration
-      # # filelight
-      # # sonnet
+      juk
+      kclock
+      # kdenlive
+      kdeplasma-addons
+      # kget
+      # ktorrent
+      qtwebengine
+      qtmultimedia
+      # falkon
+      # kaccounts-providers
+      # kaccounts-integration
+      # kio-extras
+      # kio-gdrive
+      # kdepim-addons
+      # signond
+      krdc
+      # # plasma-vault
+      # kleopatra
+      plasma-browser-integration
+      # filelight
+      # sonnet
     ])
     ++ (with pkgs.gnomeExtensions; [
       # appindicator
