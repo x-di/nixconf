@@ -13,6 +13,7 @@
 
     # Linux kernel selection
     kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest-lto-x86_64-v3;
+    # kernelPackages = pkgs.linuxPackages_xanmod_latest;
 
     # Kernel sysctl optimizations for desktop use
     kernel.sysctl = {
