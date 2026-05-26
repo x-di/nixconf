@@ -30,10 +30,10 @@
     '';
 
     # Thermal management
-    thermald.enable = lib.mkDefault false;
+    thermald.enable = lib.mkDefault true;
 
     throttled = {
-      enable = lib.mkDefault true;
+      enable = lib.mkDefault false;
       extraConfig = ''
         [GENERAL]
         Enabled: True

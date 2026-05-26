@@ -201,7 +201,7 @@
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
   # System state version
-  system.stateVersion = "26.05";
+  system.stateVersion = "26.11";
 
   # Home Manager Integration
   home-manager = {
